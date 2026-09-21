@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @nihalsailor
 - 👀 I’m interested in Game Development and Hacking.
 - 💞️ I’m looking to collaborate on ...
-- 📫 To contact me Here's my email :- nihalsailor14@gmail.com.
+- 📫 To contact me Here's my email :- nihalsailor14@gmail.com and instagram ID :- @nihalsailor
 
 
 <!---
