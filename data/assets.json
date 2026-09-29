@@ -1,0 +1,82 @@
+[
+  {
+    "id": "stuck-cursed-ui",
+    "title": "Stuck Cursed: Dark Fantasy UI Kit",
+    "category": "unity-ui",
+    "categoryLabel": "UI & HUD Systems",
+    "unityVersion": "Unity 2022.3+ / Unity 6",
+    "renderPipeline": "Built-in / URP / HDRP",
+    "status": "In Development / Coming Soon",
+    "image": "BackgroundLogo.png",
+    "desc": "A complete dark fantasy and gothic maritime UI framework for Unity. Features ornate brass borders, responsive modal systems, animated compasses, health bars, and inventory grids.",
+    "tags": ["Unity UI", "UGUI", "UI Toolkit", "Dark Fantasy", "Sound FX Included"],
+    "details": "Engineered for RPGs, action games, and atmospheric maritime adventures. Includes 40+ handcrafted sprites, 9-sliced sliced frames, responsive canvas prefabs, animated buttons, sound effect synthesizers, and sample scene layouts ready to drop into any Unity pipeline.",
+    "assetStoreUrl": "#",
+    "githubUrl": "https://github.com/nihalsailor",
+    "metrics": [
+      { "label": "Prefabs", "val": "45+ Ready" },
+      { "label": "Pipelines", "val": "URP & HDRP" },
+      { "label": "Resolution", "val": "4K Crisp" }
+    ]
+  },
+  {
+    "id": "corsair-vehicle-physics",
+    "title": "Corsair Vehicular Combat Controller",
+    "category": "unity-tools",
+    "categoryLabel": "Physics & Gameplay Systems",
+    "unityVersion": "Unity 2022.3+",
+    "renderPipeline": "Universal",
+    "status": "In Development",
+    "image": "BackgroundLogo.png",
+    "desc": "High-octane arcade vehicle controller with dynamic wheel suspension, drift physics, projectile ballistic trajectories, and multiplayer synchronization hooks.",
+    "tags": ["Unity Physics", "Vehicle Controller", "C#", "Photon Ready", "Arcade Driving"],
+    "details": "Derived from the core combat mechanics of WRX Battles Online. Delivers instant plug-and-play vehicle prefabs, customizable torque curves, tire slip friction models, surface deformation sound triggers, and destructible armor component scripts.",
+    "assetStoreUrl": "#",
+    "githubUrl": "https://github.com/nihalsailor/WRXBattlesOnline",
+    "metrics": [
+      { "label": "Setup Time", "val": "< 5 Mins" },
+      { "label": "Netcode", "val": "Client Prediction" },
+      { "label": "Performance", "val": "Zero GC Alloc" }
+    ]
+  },
+  {
+    "id": "abyssal-ocean-shader",
+    "title": "Abyssal Dynamic Buoyancy & Ocean Shader",
+    "category": "unity-shaders",
+    "categoryLabel": "Shaders & Environmental VFX",
+    "unityVersion": "Unity 2022.3+ / Unity 6",
+    "renderPipeline": "URP & HDRP",
+    "status": "Planned Release",
+    "image": "BackgroundLogo.png",
+    "desc": "Photorealistic stormy ocean wave shader with GPU Gerstner wave displacement, dynamic crest foam, underwater caustics, and multi-point vessel buoyancy physics.",
+    "tags": ["Shader Graph", "HLSL", "Buoyancy", "URP", "Water VFX"],
+    "details": "Offers customizable wave amplitude, storm wind velocity, shoreline wave breaking, and synchronous CPU/GPU mathematical ocean height queries so vessels bob and crest realistically in stormy water.",
+    "assetStoreUrl": "#",
+    "githubUrl": "https://github.com/nihalsailor",
+    "metrics": [
+      { "label": "Pass", "val": "Shader Graph" },
+      { "label": "Buoyancy", "val": "8-Point Rigid" },
+      { "label": "Overhead", "val": "< 0.4ms GPU" }
+    ]
+  },
+  {
+    "id": "guardian-security-unity",
+    "title": "Guardian Client Security & Anti-Cheat Kit",
+    "category": "unity-security",
+    "categoryLabel": "Security & Network Defense",
+    "unityVersion": "Unity 2021.3 - 2023+",
+    "renderPipeline": "All Pipelines",
+    "status": "In Research",
+    "image": "MainLogo.jpg",
+    "desc": "Lightweight memory obfuscation, speedhack detection, and tamper-resistant save encryption for standalone Unity games.",
+    "tags": ["Cyber Security", "Anti-Tamper", "AES-256", "C# Memory Guard"],
+    "details": "Prevents unauthorized runtime memory modification, cheat engine variable scraping, save file manipulation, and MITM packet injection on client devices.",
+    "assetStoreUrl": "#",
+    "githubUrl": "https://github.com/nihalsailor",
+    "metrics": [
+      { "label": "Encryption", "val": "AES-GCM" },
+      { "label": "Detection", "val": "Real-time" },
+      { "label": "Overhead", "val": "Negligible" }
+    ]
+  }
+]

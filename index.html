@@ -61,6 +61,7 @@
             <li><a href="#bridge" class="nav-link active"><i class="fas fa-compass"></i> The Bridge</a></li>
             <li><a href="#about" class="nav-link"><i class="fas fa-skull"></i> The Captain</a></li>
             <li><a href="#armada" class="nav-link"><i class="fas fa-ship"></i> The Armada</a></li>
+            <li><a href="projects.html" class="nav-link"><i class="fab fa-unity"></i> Asset Vault</a></li>
             <li><a href="#arsenal" class="nav-link"><i class="fas fa-shield-halved"></i> Arsenal</a></li>
             <li><a href="#dispatches" class="nav-link"><i class="fas fa-scroll"></i> Dispatches</a></li>
             <li><a href="#contact" class="nav-link"><i class="fas fa-envelope-open-text"></i> Summon</a></li>
@@ -237,21 +238,28 @@
           </p>
         </div>
 
-        <!-- Filter & Commission Navigation -->
+        <!-- Filter Navigation -->
         <div class="armada-filters">
           <button class="filter-btn active" data-filter="all">All Vessels</button>
           <button class="filter-btn" data-filter="game">Game Dev & 3D</button>
           <button class="filter-btn" data-filter="web">Web Platforms</button>
           <button class="filter-btn" data-filter="systems">Systems & Security</button>
           <button class="filter-btn" data-filter="creative">Creative Audio</button>
-          <button id="btn-open-add-project" class="btn-corsair btn-add-vessel" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">
-            <i class="fas fa-plus"></i> Commission New Vessel
-          </button>
+          <a href="projects.html" class="btn-corsair" style="padding: 0.5rem 1.25rem; font-size: 0.8rem; border-color: var(--gold-primary);">
+            <i class="fab fa-unity"></i> Asset Store & Full Vault ➔
+          </a>
         </div>
 
-        <!-- Grid of Project Cards (Dynamically Loaded from projects.json & Local Customizations) -->
+        <!-- Grid of Project Cards (Dynamically Loaded from projects.json) -->
         <div class="armada-grid">
           <!-- Populated dynamically by js/main.js -->
+        </div>
+
+        <!-- Explore Full Vault Banner -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="projects.html" class="btn-corsair" style="font-size: 0.95rem; padding: 0.85rem 2.2rem;">
+            <i class="fab fa-unity"></i> Explore Full Archive & Unity Asset Store Releases ➔
+          </a>
         </div>
 
         </div>
@@ -683,145 +691,6 @@
           <i class="fas fa-play"></i> Launch Vessel
         </a>
       </div>
-    </div>
-  </div>
-
-  <!-- ======================================================================
-       COMMISSION NEW VESSEL (ADD PROJECT) MODAL
-       ====================================================================== -->
-  <div id="add-project-modal" class="modal-backdrop">
-    <div class="gilded-card modal-dialog" style="max-width: 680px;">
-      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
-      
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-gold); padding-bottom: 0.75rem;">
-        <h3 class="font-cinzel gold-gradient-text" style="font-size: 1.4rem; margin: 0;">
-          <i class="fas fa-ship"></i> Commission New Vessel
-        </h3>
-        <span class="badge-corsair" style="margin: 0; font-size: 0.65rem;">Armada Expansion</span>
-      </div>
-
-      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.25rem;">
-        Add your game, application, security tool, or creative project to your live showcase. You can preview it immediately and export it to deploy for everyone worldwide.
-      </p>
-
-      <form id="add-project-form" class="parchment-form">
-        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 1rem;">
-          <div class="form-group">
-            <label for="proj-title" class="form-label">Vessel / Project Name *</label>
-            <input type="text" id="proj-title" class="form-control" placeholder="e.g. Apex Combat Arena" required>
-          </div>
-
-          <div class="form-group">
-            <label for="proj-category" class="form-label">Fleet Category *</label>
-            <select id="proj-category" class="form-control" required>
-              <option value="game">Game Dev & 3D</option>
-              <option value="web">Web Platforms</option>
-              <option value="systems">Systems & Security</option>
-              <option value="creative">Creative Audio & Art</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="proj-desc" class="form-label">Brief Mission Summary (Card display) *</label>
-          <input type="text" id="proj-desc" class="form-control" placeholder="1-2 sentences summarizing what this project does..." required>
-        </div>
-
-        <div class="form-group">
-          <label for="proj-details" class="form-label">Detailed Vessel Log (Inspection Modal)</label>
-          <textarea id="proj-details" class="form-control" style="min-height: 80px;" placeholder="Full architectural details, features, and technical achievements..."></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="proj-tags" class="form-label">Technologies & Weapons (Comma-separated) *</label>
-          <input type="text" id="proj-tags" class="form-control" placeholder="e.g. Unity, C#, Multiplayer, Photon, Python" required>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-          <div class="form-group">
-            <label for="proj-image-url" class="form-label">Image URL (or select below)</label>
-            <input type="text" id="proj-image-url" class="form-control" placeholder="Image URL or BackgroundLogo.png">
-          </div>
-          <div class="form-group">
-            <label for="proj-image-file" class="form-label">Or Upload Screenshot</label>
-            <input type="file" id="proj-image-file" accept="image/*" class="form-control" style="padding: 0.5rem;">
-          </div>
-        </div>
-        <img id="image-upload-preview" class="image-preview-box" alt="Vessel Preview">
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-          <div class="form-group">
-            <label for="proj-code" class="form-label">GitHub / Blueprint URL</label>
-            <input type="url" id="proj-code" class="form-control" placeholder="https://github.com/nihalsailor/my-project">
-          </div>
-          <div class="form-group">
-            <label for="proj-live" class="form-label">Live Demo / Play Link (Optional)</label>
-            <input type="url" id="proj-live" class="form-control" placeholder="https://...">
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.6rem;">
-          <div class="form-group">
-            <label class="form-label" style="font-size: 0.72rem;">Metric 1</label>
-            <input type="text" id="proj-metric-label-1" class="form-control" placeholder="Engine" value="Engine">
-          </div>
-          <div class="form-group">
-            <label class="form-label" style="font-size: 0.72rem;">Value 1</label>
-            <input type="text" id="proj-metric-val-1" class="form-control" placeholder="Unity 3D" value="Unity 3D">
-          </div>
-          <div class="form-group">
-            <label class="form-label" style="font-size: 0.72rem;">Metric 2</label>
-            <input type="text" id="proj-metric-label-2" class="form-control" placeholder="Status" value="Status">
-          </div>
-          <div class="form-group">
-            <label class="form-label" style="font-size: 0.72rem;">Value 2</label>
-            <input type="text" id="proj-metric-val-2" class="form-control" placeholder="Released" value="Released">
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 1rem; margin-top: 0.75rem;">
-          <button type="submit" class="btn-corsair btn-add-vessel" style="flex: 2;">
-            <i class="fas fa-anchor"></i> Commission & Preview Live
-          </button>
-          <button type="button" id="btn-export-projects" class="btn-corsair btn-card-secondary" style="flex: 1; font-size: 0.78rem;">
-            <i class="fas fa-download"></i> Export JSON
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- ======================================================================
-       EXPORT / DEPLOY HELPER MODAL
-       ====================================================================== -->
-  <div id="export-modal" class="modal-backdrop">
-    <div class="gilded-card modal-dialog" style="max-width: 650px;">
-      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
-      
-      <h3 class="font-cinzel gold-gradient-text" style="font-size: 1.4rem; margin-bottom: 0.5rem;">
-        <i class="fas fa-circle-check" style="color: #34d399;"></i> Vessel Commissioned Successfully!
-      </h3>
-      <p style="color: var(--text-parchment); font-size: 0.9rem; margin-bottom: 1.25rem;">
-        Your new project is <strong>now live in your browser showcase</strong>! To publish it permanently so that <strong>everyone visiting your site sees it</strong>:
-      </p>
-
-      <ol style="margin-left: 1.5rem; color: var(--text-muted); font-size: 0.88rem; line-height: 1.8; margin-bottom: 1.25rem;">
-        <li>Copy the JSON snippet below or click <strong>"Download projects.json"</strong>.</li>
-        <li>Paste it into <code style="color: var(--gold-light);">data/projects.json</code> in this project folder.</li>
-        <li>Commit and push to GitHub (<code style="color: var(--gold-light);">git push origin main</code>)!</li>
-      </ol>
-
-      <pre id="export-json-code" class="code-export-box"></pre>
-
-      <div style="display: flex; gap: 1rem; margin-top: 1.25rem;">
-        <button id="btn-copy-projects-json" class="btn-corsair btn-card-primary" style="flex: 1;">
-          <i class="fas fa-copy"></i> Copy Full Armada JSON
-        </button>
-        <button onclick="exportProjectsJsonFile()" class="btn-corsair btn-card-secondary" style="flex: 1;">
-          <i class="fas fa-download"></i> Download projects.json
-        </button>
-      </div>
-    </div>
   </div>
 
   <!-- ======================================================================

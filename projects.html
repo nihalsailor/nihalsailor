@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complete Fleet & Unity Asset Store | NIHALSAILOR</title>
+  
+  <!-- Meta Information & SEO -->
+  <meta name="description" content="Complete directory of software releases, applications, and Unity Asset Store systems by Nihalsailor.">
+  <meta name="keywords" content="Nihalsailor, Unity Asset Store, Game Development, Shaders, UI Kits, Cyber Security, Web Platforms">
+  <meta name="author" content="Nihalsailor">
+  <meta name="p:domain_verify" content="e11746ca856d30727b4935c454664b37"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="MainLogo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .archive-hero {
+      padding: 7.5rem 0 3.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .unity-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.45);
+      color: #86efac;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .status-badge-dev {
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      color: #fde047;
+    }
+    .search-bar-wrap {
+      max-width: 550px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 0.9rem 1.25rem 0.9rem 3rem;
+      background: rgba(7, 12, 22, 0.85);
+      border: 1px solid var(--border-gold);
+      border-radius: 30px;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      transition: var(--transition-smooth);
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 25px var(--gold-glow);
+    }
+    .search-icon {
+      position: absolute;
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold-primary);
+      pointer-events: none;
+    }
+    .unity-section-banner {
+      background: linear-gradient(135deg, rgba(20, 34, 60, 0.8), rgba(8, 14, 26, 0.9));
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+    .unity-logo-icon {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    .asset-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.5rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Atmosphere Canvas -->
+  <canvas id="atmosphere-canvas"></canvas>
+
+  <div class="content-wrapper">
+
+    <!-- Navigation Bar -->
+    <header class="main-nav scrolled">
+      <div class="container nav-container">
+        
+        <a href="index.html" class="brand-link" title="Nihalsailor Flagship">
+          <div class="brand-avatar-wrap">
+            <img src="MainLogo.jpg" alt="Nihalsailor Logo" class="brand-avatar">
+          </div>
+          <div>
+            <span class="brand-name gold-gradient-text">NIHALSAILOR</span>
+            <span class="brand-tag">Asset Vault</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Flagship Home</a></li>
+            <li><a href="#unity-assets" class="nav-link"><i class="fab fa-unity"></i> Unity Assets</a></li>
+            <li><a href="#all-vessels" class="nav-link"><i class="fas fa-ship"></i> All Projects</a></li>
+            <li><a href="index.html#contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn-sound-toggle" aria-label="Toggle Ocean Soundscape" title="Play Ocean Ambience">
+            <i class="fas fa-volume-xmark"></i>
+          </button>
+          
+          <a href="index.html" class="btn-corsair" style="padding: 0.6rem 1.25rem; font-size: 0.78rem;">
+            <span><i class="fas fa-arrow-left"></i> Flagship</span>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Main Hero -->
+    <section class="archive-hero">
+      <div class="container">
+        <span class="section-tag">// VAULT & EXPEDITION ARCHIVES</span>
+        <h1 class="hero-title gold-gradient-text" style="font-size: clamp(2.2rem, 5vw, 4rem); margin-bottom: 1rem;">
+          ALL VESSELS & UNITY ASSET STORE
+        </h1>
+        <p class="hero-subtitle" style="max-width: 780px;">
+          The complete master registry of published platforms, game engineering assets, cybersecurity tools, and upcoming Unity Asset Store packages by <strong>Nihalsailor</strong>.
+        </p>
+
+        <!-- Search Input -->
+        <div class="search-bar-wrap">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="vault-search-input" class="search-input" placeholder="Search by name, tag, Unity, shader, security, or technology...">
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="armada-filters" style="margin-bottom: 2rem;">
+          <button class="filter-btn active" data-vault-filter="all">All Releases (<span id="count-all">0</span>)</button>
+          <button class="filter-btn" data-vault-filter="unity"><i class="fab fa-unity"></i> Unity Asset Store (<span id="count-unity">0</span>)</button>
+          <button class="filter-btn" data-vault-filter="game"><i class="fas fa-gamepad"></i> Game Dev (<span id="count-game">0</span>)</button>
+          <button class="filter-btn" data-vault-filter="web"><i class="fas fa-globe"></i> Web Platforms (<span id="count-web">0</span>)</button>
+          <button class="filter-btn" data-vault-filter="systems"><i class="fas fa-shield-halved"></i> Security & Systems (<span id="count-systems">0</span>)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unity Asset Store Highlight Banner -->
+    <div class="container" id="unity-assets">
+      <div class="unity-section-banner">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <i class="fab fa-unity unity-logo-icon"></i>
+          <div>
+            <h3 class="font-cinzel gold-gradient-text" style="font-size: 1.45rem; margin-bottom: 0.25rem;">
+              Unity Asset Store Packages
+            </h3>
+            <p style="color: var(--text-parchment); font-size: 0.88rem; margin: 0;">
+              Production-ready UI frameworks, physics systems, and HLSL shaders crafted for game developers.
+            </p>
+          </div>
+        </div>
+        <div>
+          <a href="https://assetstore.unity.com" target="_blank" rel="noopener" class="btn-corsair" style="font-size: 0.78rem;">
+            <i class="fab fa-unity"></i> Unity Asset Store Profile
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master Cards Grid -->
+    <section id="all-vessels" style="padding-top: 0;">
+      <div class="container">
+        <div id="vault-grid" class="armada-grid">
+          <!-- Populated dynamically by script -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+              <img src="MainLogo.jpg" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--gold-primary);">
+              <h4 class="gold-gradient-text" style="margin: 0;">NIHALSAILOR</h4>
+            </div>
+            <p>"Engineering worlds, securing systems, and charting uncharted waters."</p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="font-cinzel">Quick Ports</h5>
+            <ul class="footer-links-list">
+              <li><a href="index.html"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> Flagship Home</a></li>
+              <li><a href="index.html#armada"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> Featured Armada</a></li>
+              <li><a href="projects.html"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> All Projects & Unity Assets</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="font-cinzel">Signals & Socials</h5>
+            <ul class="footer-links-list">
+              <li><a href="https://itlive.in/nihalsailor/index.html" target="_blank" rel="noopener"><i class="fas fa-globe"></i> ITLive Portal</a></li>
+              <li><a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube Fleet</a></li>
+              <li><a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://github.com/nihalsailor" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 <strong>NIHALSAILOR</strong>. All rights reserved.</div>
+          <div><a href="index.html" class="btn-corsair" style="padding: 0.4rem 0.9rem; font-size: 0.72rem;"><i class="fas fa-arrow-up"></i> Return to Flagship</a></div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Detail Inspection Modal -->
+  <div id="vault-modal" class="modal-backdrop">
+    <div class="gilded-card modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div style="height: 250px; overflow: hidden; border-radius: 4px; margin: -2rem -2rem 1.5rem -2rem; border-bottom: 1px solid var(--border-gold); position: relative;">
+        <img id="v-modal-img" src="BackgroundLogo.png" alt="Preview" style="width: 100%; height: 100%; object-fit: cover;">
+        <span id="v-modal-category" class="project-category-tag" style="top: 1rem; right: 1rem;">Category</span>
+      </div>
+
+      <h3 id="v-modal-title" class="font-cinzel" style="font-size: 1.75rem; margin-bottom: 0.75rem;">Item Title</h3>
+      
+      <div id="v-modal-tags" class="project-tags"></div>
+      
+      <p id="v-modal-desc" style="color: var(--text-parchment); line-height: 1.75; margin-bottom: 1.5rem;"></p>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 class="font-cinzel" style="font-size: 0.95rem; color: var(--gold-light); margin-bottom: 0.75rem; text-transform: uppercase;">
+          Vessel & Asset Specifications
+        </h4>
+        <div id="v-modal-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; background: rgba(5, 9, 17, 0.7); padding: 1rem; border-radius: 6px; border: 1px solid var(--border-subtle);"></div>
+      </div>
+
+      <div class="project-actions" style="margin-top: 1.5rem; gap: 0.75rem;">
+        <a id="v-modal-code" href="#" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1;">
+          <i class="fab fa-github"></i> Blueprint
+        </a>
+        <a id="v-modal-live" href="#" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1; border-color: var(--gold-primary);">
+          <i class="fas fa-external-link-alt"></i> Live Demo / Store
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script>
+    let vaultItems = [];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Sound toggle
+      const soundBtn = document.querySelector('.btn-sound-toggle');
+      if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+          const isPlaying = window.maritimeAudio.toggleSound();
+          soundBtn.classList.toggle('playing', isPlaying);
+          soundBtn.innerHTML = isPlaying ? '<i class="fas fa-volume-high"></i>' : '<i class="fas fa-volume-xmark"></i>';
+        });
+      }
+
+      await loadVaultData();
+      initVaultFiltersAndSearch();
+      initVaultModal();
+    });
+
+    async function loadVaultData() {
+      // Load standard projects
+      let projects = window.DEFAULT_PROJECTS || [];
+      try {
+        const pRes = await fetch('data/projects.json');
+        if (pRes.ok) projects = await pRes.json();
+      } catch (e) {}
+
+      // Load Unity assets
+      let assets = [];
+      try {
+        const aRes = await fetch('data/assets.json');
+        if (aRes.ok) assets = await aRes.json();
+      } catch (e) {}
+
+      // Normalize and combine
+      const mappedAssets = assets.map(a => ({
+        ...a,
+        isUnityAsset: true,
+        categoryGroup: 'unity',
+        liveUrl: a.assetStoreUrl || '#',
+        codeUrl: a.githubUrl || 'https://github.com/nihalsailor'
+      }));
+
+      const mappedProjects = projects.map(p => ({
+        ...p,
+        isUnityAsset: false,
+        categoryGroup: p.category || 'other'
+      }));
+
+      vaultItems = [...mappedAssets, ...mappedProjects];
+      updateCounts(vaultItems);
+      renderVaultGrid(vaultItems);
+    }
+
+    function updateCounts(items) {
+      document.getElementById('count-all').textContent = items.length;
+      document.getElementById('count-unity').textContent = items.filter(i => i.isUnityAsset).length;
+      document.getElementById('count-game').textContent = items.filter(i => i.categoryGroup === 'game').length;
+      document.getElementById('count-web').textContent = items.filter(i => i.categoryGroup === 'web').length;
+      document.getElementById('count-systems').textContent = items.filter(i => i.categoryGroup === 'systems').length;
+    }
+
+    function renderVaultGrid(items) {
+      const grid = document.getElementById('vault-grid');
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text-muted);"><p>No vessels or assets found matching your criteria.</p></div>`;
+        return;
+      }
+
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'gilded-card project-card tilt-card';
+        card.dataset.id = item.id;
+
+        const isUnity = item.isUnityAsset;
+        const tagsHtml = (item.tags || []).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join('');
+
+        card.innerHTML = `
+          <div class="project-media">
+            <img src="${escapeHtml(item.image || 'BackgroundLogo.png')}" alt="${escapeHtml(item.title)}" class="project-media-img">
+            <div class="project-media-overlay"></div>
+            <span class="project-category-tag">${escapeHtml(item.categoryLabel || item.category)}</span>
+          </div>
+
+          ${isUnity ? `
+            <div class="asset-meta-row">
+              <span class="unity-badge"><i class="fab fa-unity"></i> Asset Store</span>
+              ${item.status ? `<span class="unity-badge status-badge-dev">${escapeHtml(item.status)}</span>` : ''}
+              ${item.unityVersion ? `<span class="unity-badge" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); color: #7dd3fc;">${escapeHtml(item.unityVersion)}</span>` : ''}
+            </div>
+          ` : ''}
+
+          <h3 class="project-title font-cinzel">
+            <span>${escapeHtml(item.title)}</span>
+            <i class="${isUnity ? 'fab fa-unity text-gold' : 'fas fa-ship text-gold'}" style="font-size: 1.1rem;"></i>
+          </h3>
+
+          <p class="project-desc">${escapeHtml(item.desc)}</p>
+          <div class="project-tags">${tagsHtml}</div>
+
+          <div class="project-actions">
+            <button class="btn-card-action btn-card-primary" data-v-inspect="${escapeHtml(item.id)}">
+              <i class="fas fa-eye"></i> Details
+            </button>
+            ${item.liveUrl && item.liveUrl !== '#' ? `
+              <a href="${escapeHtml(item.liveUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary" style="border-color: var(--gold-primary); color: var(--gold-light);">
+                <i class="${isUnity ? 'fab fa-unity' : 'fas fa-arrow-up-right-from-square'}"></i> ${isUnity ? 'Store' : 'Live'}
+              </a>
+            ` : ''}
+            ${item.codeUrl && item.codeUrl !== '#' ? `
+              <a href="${escapeHtml(item.codeUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary">
+                <i class="fab fa-github"></i> Code
+              </a>
+            ` : ''}
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      attachInspectionListeners();
+    }
+
+    function initVaultFiltersAndSearch() {
+      const filterBtns = document.querySelectorAll('[data-vault-filter]');
+      const searchInput = document.getElementById('vault-search-input');
+      let currentFilter = 'all';
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.vaultFilter;
+          filterVault();
+        });
+      });
+
+      searchInput.addEventListener('input', () => {
+        filterVault();
+      });
+
+      function filterVault() {
+        const query = searchInput.value.toLowerCase().trim();
+        const filtered = vaultItems.filter(item => {
+          // Category filter
+          let matchesCat = true;
+          if (currentFilter === 'unity') matchesCat = item.isUnityAsset;
+          else if (currentFilter !== 'all') matchesCat = (item.categoryGroup === currentFilter);
+
+          // Query filter
+          let matchesQuery = true;
+          if (query) {
+            const haystack = [
+              item.title,
+              item.desc,
+              item.details,
+              item.categoryLabel,
+              (item.tags || []).join(' ')
+            ].join(' ').toLowerCase();
+            matchesQuery = haystack.includes(query);
+          }
+
+          return matchesCat && matchesQuery;
+        });
+
+        renderVaultGrid(filtered);
+      }
+    }
+
+    function initVaultModal() {
+      const modal = document.getElementById('vault-modal');
+      const closeBtn = modal.querySelector('.modal-close-btn');
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+    }
+
+    function attachInspectionListeners() {
+      const inspectBtns = document.querySelectorAll('[data-v-inspect]');
+      const modal = document.getElementById('vault-modal');
+
+      inspectBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const id = btn.dataset.vInspect;
+          const item = vaultItems.find(i => i.id === id);
+          if (!item) return;
+
+          document.getElementById('v-modal-title').textContent = item.title;
+          document.getElementById('v-modal-category').textContent = item.categoryLabel || item.category;
+          document.getElementById('v-modal-desc').innerHTML = escapeHtml(item.details || item.desc).replace(/\n/g, '<br>');
+          document.getElementById('v-modal-img').src = item.image || 'BackgroundLogo.png';
+
+          const tagsBox = document.getElementById('v-modal-tags');
+          tagsBox.innerHTML = '';
+          (item.tags || []).forEach(t => {
+            const span = document.createElement('span');
+            span.className = 'tag-pill';
+            span.textContent = t;
+            tagsBox.appendChild(span);
+          });
+
+          const metricsBox = document.getElementById('v-modal-metrics');
+          metricsBox.innerHTML = '';
+          const metrics = item.metrics || [
+            { label: 'Status', val: item.status || 'Active' },
+            { label: 'Platform', val: item.unityVersion || 'Cross-Platform' },
+            { label: 'Authored By', val: 'Nihalsailor' }
+          ];
+
+          metrics.forEach(m => {
+            const div = document.createElement('div');
+            div.className = 'stat-box';
+            div.innerHTML = `<div class="stat-number" style="font-size: 1.25rem;">${escapeHtml(m.val)}</div><div class="stat-label">${escapeHtml(m.label)}</div>`;
+            metricsBox.appendChild(div);
+          });
+
+          const liveBtn = document.getElementById('v-modal-live');
+          if (item.liveUrl && item.liveUrl !== '#') {
+            liveBtn.href = item.liveUrl;
+            liveBtn.style.display = 'inline-flex';
+            liveBtn.innerHTML = item.isUnityAsset 
+              ? '<i class="fab fa-unity"></i> View on Asset Store' 
+              : '<i class="fas fa-external-link-alt"></i> Launch Live';
+          } else {
+            liveBtn.style.display = 'none';
+          }
+
+          const codeBtn = document.getElementById('v-modal-code');
+          if (item.codeUrl && item.codeUrl !== '#') {
+            codeBtn.href = item.codeUrl;
+            codeBtn.style.display = 'inline-flex';
+          } else {
+            codeBtn.style.display = 'none';
+          }
+
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 /**
- * NIHALSAILOR ARMADA - DEFAULT PROJECT REGISTRY
- * You can also edit 'data/projects.json' directly or use the "➕ Commission Vessel" button on the website!
+ * NIHALSAILOR ARMADA - VERIFIED PROJECT REGISTRY
+ * Verified master registry for Nihalsailor flagship vessels.
  */
 
 window.DEFAULT_PROJECTS = [
@@ -18,7 +18,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Mode", "val": "Multiplayer PvP" },
       { "label": "Platform", "val": "PC & WebGL" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://wrx-battles.vercel.app/download",
     "codeUrl": "https://github.com/nihalsailor/WRXBattlesOnline"
   },
   {
@@ -35,7 +35,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Encryption", "val": "End-to-End" },
       { "label": "Latency", "val": "< 25ms" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://apanibaat.netlify.app",
     "codeUrl": "https://github.com/nihalsailor/apnibaat"
   },
   {
@@ -52,7 +52,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Integration", "val": "OBS & Twitch" },
       { "label": "Overhead", "val": "< 1% CPU" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://streamsailor.itlive.in/",
     "codeUrl": "https://github.com/nihalsailor/StreamSailor"
   },
   {
@@ -69,7 +69,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Specialization", "val": "Ethical Hacking" },
       { "label": "Database", "val": "CVE Threat Lib" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://zaimcp.space-z.ai/",
     "codeUrl": "https://github.com/nihalsailor"
   },
   {
@@ -86,7 +86,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Response", "val": "Instant Block" },
       { "label": "Platform", "val": "Android / PC" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://safeguardlite.itlive.in/",
     "codeUrl": "https://github.com/nihalsailor/ParentralControllApp"
   },
   {

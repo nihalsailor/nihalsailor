@@ -13,7 +13,7 @@
       { "label": "Mode", "val": "Multiplayer PvP" },
       { "label": "Platform", "val": "PC & WebGL" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://wrx-battles.vercel.app/download",
     "codeUrl": "https://github.com/nihalsailor/WRXBattlesOnline"
   },
   {
@@ -30,7 +30,7 @@
       { "label": "Encryption", "val": "End-to-End" },
       { "label": "Latency", "val": "< 25ms" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://apanibaat.netlify.app",
     "codeUrl": "https://github.com/nihalsailor/apnibaat"
   },
   {
@@ -47,7 +47,7 @@
       { "label": "Integration", "val": "OBS & Twitch" },
       { "label": "Overhead", "val": "< 1% CPU" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://streamsailor.itlive.in/",
     "codeUrl": "https://github.com/nihalsailor/StreamSailor"
   },
   {
@@ -64,7 +64,7 @@
       { "label": "Specialization", "val": "Ethical Hacking" },
       { "label": "Database", "val": "CVE Threat Lib" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://zaimcp.space-z.ai/",
     "codeUrl": "https://github.com/nihalsailor"
   },
   {
@@ -81,7 +81,7 @@
       { "label": "Response", "val": "Instant Block" },
       { "label": "Platform", "val": "Android / PC" }
     ],
-    "liveUrl": "#",
+    "liveUrl": "https://safeguardlite.itlive.in/",
     "codeUrl": "https://github.com/nihalsailor/ParentralControllApp"
   },
   {

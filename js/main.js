@@ -1,9 +1,9 @@
 /**
  * NIHALSAILOR MAIN APPLICATION CONTROLLER
- * Orchestrates interactions, audio state, dynamic armada projects, modals, and project creation.
+ * Orchestrates interactions, audio state, verified armada projects, modals, and animations.
  */
 
-// Global registry of all active projects
+// Global registry of all verified projects
 window.allProjects = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadAndRenderProjects();
   initProjectFilters();
   initProjectModals();
-  initAddProjectModal();
   initCaptainLogs();
   initContactForm();
   init3DTilt();
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 /* --------------------------------------------------------------------------
-   1. PROJECT REGISTRY & DYNAMIC RENDERING
+   1. VERIFIED PROJECT REGISTRY & DYNAMIC RENDERING
    -------------------------------------------------------------------------- */
 async function loadAndRenderProjects() {
   let baseProjects = window.DEFAULT_PROJECTS || [];
@@ -39,16 +38,7 @@ async function loadAndRenderProjects() {
     // Falls back seamlessly to window.DEFAULT_PROJECTS
   }
 
-  // Load custom user projects from localStorage
-  let customProjects = [];
-  try {
-    customProjects = JSON.parse(localStorage.getItem('nihalsailor_custom_projects') || '[]');
-  } catch (e) {
-    customProjects = [];
-  }
-
-  // Combine projects (custom first or appended)
-  window.allProjects = [...customProjects, ...baseProjects];
+  window.allProjects = baseProjects;
   renderArmadaGrid(window.allProjects);
 }
 
@@ -68,7 +58,6 @@ function renderArmadaGrid(projects) {
   }
 
   projects.forEach(proj => {
-    const isCustom = proj.isCustom ? true : false;
     const card = document.createElement('div');
     card.className = 'gilded-card project-card tilt-card';
     card.dataset.category = proj.category;
@@ -81,7 +70,6 @@ function renderArmadaGrid(projects) {
         <img src="${escapeHtml(proj.image || 'BackgroundLogo.png')}" alt="${escapeHtml(proj.title)}" class="project-media-img">
         <div class="project-media-overlay"></div>
         <span class="project-category-tag">${escapeHtml(proj.categoryLabel || proj.category)}</span>
-        ${isCustom ? `<button class="btn-delete-vessel" data-delete-id="${proj.id}" title="Remove Vessel from Browser"><i class="fas fa-trash-can"></i></button>` : ''}
       </div>
       <h3 class="project-title font-cinzel">
         <span>${escapeHtml(proj.title)}</span>
@@ -93,14 +81,14 @@ function renderArmadaGrid(projects) {
         <button class="btn-card-action btn-card-primary" data-inspect-project="${escapeHtml(proj.id)}">
           <i class="fas fa-eye"></i> Inspect Vessel
         </button>
-        ${proj.codeUrl && proj.codeUrl !== '#' ? `
-          <a href="${escapeHtml(proj.codeUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary">
-            <i class="fab fa-github"></i> Blueprint
-          </a>
-        ` : ''}
         ${proj.liveUrl && proj.liveUrl !== '#' ? `
           <a href="${escapeHtml(proj.liveUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary" style="border-color: var(--gold-primary); color: var(--gold-light);">
             <i class="fas fa-external-link-alt"></i> Live
+          </a>
+        ` : ''}
+        ${proj.codeUrl && proj.codeUrl !== '#' ? `
+          <a href="${escapeHtml(proj.codeUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary">
+            <i class="fab fa-github"></i> Blueprint
           </a>
         ` : ''}
       </div>
@@ -109,26 +97,9 @@ function renderArmadaGrid(projects) {
     grid.appendChild(card);
   });
 
-  // Re-attach 3D tilt and deletion listeners
+  // Re-attach 3D tilt and inspection listeners
   init3DTilt();
   attachProjectInspectors();
-  attachDeleteListeners();
-}
-
-function attachDeleteListeners() {
-  document.querySelectorAll('.btn-delete-vessel').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const id = btn.dataset.deleteId;
-      if (confirm('Are you sure you want to dismiss this vessel from your harbor?')) {
-        let customProjects = JSON.parse(localStorage.getItem('nihalsailor_custom_projects') || '[]');
-        customProjects = customProjects.filter(p => p.id !== id);
-        localStorage.setItem('nihalsailor_custom_projects', JSON.stringify(customProjects));
-        loadAndRenderProjects();
-        showToast('⚓ Vessel removed from your deck.');
-      }
-    });
-  });
 }
 
 function attachProjectInspectors() {
@@ -172,8 +143,12 @@ function attachProjectInspectors() {
 
       const liveBtn = document.getElementById('modal-live-btn');
       if (liveBtn) {
-        liveBtn.href = data.liveUrl || '#';
-        liveBtn.style.display = data.liveUrl && data.liveUrl !== '#' ? 'inline-flex' : 'none';
+        if (data.liveUrl && data.liveUrl !== '#') {
+          liveBtn.href = data.liveUrl;
+          liveBtn.style.display = 'inline-flex';
+        } else {
+          liveBtn.style.display = 'none';
+        }
       }
 
       const codeBtn = document.getElementById('modal-code-btn');
@@ -188,174 +163,7 @@ function attachProjectInspectors() {
 }
 
 /* --------------------------------------------------------------------------
-   2. ADD NEW PROJECT (COMMISSION VESSEL) MODAL WORKFLOW
-   -------------------------------------------------------------------------- */
-function initAddProjectModal() {
-  const addModal = document.getElementById('add-project-modal');
-  const openBtn = document.getElementById('btn-open-add-project');
-  const closeBtn = addModal ? addModal.querySelector('.modal-close-btn') : null;
-  const form = document.getElementById('add-project-form');
-  const exportBtn = document.getElementById('btn-export-projects');
-  const copyJsonBtn = document.getElementById('btn-copy-projects-json');
-  const imageInput = document.getElementById('proj-image-file');
-  let uploadedImageData = '';
-
-  if (openBtn && addModal) {
-    openBtn.addEventListener('click', () => {
-      addModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-      if (window.maritimeAudio) window.maritimeAudio.playChime('blade');
-    });
-  }
-
-  function closeAddModal() {
-    if (!addModal) return;
-    addModal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  if (closeBtn) closeBtn.addEventListener('click', closeAddModal);
-  if (addModal) {
-    addModal.addEventListener('click', (e) => {
-      if (e.target === addModal) closeAddModal();
-    });
-  }
-
-  // Handle image file upload to base64
-  if (imageInput) {
-    imageInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = (uploadEvent) => {
-          uploadedImageData = uploadEvent.target.result;
-          document.getElementById('image-upload-preview').style.display = 'block';
-          document.getElementById('image-upload-preview').src = uploadedImageData;
-        };
-        reader.readAsDataURL(file);
-      }
-    });
-  }
-
-  // Form Submission
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const title = document.getElementById('proj-title').value.trim();
-      const category = document.getElementById('proj-category').value;
-      const categoryLabel = document.getElementById('proj-category').selectedOptions[0].text;
-      const desc = document.getElementById('proj-desc').value.trim();
-      const details = document.getElementById('proj-details').value.trim() || desc;
-      const tagsRaw = document.getElementById('proj-tags').value.trim();
-      const liveUrl = document.getElementById('proj-live').value.trim() || '#';
-      const codeUrl = document.getElementById('proj-code').value.trim() || 'https://github.com/nihalsailor';
-      const metricLabel1 = document.getElementById('proj-metric-label-1').value.trim() || 'Engine';
-      const metricVal1 = document.getElementById('proj-metric-val-1').value.trim() || 'Custom';
-      const metricLabel2 = document.getElementById('proj-metric-label-2').value.trim() || 'Status';
-      const metricVal2 = document.getElementById('proj-metric-val-2').value.trim() || 'Completed';
-
-      const tags = tagsRaw.split(',').map(t => t.trim()).filter(Boolean);
-      const imageUrlInput = document.getElementById('proj-image-url').value.trim();
-      const finalImage = uploadedImageData || imageUrlInput || 'BackgroundLogo.png';
-
-      const newProject = {
-        id: 'vessel-' + Date.now(),
-        title,
-        category,
-        categoryLabel,
-        desc,
-        details,
-        tags: tags.length > 0 ? tags : ['Full-Stack', 'Engineering'],
-        image: finalImage,
-        liveUrl,
-        codeUrl,
-        metrics: [
-          { label: metricLabel1, val: metricVal1 },
-          { label: metricLabel2, val: metricVal2 },
-          { label: 'Armada', val: 'Nihalsailor' }
-        ],
-        isCustom: true
-      };
-
-      // Save to localStorage
-      let customProjects = JSON.parse(localStorage.getItem('nihalsailor_custom_projects') || '[]');
-      customProjects.unshift(newProject);
-      localStorage.setItem('nihalsailor_custom_projects', JSON.stringify(customProjects));
-
-      // Re-render
-      loadAndRenderProjects();
-      form.reset();
-      uploadedImageData = '';
-      if (document.getElementById('image-upload-preview')) {
-        document.getElementById('image-upload-preview').style.display = 'none';
-      }
-
-      closeAddModal();
-      showToast(`⚓ New vessel "${title}" commissioned into your Armada!`);
-
-      // Scroll to Armada section smoothly
-      const armadaSection = document.getElementById('armada');
-      if (armadaSection) {
-        armadaSection.scrollIntoView({ behavior: 'smooth' });
-      }
-
-      // Open Export helper modal or show instruction
-      setTimeout(() => {
-        showDeployInstructionModal(newProject);
-      }, 700);
-    });
-  }
-
-  // Export JSON file download
-  if (exportBtn) {
-    exportBtn.addEventListener('click', () => {
-      exportProjectsJsonFile();
-    });
-  }
-
-  // Copy JSON snippet
-  if (copyJsonBtn) {
-    copyJsonBtn.addEventListener('click', () => {
-      const jsonStr = JSON.stringify(window.allProjects, null, 2);
-      navigator.clipboard.writeText(jsonStr).then(() => {
-        showToast('📋 All projects copied to clipboard as JSON!');
-      }).catch(() => {
-        showToast('⚠️ Could not copy to clipboard.');
-      });
-    });
-  }
-}
-
-function exportProjectsJsonFile() {
-  const jsonStr = JSON.stringify(window.allProjects, null, 2);
-  const blob = new Blob([jsonStr], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'projects.json';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  showToast('💾 projects.json downloaded! Replace data/projects.json to deploy for everyone.');
-}
-
-function showDeployInstructionModal(newProject) {
-  const modal = document.getElementById('export-modal');
-  if (!modal) return;
-
-  const codeArea = document.getElementById('export-json-code');
-  if (codeArea) {
-    codeArea.textContent = JSON.stringify(newProject, null, 2);
-  }
-
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-/* --------------------------------------------------------------------------
-   3. NAVIGATION & SCROLL TRACKING
+   2. NAVIGATION & SCROLL TRACKING
    -------------------------------------------------------------------------- */
 function initNavbar() {
   const nav = document.querySelector('.main-nav');
@@ -406,7 +214,7 @@ function initNavbar() {
 }
 
 /* --------------------------------------------------------------------------
-   4. MARITIME SOUNDSCAPE TOGGLE
+   3. MARITIME SOUNDSCAPE TOGGLE
    -------------------------------------------------------------------------- */
 function initSoundToggle() {
   const soundBtns = document.querySelectorAll('.btn-sound-toggle');
@@ -436,7 +244,7 @@ function initSoundToggle() {
 }
 
 /* --------------------------------------------------------------------------
-   5. CURSED AURA (RED EYE MODE)
+   4. CURSED AURA (RED EYE MODE)
    -------------------------------------------------------------------------- */
 function initCursedMode() {
   const cursedBtns = document.querySelectorAll('[data-action="toggle-cursed"]');
@@ -475,7 +283,7 @@ function initCursedMode() {
 }
 
 /* --------------------------------------------------------------------------
-   6. PROJECT FILTERING
+   5. PROJECT FILTERING
    -------------------------------------------------------------------------- */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -506,7 +314,7 @@ function initProjectFilters() {
 }
 
 /* --------------------------------------------------------------------------
-   7. PROJECT DETAILS MODAL
+   6. PROJECT DETAILS MODAL
    -------------------------------------------------------------------------- */
 function initProjectModals() {
   const modal = document.getElementById('project-modal');
@@ -528,29 +336,15 @@ function initProjectModals() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeModal();
-      const addModal = document.getElementById('add-project-modal');
-      if (addModal) addModal.classList.remove('active');
-      const exportModal = document.getElementById('export-modal');
-      if (exportModal) exportModal.classList.remove('active');
       const logModal = document.getElementById('log-modal');
       if (logModal) logModal.classList.remove('active');
       document.body.style.overflow = '';
     }
   });
-
-  // Export modal close listeners
-  const exportModal = document.getElementById('export-modal');
-  if (exportModal) {
-    const exportClose = exportModal.querySelector('.modal-close-btn');
-    if (exportClose) exportClose.addEventListener('click', () => {
-      exportModal.classList.remove('active');
-      document.body.style.overflow = '';
-    });
-  }
 }
 
 /* --------------------------------------------------------------------------
-   8. CAPTAIN'S LOG READ-MORE MODAL
+   7. CAPTAIN'S LOG READ-MORE MODAL
    -------------------------------------------------------------------------- */
 const LOGS_DATA = {
   'log-1': {
@@ -612,7 +406,7 @@ function initCaptainLogs() {
 }
 
 /* --------------------------------------------------------------------------
-   9. CONTACT FORM (BOTTLE CAST) & DRAFT AUTOSAVE
+   8. CONTACT FORM (BOTTLE CAST) & DRAFT AUTOSAVE
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('bottle-dispatch-form');
@@ -672,7 +466,7 @@ function initContactForm() {
 }
 
 /* --------------------------------------------------------------------------
-   10. 3D TILT EFFECT ON CARDS
+   9. 3D TILT EFFECT ON CARDS
    -------------------------------------------------------------------------- */
 function init3DTilt() {
   const cards = document.querySelectorAll('.tilt-card');
@@ -697,7 +491,7 @@ function init3DTilt() {
 }
 
 /* --------------------------------------------------------------------------
-   11. ANIMATED STAT COUNTERS
+   10. ANIMATED STAT COUNTERS
    -------------------------------------------------------------------------- */
 function initStatCounters() {
   const statNumbers = document.querySelectorAll('.stat-number[data-target]');
@@ -740,7 +534,7 @@ function initStatCounters() {
 }
 
 /* --------------------------------------------------------------------------
-   12. TOAST NOTIFICATION UTILITY
+   11. TOAST NOTIFICATION UTILITY
    -------------------------------------------------------------------------- */
 function showToast(message) {
   let toast = document.getElementById('brand-toast');

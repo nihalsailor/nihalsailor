@@ -34,14 +34,17 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 
 ## 🚢 The Armada (Featured Projects)
 
-| Vessel / Project | Focus Area | Tech Stack |
-| :--- | :--- | :--- |
-| **WRX Battles Online** | Multiplayer Combat Warfare | Unity 3D, C#, Photon, PhysX |
-| **ApaniBaat** | Real-Time Encrypted Messaging | Full-Stack, WebSockets, Node.js, React |
-| **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, Audio DSP |
-| **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker |
-| **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall, SQLite |
-| **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio |
+| Vessel / Project | Focus Area | Tech Stack | Live Deployment |
+| :--- | :--- | :--- | :--- |
+| **WRX Battles Online** | Multiplayer Combat Warfare | Unity 3D, C#, Photon, PhysX | [wrx-battles.vercel.app](https://wrx-battles.vercel.app/download) |
+| **ApaniBaat** | Real-Time Encrypted Messaging | Full-Stack, WebSockets, Node.js | [apanibaat.netlify.app](https://apanibaat.netlify.app) |
+| **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, DSP | [streamsailor.itlive.in](https://streamsailor.itlive.in/) |
+| **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker | [zaimcp.space-z.ai](https://zaimcp.space-z.ai/) |
+| **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall | [safeguardlite.itlive.in](https://safeguardlite.itlive.in/) |
+| **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio | [3D Experience](#) |
+
+> ⚓ **Explore the Full Archive & Unity Asset Store Releases:**  
+> 👉 [**https://nihalsailor.github.io/nihalsailor/projects.html**](https://nihalsailor.github.io/nihalsailor/projects.html)
 
 ---
 
