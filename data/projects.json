@@ -1,0 +1,104 @@
+[
+  {
+    "id": "wrx-battles",
+    "title": "WRX Battles Online",
+    "category": "game",
+    "categoryLabel": "Game Dev & Multiplayer",
+    "image": "BackgroundLogo.png",
+    "desc": "High-octane multiplayer combat and vehicular warfare simulator built with real-time networking, customized vehicle physics, and destructive battle arenas.",
+    "tags": ["Unity", "C#", "Multiplayer", "Physics", "Photon / WebGL"],
+    "details": "WRX Battles is an action-driven vehicular combat game engineered for high-concurrency multiplayer matches. Features dynamic vehicle suspension, damage modeling, projectile trajectory simulation, and low-latency client-side prediction.",
+    "metrics": [
+      { "label": "Engine", "val": "Unity 3D" },
+      { "label": "Mode", "val": "Multiplayer PvP" },
+      { "label": "Platform", "val": "PC & WebGL" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor/WRXBattlesOnline"
+  },
+  {
+    "id": "apanibaat",
+    "title": "ApaniBaat Realtime Platform",
+    "category": "web",
+    "categoryLabel": "Web Platforms & Chat",
+    "image": "MainLogo.jpg",
+    "desc": "Full-stack real-time communication platform featuring encrypted instant messaging, live presence tracking, low-latency room channels, and clean responsive UI.",
+    "tags": ["Full-Stack", "WebSockets", "Node.js", "React", "MongoDB"],
+    "details": "ApaniBaat provides instant, resilient peer-to-peer and group messaging. Engineered with secure session authentication, real-time message delivery acknowledgments, typing indicators, and media sharing.",
+    "metrics": [
+      { "label": "Protocol", "val": "WebSockets" },
+      { "label": "Encryption", "val": "End-to-End" },
+      { "label": "Latency", "val": "< 25ms" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor/apnibaat"
+  },
+  {
+    "id": "stream-sailor",
+    "title": "StreamSailor Studio Suite",
+    "category": "creative",
+    "categoryLabel": "Streaming & Audio DSP",
+    "image": "BackgroundLogo.png",
+    "desc": "Broadcast orchestration and interactive streaming toolset for creators. Provides custom overlays, audio signal processing, and automated Twitch/YouTube bots.",
+    "tags": ["Python", "OBS WebSocket", "Audio DSP", "Tailwind", "REST API"],
+    "details": "StreamSailor equips content creators with automated scene triggers, reactive audio filters, Twitch event integration, and stream health telemetry in a single customizable command deck.",
+    "metrics": [
+      { "label": "Sync Delay", "val": "< 10ms" },
+      { "label": "Integration", "val": "OBS & Twitch" },
+      { "label": "Overhead", "val": "< 1% CPU" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor/StreamSailor"
+  },
+  {
+    "id": "zai-security",
+    "title": "ZAI Cyber Security & Threat Radar",
+    "category": "systems",
+    "categoryLabel": "Cyber Security & Hacking",
+    "image": "MainLogo.jpg",
+    "desc": "Intelligent automated penetration testing and threat reconnaissance framework designed to detect network vulnerabilities, exposed endpoints, and misconfigurations.",
+    "tags": ["Python", "Ethical Hacking", "Network Recon", "Linux", "Docker"],
+    "details": "ZAI implements automated security audit pipelines, port vulnerability scanners, packet inspection algorithms, and real-time alerts to safeguard digital infrastructures against adversarial intrusion.",
+    "metrics": [
+      { "label": "Audit Speed", "val": "1000 ports/s" },
+      { "label": "Specialization", "val": "Ethical Hacking" },
+      { "label": "Database", "val": "CVE Threat Lib" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor"
+  },
+  {
+    "id": "parental-control",
+    "title": "Guardian Parental Control Shield",
+    "category": "systems",
+    "categoryLabel": "Systems & Device Security",
+    "image": "BackgroundLogo.png",
+    "desc": "Cross-device monitoring and content filtering application ensuring safe digital environments with real-time app usage tracking and policy enforcement.",
+    "tags": ["Android / C#", "Security Rules", "Local Firewall", "SQLite"],
+    "details": "A privacy-first parental control architecture that operates with local network filtering, activity auditing, scheduled screen lockouts, and tamper-resistant background services.",
+    "metrics": [
+      { "label": "Architecture", "val": "Zero-Leak" },
+      { "label": "Response", "val": "Instant Block" },
+      { "label": "Platform", "val": "Android / PC" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor/ParentralControllApp"
+  },
+  {
+    "id": "ghost-galleon-3d",
+    "title": "Ghost Galleon 3D WebGL",
+    "category": "game",
+    "categoryLabel": "3D Graphics & Shaders",
+    "image": "BackgroundLogo.png",
+    "desc": "Interactive 3D WebGL ocean simulator featuring dynamic cresting waves, volumetric storm fog, ship buoyancy physics, and lantern illumination.",
+    "tags": ["Three.js", "GLSL Shaders", "WebAudio", "PhysX"],
+    "details": "Engineered directly in browser technologies to demonstrate high-performance GPU vertex displacement for ocean waves, buoyancy calculations for seafaring vessels, and atmospheric particle systems.",
+    "metrics": [
+      { "label": "Frame Rate", "val": "60 FPS Ultra" },
+      { "label": "Draw Calls", "val": "< 85" },
+      { "label": "Payload", "val": "2.4 MB" }
+    ],
+    "liveUrl": "#",
+    "codeUrl": "https://github.com/nihalsailor"
+  }
+]

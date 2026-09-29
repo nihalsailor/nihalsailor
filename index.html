@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIHALSAILOR | Captain of the Digital Seas</title>
+  
+  <!-- Meta Information & SEO -->
+  <meta name="description" content="Official website and flagship of Nihalsailor — digital creator, software engineer, and navigator of uncharted digital realms.">
+  <meta name="keywords" content="Nihalsailor, portfolio, dark fantasy, game dev, software engineer, webgl, pirate aesthetic">
+  <meta name="author" content="Nihalsailor">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="NIHALSAILOR | Captain of the Digital Seas">
+  <meta property="og:description" content="Step aboard the flagship of Nihalsailor. Explore the Armada, inspect the Arsenal, and forge alliances across uncharted digital waters.">
+  <meta property="og:image" content="BackgroundLogo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="MainLogo.jpg">
+
+  <!-- Google Fonts: Cinzel Decorative, Cinzel, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Atmospheric Sea Mist & Ember Canvas -->
+  <canvas id="atmosphere-canvas"></canvas>
+
+  <div class="content-wrapper">
+
+    <!-- ======================================================================
+         NAVIGATION DECK
+         ====================================================================== -->
+    <header class="main-nav">
+      <div class="container nav-container">
+        
+        <!-- Brand Identity -->
+        <a href="#bridge" class="brand-link" title="Nihalsailor Flagship">
+          <div class="brand-avatar-wrap">
+            <img src="MainLogo.jpg" alt="Nihalsailor Logo" class="brand-avatar">
+          </div>
+          <div>
+            <span class="brand-name gold-gradient-text">NIHALSAILOR</span>
+            <span class="brand-tag">Digital Corsair</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#bridge" class="nav-link active"><i class="fas fa-compass"></i> The Bridge</a></li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-skull"></i> The Captain</a></li>
+            <li><a href="#armada" class="nav-link"><i class="fas fa-ship"></i> The Armada</a></li>
+            <li><a href="#arsenal" class="nav-link"><i class="fas fa-shield-halved"></i> Arsenal</a></li>
+            <li><a href="#dispatches" class="nav-link"><i class="fas fa-scroll"></i> Dispatches</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope-open-text"></i> Summon</a></li>
+          </ul>
+        </nav>
+
+        <!-- Sound & Action Controls -->
+        <div class="nav-actions">
+          <button class="btn-sound-toggle" aria-label="Toggle Ocean Soundscape" title="Play Ocean Ambience">
+            <i class="fas fa-volume-xmark"></i>
+          </button>
+          
+          <a href="#contact" class="btn-corsair" style="padding: 0.6rem 1.25rem; font-size: 0.78rem;">
+            <span>Join Crew</span>
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         HERO SECTION: THE STORMY DEEP
+         ====================================================================== -->
+    <section id="bridge" class="hero-section">
+      <div class="hero-background">
+        <img src="BackgroundLogo.png" alt="Ghost Galleon and Captain Nihalsailor on Stormy Shores" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+
+        <!-- Captain Crest Emblem -->
+        <div class="hero-emblem" title="Click to summon the Cursed Tide">
+          <div class="hero-emblem-ring-outer"></div>
+          <div class="hero-emblem-ring"></div>
+          <img src="MainLogo.jpg" alt="Captain Nihalsailor Emblem" class="hero-emblem-img">
+        </div>
+
+        <!-- Corsair Badge -->
+        <div class="badge-corsair">
+          <span class="pulse-dot"></span>
+          <span>CAPTAIN OF THE ABYSSAL REALM • DIGITAL ARCHITECT</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="hero-title gold-gradient-text">
+          CHARTING UNCHARTED DIGITAL HORIZONS
+        </h1>
+
+        <p class="hero-subtitle">
+          Commanding the convergence of ironclad engineering, atmospheric web artistry, and dark fantasy mastery. Step aboard the flagship of <strong>Nihalsailor</strong>.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#armada" class="btn-corsair">
+            <i class="fas fa-ship"></i> Inspect The Armada
+          </a>
+          <a href="#contact" class="btn-corsair btn-card-secondary" style="border-color: var(--gold-primary);">
+            <i class="fas fa-paper-plane"></i> Dispatch A Missive
+          </a>
+          <button class="btn-corsair btn-crimson" data-action="toggle-cursed">
+            <i class="fas fa-eye"></i> <span class="cursed-btn-text">Awaken Cursed Aura</span>
+          </button>
+        </div>
+
+        <!-- Quick Stats Deck -->
+        <div class="hero-stats-deck">
+          <div class="stat-box">
+            <div class="stat-number" data-target="48" data-suffix="+">48+</div>
+            <div class="stat-label">Expeditions Completed</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="99" data-suffix=".9%">99.9%</div>
+            <div class="stat-label">System Battle Uptime</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Corsair Rigor</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="14" data-suffix="ms">&lt; 14ms</div>
+            <div class="stat-label">Abyssal Latency</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT THE CAPTAIN SECTION
+         ====================================================================== -->
+    <section id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// IDENTITY & LORE</span>
+          <h2 class="section-title gold-gradient-text">THE TALE OF NIHALSAILOR</h2>
+          <div class="ornate-divider"><span>⚔️</span></div>
+          <p class="section-desc">
+            Forged in the crucible of relentless challenges, navigating through the thickest fog of code where conventional minds dare not venture.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Portrait Showcase -->
+          <div class="captain-portrait-frame tilt-card">
+            <div class="portrait-glow"></div>
+            <div class="portrait-wrapper">
+              <img src="MainLogo.jpg" alt="Captain Nihalsailor Portrait" class="portrait-img">
+              <div class="portrait-badge-overlay">
+                <div class="title">CAPTAIN NIHAL</div>
+                <div class="sub">Master of the Cursed Deep</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative & Pillars -->
+          <div class="about-narrative">
+            <h3 class="font-cinzel">"The sea rewards only those who hold the helm when the sky burns."</h3>
+            
+            <p>
+              I am <strong>Nihalsailor</strong>. What began as an insatiable fascination with the raw mechanics of computing has evolved into an armada of high-throughput distributed systems, immersive 3D WebGL experiences, and uncompromising creative platforms.
+            </p>
+            <p>
+              Under my command, projects are never treated as mere code; they are flagships built to withstand the harshest storms of traffic, complexity, and scale. Every line of code is forged with mathematical precision, and every interface is draped in rich atmospheric identity.
+            </p>
+
+            <!-- Three Pillars of Command -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fas fa-anchor"></i></div>
+                <div class="pillar-title">Ironclad Core</div>
+                <div class="pillar-desc">Bulletproof reliability, microsecond latency, zero single points of failure.</div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <div class="pillar-title">Atmospheric Art</div>
+                <div class="pillar-desc">Dark cinematic visuals, custom shaders, and bespoke procedural soundscapes.</div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fas fa-crosshairs"></i></div>
+                <div class="pillar-title">Strategic Vision</div>
+                <div class="pillar-desc">From initial concept to deployment under full gale, precision never wavers.</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         THE ARMADA / PROJECTS SHOWCASE
+         ====================================================================== -->
+    <section id="armada" style="background: rgba(4, 8, 16, 0.65);">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// FLAGSHIP EXPEDITIONS</span>
+          <h2 class="section-title gold-gradient-text">THE ARMADA</h2>
+          <div class="ornate-divider"><span>⚓</span></div>
+          <p class="section-desc">
+            Vessels crafted for the digital waters — ranging from high-concurrency systems to real-time 3D simulation engines.
+          </p>
+        </div>
+
+        <!-- Filter & Commission Navigation -->
+        <div class="armada-filters">
+          <button class="filter-btn active" data-filter="all">All Vessels</button>
+          <button class="filter-btn" data-filter="game">Game Dev & 3D</button>
+          <button class="filter-btn" data-filter="web">Web Platforms</button>
+          <button class="filter-btn" data-filter="systems">Systems & Security</button>
+          <button class="filter-btn" data-filter="creative">Creative Audio</button>
+          <button id="btn-open-add-project" class="btn-corsair btn-add-vessel" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">
+            <i class="fas fa-plus"></i> Commission New Vessel
+          </button>
+        </div>
+
+        <!-- Grid of Project Cards (Dynamically Loaded from projects.json & Local Customizations) -->
+        <div class="armada-grid">
+          <!-- Populated dynamically by js/main.js -->
+        </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ARSENAL / SKILLS & WEAPONS
+         ====================================================================== -->
+    <section id="arsenal">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// COMBAT & TECHNICAL PROFICIENCY</span>
+          <h2 class="section-title gold-gradient-text">THE CAPTAIN'S ARSENAL</h2>
+          <div class="ornate-divider"><span>⚔️</span></div>
+          <p class="section-desc">
+            Mastered instruments of modern software engineering, creative direction, and distributed architectures.
+          </p>
+        </div>
+
+        <div class="arsenal-grid">
+
+          <!-- Category 1: Frontend & Visual Sorcery -->
+          <div class="gilded-card tilt-card">
+            <h3 class="arsenal-category-title font-cinzel">
+              <i class="fas fa-code"></i> Frontend & Visuals
+            </h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">React / Next.js / TypeScript</span>
+                  <span class="skill-level">96%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="96%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Three.js / WebGL & Shaders</span>
+                  <span class="skill-level">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">TailwindCSS / Modern CSS Arch</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Responsive & Micro-Interactions</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend Engines & Data -->
+          <div class="gilded-card tilt-card">
+            <h3 class="arsenal-category-title font-cinzel">
+              <i class="fas fa-server"></i> Backend & Distributed
+            </h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Node.js / Express / Fastify</span>
+                  <span class="skill-level">94%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="94%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Python / FastAPI / Data Ops</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">PostgreSQL / Redis / Vector DBs</span>
+                  <span class="skill-level">89%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="89%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">GraphQL & Real-time WebSockets</span>
+                  <span class="skill-level">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tactical Operations & Security -->
+          <div class="gilded-card tilt-card">
+            <h3 class="arsenal-category-title font-cinzel">
+              <i class="fas fa-shield-virus"></i> Tactical Ops & Rigor
+            </h3>
+            <div class="skill-list">
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Docker & Container Pods</span>
+                  <span class="skill-level">91%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill crimson" data-width="91%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">CI/CD & Cloud Orchestration</span>
+                  <span class="skill-level">87%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill crimson" data-width="87%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">Zero-Trust Cryptography & Auth</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill crimson" data-width="85%"></div>
+                </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-name">High-Load Performance Tuning</span>
+                  <span class="skill-level">94%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill crimson" data-width="94%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CAPTAIN'S LOG / DISPATCHES
+         ====================================================================== -->
+    <section id="dispatches" style="background: rgba(4, 8, 16, 0.65);">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// ARCHIVES & INSIGHTS</span>
+          <h2 class="section-title gold-gradient-text">THE CAPTAIN'S LOG</h2>
+          <div class="ornate-divider"><span>📜</span></div>
+          <p class="section-desc">
+            Dispatches from the frontline of software architecture, dark aesthetic craft, and creative philosophy.
+          </p>
+        </div>
+
+        <div class="logs-grid">
+
+          <article class="gilded-card tilt-card">
+            <div class="log-date"><i class="fas fa-calendar-alt"></i> Captain's Log #412 • High Seas</div>
+            <h3 class="log-heading font-cinzel">Surviving the Digital Tempest: Resilient System Architecture</h3>
+            <p class="log-snippet">
+              When the winds of unexpected traffic surges and infrastructure outages blow at full gale force, only ships forged with redundancy will stay afloat.
+            </p>
+            <a href="#" class="log-read-more" data-read-log="log-1">
+              Read Dispatch <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="gilded-card tilt-card">
+            <div class="log-date"><i class="fas fa-calendar-alt"></i> Captain's Log #389 • The Cursed Isles</div>
+            <h3 class="log-heading font-cinzel">Forging Dark Atmospheric UIs with WebGL & Custom Shaders</h3>
+            <p class="log-snippet">
+              Clean minimalism has its place, but true immersion demands texture, mood, and tactile weight. How to transform a static page into an interactive living deck.
+            </p>
+            <a href="#" class="log-read-more" data-read-log="log-2">
+              Read Dispatch <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="gilded-card tilt-card">
+            <div class="log-date"><i class="fas fa-calendar-alt"></i> Captain's Log #354 • Dead Man's Horizon</div>
+            <h3 class="log-heading font-cinzel">The Corsair's Code: Precision Craftsmanship Under Pressure</h3>
+            <p class="log-snippet">
+              A pirate captain values only what works when steel meets storm. Clean code, zero bloat, relentless performance profiling, and unwavering accountability.
+            </p>
+            <a href="#" class="log-read-more" data-read-log="log-3">
+              Read Dispatch <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT / SUMMON THE CAPTAIN (MESSAGE IN A BOTTLE)
+         ====================================================================== -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// COMMISSIONS & ALLIANCES</span>
+          <h2 class="section-title gold-gradient-text">SUMMON THE CAPTAIN</h2>
+          <div class="ornate-divider"><span>🍾</span></div>
+          <p class="section-desc">
+            Ready to chart new digital waters or commission a flagship project? Cast your message into the tide.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left: Direct Coordinates -->
+          <div class="contact-info-deck">
+            <h3 class="font-cinzel">Direct Vessel Coordinates</h3>
+            <p>
+              Whether you represent an enterprise fleet, an indie studio, or wish to collaborate on cutting-edge digital creations, the Captain's raven is ready to take flight.
+            </p>
+
+            <div class="contact-channels">
+              
+              <a href="mailto:nihalsailor14@gmail.com" class="channel-item">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <div class="channel-text">
+                  <span class="label">Direct Dispatch Frequency</span>
+                  <span class="val">nihalsailor14@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener" class="channel-item">
+                <div class="channel-icon"><i class="fab fa-instagram"></i></div>
+                <div class="channel-text">
+                  <span class="label">Instagram Holocron</span>
+                  <span class="val">@nihalsailor</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/nihalsailor" target="_blank" rel="noopener" class="channel-item">
+                <div class="channel-icon"><i class="fab fa-github"></i></div>
+                <div class="channel-text">
+                  <span class="label">Armada Repository</span>
+                  <span class="val">github.com/nihalsailor</span>
+                </div>
+              </a>
+
+              <a href="https://discord.com" target="_blank" rel="noopener" class="channel-item">
+                <div class="channel-icon"><i class="fab fa-discord"></i></div>
+                <div class="channel-text">
+                  <span class="label">Corsair Guild Hall</span>
+                  <span class="val">Discord: @nihalsailor</span>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon"><i class="fas fa-location-crosshairs"></i></div>
+                <div class="channel-text">
+                  <span class="label">Home Port</span>
+                  <span class="val">Global Oceans / Remote Worldwide</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Interactive Parchment Form -->
+          <div class="gilded-card">
+            <h3 class="font-cinzel" style="margin-bottom: 1.5rem; font-size: 1.35rem;">
+              <i class="fas fa-feather-pointed text-gold"></i> Cast Message in a Bottle
+            </h3>
+
+            <form id="bottle-dispatch-form" class="parchment-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name / Call-Sign</label>
+                <input type="text" id="sender-name" class="form-control" placeholder="e.g. Commander Marcus" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Return Signal / Email</label>
+                <input type="email" id="sender-email" class="form-control" placeholder="e.g. marcus@armada.org" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-type" class="form-label">Expedition Nature</label>
+                <select id="sender-type" class="form-control">
+                  <option value="commission">Commission a Flagship Project</option>
+                  <option value="hire">Full-Stack / Systems Consultation</option>
+                  <option value="collaboration">Creative Collaboration</option>
+                  <option value="general">General Salutation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-msg" class="form-label">The Missive (Drafts auto-save)</label>
+                <textarea id="sender-msg" class="form-control" placeholder="Describe the mission, timeline, or realm coordinates..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-corsair" style="width: 100%; margin-top: 0.5rem;">
+                <i class="fas fa-paper-plane"></i> Seal in Wax & Cast to Sea
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MAIN FOOTER
+         ====================================================================== -->
+    <footer class="main-footer">
+      <div class="container">
+        
+        <div class="footer-top">
+          
+          <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+              <img src="MainLogo.jpg" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--gold-primary);">
+              <h4 class="gold-gradient-text" style="margin: 0;">NIHALSAILOR</h4>
+            </div>
+            <p>
+              "Not all who wander are lost; some are charting the digital storm where legends are forged."
+            </p>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="font-cinzel">The Quarters</h5>
+            <ul class="footer-links-list">
+              <li><a href="#bridge"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> The Bridge</a></li>
+              <li><a href="#about"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> The Captain's Tale</a></li>
+              <li><a href="#armada"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> Flagship Armada</a></li>
+              <li><a href="#arsenal"><i class="fas fa-chevron-right text-gold" style="font-size: 0.7rem;"></i> Weapons & Skills</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h5 class="font-cinzel">Signals & Socials</h5>
+            <ul class="footer-links-list">
+              <li><a href="https://github.com/nihalsailor" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://discord.com" target="_blank" rel="noopener"><i class="fab fa-discord"></i> Discord Server</a></li>
+              <li><a href="https://x.com" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> X / Twitter</a></li>
+              <li><a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube Vessel</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 <strong>NIHALSAILOR</strong>. All rights reserved across all seven digital seas.
+          </div>
+          <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <button class="btn-sound-toggle" style="width: 32px; height: 32px; font-size: 0.8rem;" aria-label="Toggle Sound">
+              <i class="fas fa-volume-xmark"></i>
+            </button>
+            <a href="#bridge" class="btn-corsair" style="padding: 0.4rem 0.9rem; font-size: 0.72rem;">
+              <i class="fas fa-arrow-up"></i> Top of Deck
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ======================================================================
+       PROJECT INSPECTION MODAL
+       ====================================================================== -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="gilded-card modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div style="height: 250px; overflow: hidden; border-radius: 4px; margin: -2rem -2rem 1.5rem -2rem; border-bottom: 1px solid var(--border-gold); position: relative;">
+        <img id="modal-img" src="BackgroundLogo.png" alt="Project Preview" style="width: 100%; height: 100%; object-fit: cover;">
+        <span id="modal-category" class="project-category-tag" style="top: 1rem; right: 1rem;">Category</span>
+      </div>
+
+      <h3 id="modal-title" class="font-cinzel" style="font-size: 1.75rem; margin-bottom: 0.75rem;">Project Title</h3>
+      
+      <div id="modal-tags" class="project-tags"></div>
+      
+      <p id="modal-desc" style="color: var(--text-parchment); line-height: 1.75; margin-bottom: 1.5rem;"></p>
+
+      <div style="margin-bottom: 1.5rem;">
+        <h4 class="font-cinzel" style="font-size: 0.95rem; color: var(--gold-light); margin-bottom: 0.75rem; text-transform: uppercase;">
+          Vessel Battle Metrics
+        </h4>
+        <div id="modal-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; background: rgba(5, 9, 17, 0.7); padding: 1rem; border-radius: 6px; border: 1px solid var(--border-subtle);"></div>
+      </div>
+
+      <div class="project-actions" style="margin-top: 1.5rem; gap: 0.75rem;">
+        <a id="modal-code-btn" href="https://github.com/nihalsailor" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1;">
+          <i class="fab fa-github"></i> Inspect Blueprints
+        </a>
+        <a id="modal-live-btn" href="#" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1; border-color: var(--gold-primary); display: none;">
+          <i class="fas fa-play"></i> Launch Vessel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       COMMISSION NEW VESSEL (ADD PROJECT) MODAL
+       ====================================================================== -->
+  <div id="add-project-modal" class="modal-backdrop">
+    <div class="gilded-card modal-dialog" style="max-width: 680px;">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-gold); padding-bottom: 0.75rem;">
+        <h3 class="font-cinzel gold-gradient-text" style="font-size: 1.4rem; margin: 0;">
+          <i class="fas fa-ship"></i> Commission New Vessel
+        </h3>
+        <span class="badge-corsair" style="margin: 0; font-size: 0.65rem;">Armada Expansion</span>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.25rem;">
+        Add your game, application, security tool, or creative project to your live showcase. You can preview it immediately and export it to deploy for everyone worldwide.
+      </p>
+
+      <form id="add-project-form" class="parchment-form">
+        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="proj-title" class="form-label">Vessel / Project Name *</label>
+            <input type="text" id="proj-title" class="form-control" placeholder="e.g. Apex Combat Arena" required>
+          </div>
+
+          <div class="form-group">
+            <label for="proj-category" class="form-label">Fleet Category *</label>
+            <select id="proj-category" class="form-control" required>
+              <option value="game">Game Dev & 3D</option>
+              <option value="web">Web Platforms</option>
+              <option value="systems">Systems & Security</option>
+              <option value="creative">Creative Audio & Art</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-desc" class="form-label">Brief Mission Summary (Card display) *</label>
+          <input type="text" id="proj-desc" class="form-control" placeholder="1-2 sentences summarizing what this project does..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-details" class="form-label">Detailed Vessel Log (Inspection Modal)</label>
+          <textarea id="proj-details" class="form-control" style="min-height: 80px;" placeholder="Full architectural details, features, and technical achievements..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-tags" class="form-label">Technologies & Weapons (Comma-separated) *</label>
+          <input type="text" id="proj-tags" class="form-control" placeholder="e.g. Unity, C#, Multiplayer, Photon, Python" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="proj-image-url" class="form-label">Image URL (or select below)</label>
+            <input type="text" id="proj-image-url" class="form-control" placeholder="Image URL or BackgroundLogo.png">
+          </div>
+          <div class="form-group">
+            <label for="proj-image-file" class="form-label">Or Upload Screenshot</label>
+            <input type="file" id="proj-image-file" accept="image/*" class="form-control" style="padding: 0.5rem;">
+          </div>
+        </div>
+        <img id="image-upload-preview" class="image-preview-box" alt="Vessel Preview">
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="proj-code" class="form-label">GitHub / Blueprint URL</label>
+            <input type="url" id="proj-code" class="form-control" placeholder="https://github.com/nihalsailor/my-project">
+          </div>
+          <div class="form-group">
+            <label for="proj-live" class="form-label">Live Demo / Play Link (Optional)</label>
+            <input type="url" id="proj-live" class="form-control" placeholder="https://...">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.6rem;">
+          <div class="form-group">
+            <label class="form-label" style="font-size: 0.72rem;">Metric 1</label>
+            <input type="text" id="proj-metric-label-1" class="form-control" placeholder="Engine" value="Engine">
+          </div>
+          <div class="form-group">
+            <label class="form-label" style="font-size: 0.72rem;">Value 1</label>
+            <input type="text" id="proj-metric-val-1" class="form-control" placeholder="Unity 3D" value="Unity 3D">
+          </div>
+          <div class="form-group">
+            <label class="form-label" style="font-size: 0.72rem;">Metric 2</label>
+            <input type="text" id="proj-metric-label-2" class="form-control" placeholder="Status" value="Status">
+          </div>
+          <div class="form-group">
+            <label class="form-label" style="font-size: 0.72rem;">Value 2</label>
+            <input type="text" id="proj-metric-val-2" class="form-control" placeholder="Released" value="Released">
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; margin-top: 0.75rem;">
+          <button type="submit" class="btn-corsair btn-add-vessel" style="flex: 2;">
+            <i class="fas fa-anchor"></i> Commission & Preview Live
+          </button>
+          <button type="button" id="btn-export-projects" class="btn-corsair btn-card-secondary" style="flex: 1; font-size: 0.78rem;">
+            <i class="fas fa-download"></i> Export JSON
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       EXPORT / DEPLOY HELPER MODAL
+       ====================================================================== -->
+  <div id="export-modal" class="modal-backdrop">
+    <div class="gilded-card modal-dialog" style="max-width: 650px;">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <h3 class="font-cinzel gold-gradient-text" style="font-size: 1.4rem; margin-bottom: 0.5rem;">
+        <i class="fas fa-circle-check" style="color: #34d399;"></i> Vessel Commissioned Successfully!
+      </h3>
+      <p style="color: var(--text-parchment); font-size: 0.9rem; margin-bottom: 1.25rem;">
+        Your new project is <strong>now live in your browser showcase</strong>! To publish it permanently so that <strong>everyone visiting your site sees it</strong>:
+      </p>
+
+      <ol style="margin-left: 1.5rem; color: var(--text-muted); font-size: 0.88rem; line-height: 1.8; margin-bottom: 1.25rem;">
+        <li>Copy the JSON snippet below or click <strong>"Download projects.json"</strong>.</li>
+        <li>Paste it into <code style="color: var(--gold-light);">data/projects.json</code> in this project folder.</li>
+        <li>Commit and push to GitHub (<code style="color: var(--gold-light);">git push origin main</code>)!</li>
+      </ol>
+
+      <pre id="export-json-code" class="code-export-box"></pre>
+
+      <div style="display: flex; gap: 1rem; margin-top: 1.25rem;">
+        <button id="btn-copy-projects-json" class="btn-corsair btn-card-primary" style="flex: 1;">
+          <i class="fas fa-copy"></i> Copy Full Armada JSON
+        </button>
+        <button onclick="exportProjectsJsonFile()" class="btn-corsair btn-card-secondary" style="flex: 1;">
+          <i class="fas fa-download"></i> Download projects.json
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       CAPTAIN'S LOG READ-MORE MODAL
+       ====================================================================== -->
+  <div id="log-modal" class="modal-backdrop">
+    <div class="gilded-card modal-dialog">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      
+      <div id="log-modal-date" style="font-family: var(--font-mono); color: var(--gold-primary); font-size: 0.85rem; margin-bottom: 0.5rem;">
+        Log Date
+      </div>
+
+      <h3 id="log-modal-title" class="font-cinzel" style="font-size: 1.6rem; margin-bottom: 1.5rem; line-height: 1.35;">
+        Dispatch Title
+      </h3>
+
+      <div class="ornate-divider" style="margin-bottom: 1.5rem;"><span>📜</span></div>
+
+      <div id="log-modal-content" style="color: var(--text-parchment); line-height: 1.85; font-size: 1.02rem;">
+        Dispatch content goes here...
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

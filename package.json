@@ -1,0 +1,21 @@
+{
+  "name": "nihalsailor-website",
+  "version": "1.0.0",
+  "description": "Official brand website and portfolio for Nihalsailor - Captain of the Digital Seas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nihalsailor",
+    "portfolio",
+    "brand",
+    "gaming",
+    "dark-fantasy",
+    "pirate",
+    "developer"
+  ],
+  "author": "Nihalsailor",
+  "license": "MIT"
+}
