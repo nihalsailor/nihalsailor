@@ -73,16 +73,16 @@ window.DEFAULT_PROJECTS = [
     "codeUrl": "https://github.com/nihalsailor"
   },
   {
-    "id": "parental-control",
-    "title": "Guardian Parental Control Shield",
+    "id": "safeguard-lite",
+    "title": "SafeGuard Lite",
     "category": "systems",
     "categoryLabel": "Systems & Device Security",
     "image": "BackgroundLogo.png",
-    "desc": "Cross-device monitoring and content filtering application ensuring safe digital environments with real-time app usage tracking and policy enforcement.",
+    "desc": "Lightweight cross-device monitoring and content filtering application ensuring safe digital environments with real-time app usage tracking and policy enforcement.",
     "tags": ["Android / C#", "Security Rules", "Local Firewall", "SQLite"],
-    "details": "A privacy-first parental control architecture that operates with local network filtering, activity auditing, scheduled screen lockouts, and tamper-resistant background services.",
+    "details": "SafeGuard Lite is a privacy-first device management and parental control architecture that operates with local network filtering, activity auditing, scheduled screen lockouts, and tamper-resistant background services.",
     "metrics": [
-      { "label": "Architecture", "val": "Zero-Leak" },
+      { "label": "Edition", "val": "Lite" },
       { "label": "Response", "val": "Instant Block" },
       { "label": "Platform", "val": "Android / PC" }
     ],

@@ -36,7 +36,7 @@ Welcome to the official repository and flagship website of **Nihalsailor**.
 | **ApaniBaat** | Real-Time Encrypted Messaging | Full-Stack, WebSockets, Node.js, React |
 | **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, Audio DSP |
 | **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker |
-| **Guardian Parental Control Shield** | Security & Policy Enforcement | Android, C#, Local Firewall, SQLite |
+| **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall, SQLite |
 | **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio |
 
 ---
