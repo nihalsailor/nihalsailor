@@ -5,11 +5,10 @@
   # ⚓ NIHALSAILOR
   ### Captain of the Digital Seas • Game Developer & Ethical Hacker
 
-  [![Live Website](https://img.shields.io/badge/Live_Site-nihalsailor.github.io-gold?style=for-the-badge&logo=compass&logoColor=black)](https://nihalsailor.github.io/nihalsailor/)
-  [![Web Portal](https://img.shields.io/badge/Portal-itlive.in%2Fnihalsailor-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://itlive.in/nihalsailor/index.html)
+  [![Official Domain](https://img.shields.io/badge/Official_Domain-nihalsailor.com-gold?style=for-the-badge&logo=compass&logoColor=black)](https://nihalsailor.com/)
+  [![GitHub Mirror](https://img.shields.io/badge/GitHub_Mirror-nihalsailor.github.io-181717?style=for-the-badge&logo=github)](https://nihalsailor.github.io/nihalsailor/)
   [![YouTube](https://img.shields.io/badge/YouTube-@nihalsailor-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@nihalsailor)
   [![Instagram](https://img.shields.io/badge/Instagram-@nihalsailor-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/nihalsailor)
-  [![GitHub](https://img.shields.io/badge/GitHub-nihalsailor-181717?style=for-the-badge&logo=github)](https://github.com/nihalsailor)
   [![Email](https://img.shields.io/badge/Dispatch-nihalsailor14@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nihalsailor14@gmail.com)
 
   <p>
@@ -26,8 +25,8 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 
 - 🎮 **Passions:** Game Development (Unity 3D / Unreal / WebGL), Ethical Hacking & Systems Security.
 - ⚡ **Core Craft:** Engineering resilient multiplayer games, distributed systems, and atmospheric dark-fantasy web experiences.
-- 🌐 **Live Flagship:** [**https://nihalsailor.github.io/nihalsailor/**](https://nihalsailor.github.io/nihalsailor/)
-- ⚓ **Web Portal:** [**https://itlive.in/nihalsailor/index.html**](https://itlive.in/nihalsailor/index.html)
+- 🌐 **Official Domain:** [**https://nihalsailor.com/**](https://nihalsailor.com/)
+- ⚓ **GitHub Mirror:** [https://nihalsailor.github.io/nihalsailor/](https://nihalsailor.github.io/nihalsailor/)
 - 📺 **YouTube:** [**https://www.youtube.com/@nihalsailor**](https://www.youtube.com/@nihalsailor)
 
 ---
@@ -38,13 +37,13 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 | :--- | :--- | :--- | :--- |
 | **WRX Battles Online** | Multiplayer Combat Warfare | Unity 3D, C#, Photon, PhysX | [wrx-battles.vercel.app](https://wrx-battles.vercel.app/download) |
 | **ApaniBaat** | Real-Time Encrypted Messaging | Full-Stack, WebSockets, Node.js | [apanibaat.netlify.app](https://apanibaat.netlify.app) |
-| **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, DSP | [streamsailor.itlive.in](https://streamsailor.itlive.in/) |
+| **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, DSP | [streamsailor.nihalsailor.com](https://streamsailor.nihalsailor.com/) |
 | **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker | [zaimcp.space-z.ai](https://zaimcp.space-z.ai/) |
-| **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall | [safeguardlite.itlive.in](https://safeguardlite.itlive.in/) |
+| **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall | [safeguardlite.nihalsailor.com](https://safeguardlite.nihalsailor.com/) |
 | **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio | [3D Experience](#) |
 
 > ⚓ **Explore the Full Archive & Unity Asset Store Releases:**  
-> 👉 [**https://nihalsailor.github.io/nihalsailor/projects.html**](https://nihalsailor.github.io/nihalsailor/projects.html)
+> 👉 [**https://nihalsailor.com/projects.html**](https://nihalsailor.com/projects.html)
 
 ---
 
@@ -58,7 +57,7 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 
 ## 📬 Direct Coordinates
 
-- 🌐 **Web Portal:** [itlive.in/nihalsailor](https://itlive.in/nihalsailor/index.html)
+- 🌐 **Official Domain:** [nihalsailor.com](https://nihalsailor.com/)
 - 📺 **YouTube Channel:** [@nihalsailor](https://www.youtube.com/@nihalsailor)
 - 📸 **Instagram:** [@nihalsailor](https://instagram.com/nihalsailor)
 - 🐙 **GitHub:** [@nihalsailor](https://github.com/nihalsailor)

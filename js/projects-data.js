@@ -52,7 +52,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Integration", "val": "OBS & Twitch" },
       { "label": "Overhead", "val": "< 1% CPU" }
     ],
-    "liveUrl": "https://streamsailor.itlive.in/",
+    "liveUrl": "https://streamsailor.nihalsailor.com/",
     "codeUrl": "https://github.com/nihalsailor/StreamSailor"
   },
   {
@@ -86,7 +86,7 @@ window.DEFAULT_PROJECTS = [
       { "label": "Response", "val": "Instant Block" },
       { "label": "Platform", "val": "Android / PC" }
     ],
-    "liveUrl": "https://safeguardlite.itlive.in/",
+    "liveUrl": "https://safeguardlite.nihalsailor.com/",
     "codeUrl": "https://github.com/nihalsailor/ParentralControllApp"
   },
   {
