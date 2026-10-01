@@ -283,11 +283,19 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/audio.js"></script>
-  <script src="js/canvas.js"></script>
-  <script src="js/projects-data.js"></script>
+  <script src="js/audio.js?v=2.0.1"></script>
+  <script src="js/canvas.js?v=2.0.1"></script>
+  <script src="js/projects-data.js?v=2.0.1"></script>
   <script>
     let vaultItems = [];
+
+    function sanitizeProjectUrl(url) {
+      if (!url) return url;
+      return url
+        .replace(/streamsailor\.itlive\.in/gi, 'streamsailor.nihalsailor.com')
+        .replace(/safeguardlite\.itlive\.in/gi, 'safeguardlite.nihalsailor.com')
+        .replace(/itlive\.in\/nihalsailor\/?/gi, 'nihalsailor.com/');
+    }
 
     document.addEventListener('DOMContentLoaded', async () => {
       // Sound toggle
@@ -306,33 +314,34 @@
     });
 
     async function loadVaultData() {
-      // Load standard projects
+      // Load standard projects (bypass stale browser/CDN cache)
       let projects = window.DEFAULT_PROJECTS || [];
       try {
-        const pRes = await fetch('data/projects.json');
+        const pRes = await fetch('data/projects.json?t=' + Date.now(), { cache: 'no-store' });
         if (pRes.ok) projects = await pRes.json();
       } catch (e) {}
 
-      // Load Unity assets
+      // Load Unity assets (bypass stale browser/CDN cache)
       let assets = [];
       try {
-        const aRes = await fetch('data/assets.json');
+        const aRes = await fetch('data/assets.json?t=' + Date.now(), { cache: 'no-store' });
         if (aRes.ok) assets = await aRes.json();
       } catch (e) {}
 
-      // Normalize and combine
+      // Normalize and combine with verified URL sanitization
       const mappedAssets = assets.map(a => ({
         ...a,
         isUnityAsset: true,
         categoryGroup: 'unity',
-        liveUrl: a.assetStoreUrl || '#',
+        liveUrl: sanitizeProjectUrl(a.assetStoreUrl || '#'),
         codeUrl: a.githubUrl || 'https://github.com/nihalsailor'
       }));
 
       const mappedProjects = projects.map(p => ({
         ...p,
         isUnityAsset: false,
-        categoryGroup: p.category || 'other'
+        categoryGroup: p.category || 'other',
+        liveUrl: sanitizeProjectUrl(p.liveUrl)
       }));
 
       vaultItems = [...mappedAssets, ...mappedProjects];
@@ -515,8 +524,9 @@
           });
 
           const liveBtn = document.getElementById('v-modal-live');
-          if (item.liveUrl && item.liveUrl !== '#') {
-            liveBtn.href = item.liveUrl;
+          const cleanLive = sanitizeProjectUrl(item.liveUrl);
+          if (cleanLive && cleanLive !== '#') {
+            liveBtn.href = cleanLive;
             liveBtn.style.display = 'inline-flex';
             liveBtn.innerHTML = item.isUnityAsset 
               ? '<i class="fab fa-unity"></i> View on Asset Store' 

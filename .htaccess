@@ -29,7 +29,7 @@ AddDefaultCharset UTF-8
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
-# 5. Browser Caching for Fast Performance
+# 5. Browser Caching for Fast Performance & Fresh Data
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 day"
@@ -40,7 +40,20 @@ AddDefaultCharset UTF-8
   ExpiresByType text/css "access plus 1 week"
   ExpiresByType application/javascript "access plus 1 week"
   ExpiresByType text/javascript "access plus 1 week"
-  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Prevent caching of dynamic JSON databases and HTML entry points
+<IfModule mod_headers.c>
+  <FilesMatch "\.(json)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
 </IfModule>
 
 # 6. Basic Security Headers

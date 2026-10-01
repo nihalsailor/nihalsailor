@@ -22,12 +22,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 /* --------------------------------------------------------------------------
    1. VERIFIED PROJECT REGISTRY & DYNAMIC RENDERING
    -------------------------------------------------------------------------- */
+function sanitizeProjectUrl(url) {
+  if (!url) return url;
+  return url
+    .replace(/streamsailor\.itlive\.in/gi, 'streamsailor.nihalsailor.com')
+    .replace(/safeguardlite\.itlive\.in/gi, 'safeguardlite.nihalsailor.com')
+    .replace(/itlive\.in\/nihalsailor\/?/gi, 'nihalsailor.com/');
+}
+
 async function loadAndRenderProjects() {
   let baseProjects = window.DEFAULT_PROJECTS || [];
 
-  // Attempt to fetch latest data/projects.json if hosted on web server
+  // Attempt to fetch latest data/projects.json if hosted on web server (bypass stale cache)
   try {
-    const res = await fetch('data/projects.json');
+    const res = await fetch('data/projects.json?t=' + Date.now(), { cache: 'no-store' });
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
@@ -38,7 +46,10 @@ async function loadAndRenderProjects() {
     // Falls back seamlessly to window.DEFAULT_PROJECTS
   }
 
-  window.allProjects = baseProjects;
+  window.allProjects = baseProjects.map(p => ({
+    ...p,
+    liveUrl: sanitizeProjectUrl(p.liveUrl)
+  }));
   renderArmadaGrid(window.allProjects);
 }
 
@@ -143,8 +154,9 @@ function attachProjectInspectors() {
 
       const liveBtn = document.getElementById('modal-live-btn');
       if (liveBtn) {
-        if (data.liveUrl && data.liveUrl !== '#') {
-          liveBtn.href = data.liveUrl;
+        const cleanUrl = sanitizeProjectUrl(data.liveUrl);
+        if (cleanUrl && cleanUrl !== '#') {
+          liveBtn.href = cleanUrl;
           liveBtn.style.display = 'inline-flex';
         } else {
           liveBtn.style.display = 'none';
