@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WRX Battles by Nihal Sailor - Multiplayer Combat</title>
+  
+  <!-- Meta Information & SEO -->
+  <meta name="description" content="Discover the latest software innovation from developer Nihal Sailor. Download WRX Battles Online for advanced optimization, seamless security, and custom tools.">
+  <meta name="keywords" content="Unity, C#, Multiplayer, Physics, Photon / WebGL, Nihal Sailor, software developer, portfolio, WRX Battles Online">
+  <meta name="author" content="Nihal Sailor">
+  <meta name="p:domain_verify" content="e11746ca856d30727b4935c454664b37"/>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nihalsailor.com/projects/wrx-battles.html">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="WRX Battles by Nihal Sailor - Multiplayer Combat">
+  <meta property="og:description" content="Discover the latest software innovation from developer Nihal Sailor. Download WRX Battles Online for advanced optimization, seamless security, and custom tools.">
+  <meta property="og:image" content="https://nihalsailor.com/BackgroundLogo.png">
+  <meta property="og:url" content="https://nihalsailor.com/projects/wrx-battles.html">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WRX Battles by Nihal Sailor - Multiplayer Combat">
+  <meta name="twitter:description" content="Discover the latest software innovation from developer Nihal Sailor. Download WRX Battles Online for advanced optimization, seamless security, and custom tools.">
+  <meta name="twitter:image" content="https://nihalsailor.com/BackgroundLogo.png">
+
+  <!-- Schema.org JSON-LD Structured Data (Google Knowledge Graph & Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "WRX Battles Online",
+    "url": "https://nihalsailor.com/projects/wrx-battles.html",
+    "image": "https://nihalsailor.com/BackgroundLogo.png",
+    "description": "Discover the latest software innovation from developer Nihal Sailor. Download WRX Battles Online for advanced optimization, seamless security, and custom tools.",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Windows, WebGL, PC",
+    "author": {
+      "@type": "Person",
+      "name": "Nihal Sailor",
+      "url": "https://nihalsailor.com",
+      "sameAs": [
+        "https://www.youtube.com/@nihalsailor",
+        "https://github.com/nihalsailor",
+        "https://instagram.com/nihalsailor"
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#d4af37">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .launch-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 7.5rem 1.5rem 5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .launch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      box-shadow: var(--shadow-gilded);
+      backdrop-filter: blur(14px);
+      padding: 2.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .launch-banner-wrap {
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .launch-banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .press-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: rgba(229, 185, 92, 0.12);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      margin-bottom: 1.25rem;
+    }
+    .press-headline {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .press-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-parchment);
+      margin-bottom: 2.25rem;
+    }
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .feature-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background: rgba(5, 9, 17, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      transition: var(--transition-smooth);
+    }
+    .feature-item:hover {
+      border-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+    .feature-icon {
+      color: var(--gold-primary);
+      font-size: 1.35rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+    .feature-title {
+      font-family: var(--font-cinzel);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 0.25rem;
+    }
+    .feature-desc {
+      color: var(--text-parchment);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .spec-box {
+      background: rgba(5, 9, 17, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .spec-number {
+      font-family: var(--font-cinzel);
+      font-size: 1.3rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.25rem;
+    }
+    .spec-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .author-card {
+      background: rgba(5, 9, 17, 0.75);
+      border: 1px solid var(--border-gold);
+      border-radius: 6px;
+      padding: 1.75rem;
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .author-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-primary);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .launch-container { padding-top: 6rem; }
+      .launch-card { padding: 1.5rem; }
+      .press-headline { font-size: 1.75rem; }
+      .author-card { flex-direction: column; text-align: center; }
+      .action-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Mist & Canvas -->
+  <canvas id="atmosphere-canvas"></canvas>
+
+  <div class="content-wrapper">
+
+    <!-- Header / Navigation Deck -->
+    <header class="main-nav scrolled">
+      <div class="container nav-container">
+        <a href="../index.html" class="brand-link" title="Nihalsailor Flagship">
+          <div class="brand-avatar-wrap">
+            <img src="../MainLogo.jpg" alt="Nihalsailor Crest" class="brand-avatar">
+          </div>
+          <div>
+            <span class="brand-name gold-gradient-text">NIHALSAILOR</span>
+            <span class="brand-tag">Digital Corsair</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Flagship Home</a></li>
+            <li><a href="../projects.html" class="nav-link active"><i class="fas fa-ship"></i> All Projects</a></li>
+            <li><a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="nav-link"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="../index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn-sound-toggle" aria-label="Toggle Sea Ambience">
+            <i class="fas fa-volume-xmark"></i>
+          </button>
+          <a href="../projects.html" class="btn-corsair" style="font-size: 0.78rem; padding: 0.5rem 1rem;">
+            <i class="fas fa-arrow-left"></i> Fleet Vault
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content: SEO-Optimized Product Launch Template -->
+    <main class="launch-container">
+      <article class="launch-card">
+        
+        <!-- Media Banner -->
+        <div class="launch-banner-wrap">
+          <img src="../BackgroundLogo.png" alt="WRX Battles Online by Nihal Sailor" class="launch-banner-img">
+          <span class="project-category-tag" style="position: absolute; top: 1rem; right: 1rem;">
+            Game Dev &amp; Multiplayer
+          </span>
+        </div>
+
+        <!-- Press Release Title & Badge -->
+        <div class="press-badge">
+          <i class="fas fa-bullhorn text-gold"></i> Official Product Release • Nihal Sailor
+        </div>
+
+        <h1 class="press-headline font-cinzel">
+          WRX Battles by Nihal Sailor - Multiplayer Combat
+        </h1>
+
+        <div class="project-tags" style="margin-bottom: 1.5rem;">
+          <span class="tag-pill">Unity</span><span class="tag-pill">C#</span><span class="tag-pill">Multiplayer</span><span class="tag-pill">Physics</span><span class="tag-pill">Photon / WebGL</span>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin-bottom: 1.75rem;">
+
+        <!-- Main Content / Press Release Body -->
+        <p class="press-body">
+          Independent software engineer and developer <strong>Nihal Sailor</strong> has officially announced the launch of his newest project, <strong>WRX Battles Online</strong>. Following the release of mobile utilities like SafeGuard Lite, this latest software addresses critical needs in <em>real-time multiplayer vehicular combat and physics simulation</em>.
+        </p>
+
+        <!-- Key Features of [Product Name] -->
+        <h2 class="font-cinzel gold-gradient-text" style="font-size: 1.45rem; margin-bottom: 0.5rem;">
+          Key Features of WRX Battles Online
+        </h2>
+        
+        <ul class="feature-list">
+          <li class="feature-item">
+            <i class="fas fa-award feature-icon"></i>
+            <div>
+              <div class="feature-title">Engineered by Nihal Sailor</div>
+              <div class="feature-desc">Built from the ground up prioritizing clean architecture, high reliability, and efficient runtime performance.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-bolt feature-icon"></i>
+            <div>
+              <div class="feature-title">Synchronized Multiplayer Warfare</div>
+              <div class="feature-desc">Engineered with low-latency client-side prediction, projectile trajectory ballistics, and high-concurrency Photon networking.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-shield-halved feature-icon"></i>
+            <div>
+              <div class="feature-title">Resilient Client Architecture</div>
+              <div class="feature-desc">Hardened game state validation and physics verification to prevent cheat injection and latency desynchronization.</div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Technical Specifications -->
+        <h3 class="font-cinzel text-gold" style="font-size: 1.15rem; margin-bottom: 1rem; text-transform: uppercase;">
+          Vessel & Asset Specifications
+        </h3>
+        <div class="spec-grid">
+          
+    <div class="spec-box">
+      <div class="spec-number">Unity 3D</div>
+      <div class="spec-label">Engine</div>
+    </div>
+  
+    <div class="spec-box">
+      <div class="spec-number">Multiplayer PvP</div>
+      <div class="spec-label">Mode</div>
+    </div>
+  
+    <div class="spec-box">
+      <div class="spec-number">PC &amp; WebGL</div>
+      <div class="spec-label">Platform</div>
+    </div>
+  
+        </div>
+
+        <!-- Live Links & Direct Actions -->
+        <div class="action-row">
+          
+            <a href="https://wrx-battles.vercel.app/download" target="_blank" rel="noopener" class="btn-corsair" style="border-color: var(--gold-primary); flex: 1; text-align: center;">
+              <i class="fas fa-external-link-alt"></i> Launch Live / Download
+            </a>
+          
+          
+            <a href="https://github.com/nihalsailor/WRXBattlesOnline" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1; text-align: center;">
+              <i class="fab fa-github"></i> Blueprint Source Code
+            </a>
+          
+          <a href="../projects.html" class="btn-corsair" style="flex: 1; text-align: center;">
+            <i class="fas fa-arrow-left"></i> Return to Fleet Archive
+          </a>
+        </div>
+
+        <!-- About the Developer (Structured Bio & Brand Coordinates) -->
+        <section class="author-card">
+          <img src="../MainLogo.jpg" alt="Developer Nihal Sailor" class="author-avatar">
+          <div>
+            <h3 class="font-cinzel text-gold" style="font-size: 1.15rem; margin-bottom: 0.35rem;">
+              About the Developer: Nihal Sailor
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-parchment); margin-bottom: 0.85rem;">
+              <strong>Nihal Sailor</strong> is a digital creator, 3D artist, and programmer dedicated to building accessible software tools. Through his official platform at <a href="https://nihalsailor.com" class="text-gold" style="text-decoration: underline;">nihalsailor.com</a>, he continues to build projects that bridge the gap between user privacy and functional utility.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or subscribe to the <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Nihal Sailor YouTube Channel</a> for video deep-dives.
+            </p>
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="margin-top: 4rem;">
+      <div class="container footer-container">
+        <div class="footer-bottom">
+          <div>&copy; 2026 <strong>NIHALSAILOR</strong>. All rights reserved.</div>
+          <div><a href="../projects.html" class="btn-corsair" style="padding: 0.4rem 0.9rem; font-size: 0.72rem;"><i class="fas fa-arrow-up"></i> Return to Fleet Archive</a></div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Ambient Audio & Canvas Scripts -->
+  <script src="../js/audio.js?v=2.0.1"></script>
+  <script src="../js/canvas.js?v=2.0.1"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const soundBtn = document.querySelector('.btn-sound-toggle');
+      if (soundBtn && window.maritimeAudio) {
+        soundBtn.addEventListener('click', () => {
+          const isPlaying = window.maritimeAudio.toggleSound();
+          soundBtn.classList.toggle('playing', isPlaying);
+          soundBtn.innerHTML = isPlaying ? '<i class="fas fa-volume-high"></i>' : '<i class="fas fa-volume-xmark"></i>';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -413,9 +413,9 @@
           <div class="project-tags">${tagsHtml}</div>
 
           <div class="project-actions">
-            <button class="btn-card-action btn-card-primary" data-v-inspect="${escapeHtml(item.id)}">
+            <a href="projects/${escapeHtml(item.id)}.html" class="btn-card-action btn-card-primary">
               <i class="fas fa-eye"></i> Details
-            </button>
+            </a>
             ${item.liveUrl && item.liveUrl !== '#' ? `
               <a href="${escapeHtml(item.liveUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary" style="border-color: var(--gold-primary); color: var(--gold-light);">
                 <i class="${isUnity ? 'fab fa-unity' : 'fas fa-arrow-up-right-from-square'}"></i> ${isUnity ? 'Store' : 'Live'}

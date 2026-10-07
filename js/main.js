@@ -89,9 +89,9 @@ function renderArmadaGrid(projects) {
       <p class="project-desc">${escapeHtml(proj.desc)}</p>
       <div class="project-tags">${tagsHtml}</div>
       <div class="project-actions">
-        <button class="btn-card-action btn-card-primary" data-inspect-project="${escapeHtml(proj.id)}">
-          <i class="fas fa-eye"></i> Inspect Vessel
-        </button>
+        <a href="projects/${escapeHtml(proj.id)}.html" class="btn-card-action btn-card-primary">
+          <i class="fas fa-eye"></i> Details
+        </a>
         ${proj.liveUrl && proj.liveUrl !== '#' ? `
           <a href="${escapeHtml(proj.liveUrl)}" target="_blank" rel="noopener" class="btn-card-action btn-card-secondary" style="border-color: var(--gold-primary); color: var(--gold-light);">
             <i class="fas fa-external-link-alt"></i> Live
