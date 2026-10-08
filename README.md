@@ -40,6 +40,7 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 | **StreamSailor Suite** | Creator Broadcast Deck & DSP | Python, OBS WebSockets, DSP | [streamsailor.nihalsailor.com](https://streamsailor.nihalsailor.com/) |
 | **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker | [zaimcp.space-z.ai](https://zaimcp.space-z.ai/) |
 | **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall | [safeguardlite.nihalsailor.com](https://safeguardlite.nihalsailor.com/) |
+| **Flow Connect Free** | AI Systems & MCP Protocol | MCP Protocol, TypeScript, Chrome MV3 | [github.com/nihalsailor/flow-connect-free](https://github.com/nihalsailor/flow-connect-free) |
 | **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio | [3D Experience](#) |
 
 > ⚓ **Explore the Full Archive & Unity Asset Store Releases:**  

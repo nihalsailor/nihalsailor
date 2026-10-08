@@ -1,0 +1,115 @@
+{{Short description|Indian software engineer and game developer}}
+{{Infobox person
+| name             = Nihal Sailor
+| other_names      = Captain Nihalsailor
+| image            = Nihal_Sailor_Portrait.jpg
+| image_size       = 220px
+| caption          = Nihal Sailor
+| occupation       = {{flatlist|
+* Software engineer
+* Game developer
+* Cybersecurity researcher
+* 3D graphics developer
+}}
+| years_active     = 2022–present
+| known_for        = {{flatlist|
+* ''WRX Battles Online''
+* ''SafeGuard Lite''
+* ''ApaniBaat''
+* ''StreamSailor Suite''
+}}
+| website          = {{URL|https://nihalsailor.com/}}
+}}
+
+'''Nihal Sailor''' (known professionally and online as '''Nihalsailor''') is an Indian software developer, ethical hacker, and game engineer.<ref>{{cite web |title=Nihalsailor Flagship Portal |url=https://nihalsailor.com/ |access-date=2026-10-07}}</ref> He is the creator and maintainer of several multiplayer gaming systems, real-time communications platforms, and system security tools, including the combat vehicle multiplayer simulator ''WRX Battles Online'', the privacy-focused device utility ''SafeGuard Lite'', and the creative broadcast toolset ''StreamSailor Suite''.<ref>{{cite web |title=The Fleet & Asset Store Archive |url=https://nihalsailor.com/projects.html |website=nihalsailor.com |access-date=2026-10-07}}</ref>
+
+== Career and development ==
+
+Sailor's software engineering focus spans interactive 3D simulations, real-time networking, client-side encryption, and cyber security automation. His digital presence and creative brand are characterized by dark maritime and nautical fantasy motifs under the persona "Captain Nihalsailor".<ref>{{cite web |title=Nihalsailor Official Repository Profile |url=https://github.com/nihalsailor |website=GitHub |access-date=2026-10-07}}</ref>
+
+=== Game development and 3D graphics ===
+In game engineering, Sailor utilizes the [[Unity (game engine)|Unity]] engine, [[C Sharp (programming language)|C#]], and [[WebGL]] technologies.
+* '''WRX Battles Online''': A high-tempo multiplayer vehicular combat title incorporating dynamic wheel suspension, client-side predictive netcode, weapon ballistics, and destructible vehicle components.<ref>{{cite web |title=WRX Battles Online Repository |url=https://github.com/nihalsailor/WRXBattlesOnline |website=GitHub |access-date=2026-10-07}}</ref>
+* '''Ghost Galleon 3D''': A browser-based interactive 3D ocean simulator engineered in [[Three.js]] and custom [[OpenGL Shading Language|GLSL]] shaders, demonstrating GPU Gerstner wave displacement and dynamic buoyancy physics in real time.
+* '''Unity Asset Store tools''': Development of modular systems for independent game studios, including dark fantasy user interface kits (''Stuck Cursed UI''), multi-point ocean buoyancy algorithms, and runtime game memory encryption toolsets.
+
+=== Cybersecurity and system software ===
+Sailor has engineered several utilities addressing cybersecurity, local policy enforcement, and communication privacy:
+* '''SafeGuard Lite''': A lightweight device management and content-filtering application engineered for Android and personal computers. The software utilizes local network packet filtering, application lockouts, and tamper-resistant background daemons to provide parental controls without relying on third-party cloud monitoring.<ref>{{cite web |title=SafeGuard Lite Project Source |url=https://github.com/nihalsailor/ParentralControllApp |website=GitHub |access-date=2026-10-07}}</ref>
+* '''ZAI Cyber Threat Radar''': An automated reconnaissance and ethical penetration auditing pipeline built in [[Python (programming language)|Python]] and [[Docker (software)|Docker]] to scan exposed endpoints, inspect open network ports, and correlate findings against known Common Vulnerabilities and Exposures (CVE) databases.<ref>{{cite web |title=ZAI Security Radar Deployment |url=https://zaimcp.space-z.ai/ |website=Space-Z AI |access-date=2026-10-07}}</ref>
+* '''ApaniBaat''': A full-stack real-time communications application engineered with [[Node.js]], [[React (software)|React]], and [[WebSocket]] protocol, providing end-to-end encrypted messaging, media distribution, and presence synchronization.<ref>{{cite web |title=ApaniBaat Realtime Communication |url=https://github.com/nihalsailor/apnibaat |website=GitHub |access-date=2026-10-07}}</ref>
+* '''StreamSailor Studio Suite''': An open broadcast orchestration tool written in Python that interfaces with OBS Studio via WebSockets, featuring automated live stream triggers, responsive audio digital signal processing (DSP), and streaming platform telemetry.
+
+== Notable projects and software ==
+
+{| class="wikitable sortable"
+|+ Selected software projects by Nihal Sailor
+! Project
+! Year
+! Primary technologies
+! Category
+! Description
+|-
+| ''WRX Battles Online''
+| 2024
+| Unity 3D, C#, Photon PUN, PhysX
+| Video game
+| Multiplayer vehicular combat and physics battle arena.
+|-
+| ''SafeGuard Lite''
+| 2024
+| Android, C#, SQLite, Network Filter
+| Security utility
+| Privacy-first parental control and endpoint firewall application.
+|-
+| ''ApaniBaat''
+| 2024
+| Node.js, WebSockets, React, MongoDB
+| Web platform
+| Real-time encrypted group and peer messaging service.
+|-
+| ''StreamSailor Suite''
+| 2025
+| Python, OBS WebSockets, Audio DSP
+| Broadcast tooling
+| Interactive creator dashboard and audio signal processor.
+|-
+| ''ZAI Cyber Threat Radar''
+| 2025
+| Python, Linux, Docker, CVE APIs
+| Cybersecurity
+| Automated vulnerability scanner and network reconnaissance suite.
+|-
+| ''Ghost Galleon 3D''
+| 2025
+| Three.js, WebGL, GLSL Shaders, Web Audio
+| 3D Simulation
+| In-browser maritime wave dynamics and atmospheric simulator.
+|}
+
+== Technical specializations ==
+
+Sailor's primary technical proficiencies include:
+* '''Game Engineering:''' Unity 3D engine, C#, multiplayer state synchronization, client-side prediction, GLSL/HLSL custom shaders, and vehicle physics.
+* '''Information Security:''' Network penetration testing, endpoint traffic auditing, local packet filtering, and memory tamper resistance.
+* '''Web & Distributed Systems:''' WebSockets, Three.js 3D rendering, asynchronous Node.js microservices, and Docker containerization.
+
+== See also ==
+* [[Independent video game development]]
+* [[Game physics]]
+* [[Application security]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|https://nihalsailor.com/}}
+* {{GitHub|nihalsailor}}
+* [https://www.youtube.com/@nihalsailor Nihal Sailor on YouTube]
+
+{{DEFAULTSORT:Sailor, Nihal}}
+[[Category:Living people]]
+[[Category:Indian computer programmers]]
+[[Category:Indian video game developers]]
+[[Category:Unity (game engine) developers]]
+[[Category:Information security professionals]]

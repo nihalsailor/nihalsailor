@@ -134,6 +134,18 @@ const projectMetadata = {
     schemaType: 'SoftwareApplication',
     appCategory: 'SecurityApplication',
     operatingSystem: 'Unity All Platforms'
+  },
+  'flow-connect-free': {
+    metaTitle: 'Flow Connect Free by Nihal Sailor - Google Flow MCP',
+    metaDesc: 'Discover the latest software innovation from developer Nihal Sailor. Download Flow Connect Free for advanced optimization, seamless security, and custom tools.',
+    niche: 'generative AI orchestration, Model Context Protocol (MCP) bridges, and browser automation',
+    feature1Title: 'Hardware-Level Input Automation & CDP',
+    feature1Desc: 'Dispatches trusted hardware clicks and keystrokes via Chrome DevTools Protocol to bypass synthetic event blocks and capture clean CDN media URLs in real time.',
+    feature2Title: 'Local & Private Loopback Architecture',
+    feature2Desc: 'Operates purely on local loopback (127.0.0.1:8791) with zero third-party telemetry, no cloud API key dependencies, and direct local download synchronization.',
+    schemaType: 'SoftwareApplication',
+    appCategory: 'DeveloperApplication',
+    operatingSystem: 'Windows, macOS, Linux, Chrome/Edge'
   }
 };
 

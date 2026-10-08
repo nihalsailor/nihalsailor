@@ -1,0 +1,28 @@
+{{Userpage}}
+
+== Nihal Sailor (Developer42) ==
+Hello! I am '''Nihal Sailor''' (known online as '''Nihalsailor''' / '''Developer42'''). I am an independent software developer, game engineer, and cybersecurity researcher.
+
+=== About Me ===
+* 🎮 '''Focus:''' Multiplayer Game Engineering (Unity 3D, C#, WebGL) & 3D Shaders.
+* 🛡️ '''Security:''' Network Penetration Auditing, Endpoint Defense, and Device Privacy.
+* 🌐 '''Official Website:''' [https://nihalsailor.com nihalsailor.com]
+* 🐙 '''GitHub:''' [https://github.com/nihalsailor github.com/nihalsailor]
+* 📺 '''YouTube:''' [https://www.youtube.com/@nihalsailor @nihalsailor]
+
+=== Notable Projects ===
+* '''WRX Battles Online:''' Multiplayer vehicular combat arena with custom wheel physics and Photon netcode.
+* '''SafeGuard Lite:''' Privacy-first device safety and parental control system with local network filtering.
+* '''ApaniBaat:''' Real-time end-to-end encrypted messaging suite using WebSockets and Node.js.
+* '''StreamSailor Suite:''' Broadcast workflow automation and audio DSP for creators.
+* '''ZAI Cyber Threat Radar:''' Network vulnerability reconnaissance and automated CVE auditing.
+
+=== Wikipedia Activities ===
+* Interested in improving articles related to:
+** [[Unity (game engine)]]
+** [[Video game development]]
+** [[Network security]]
+** [[WebGL]] & 3D Web Graphics
+
+----
+''"The sea rewards only those who hold the helm when the sky burns."''

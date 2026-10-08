@@ -100,5 +100,22 @@
     ],
     "liveUrl": "#",
     "codeUrl": "https://github.com/nihalsailor"
+  },
+  {
+    "id": "flow-connect-free",
+    "title": "Flow Connect Free",
+    "category": "systems",
+    "categoryLabel": "AI Systems & MCP Protocol",
+    "image": "BackgroundLogo.png",
+    "desc": "Open-source Model Context Protocol (MCP) bridge connecting AI coding agents directly to Google Flow for unlimited high-resolution image and video generation.",
+    "tags": ["MCP Protocol", "Google Flow", "TypeScript", "Chrome Extension", "Veo 3.1 & Nano"],
+    "details": "Flow Connect Free connects AI coding assistants (Claude Code, Antigravity, Cursor, Windsurf) to Google Flow via Chrome DevTools Protocol and local WebSocket loopback. Dispatches hardware-level inputs, intercepts clean CDN media URLs, supports automated Image-to-Image prompts, and syncs media locally with zero API key fees.",
+    "metrics": [
+      { "label": "Protocol", "val": "MCP JSON-RPC" },
+      { "label": "Models", "val": "Veo 3.1 & Nano" },
+      { "label": "Pricing", "val": "100% Free / MIT" }
+    ],
+    "liveUrl": "https://github.com/nihalsailor/flow-connect-free",
+    "codeUrl": "https://github.com/nihalsailor/flow-connect-free"
   }
 ]
