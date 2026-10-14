@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build:zip": "node scripts/package-deploy.js"
   },
   "keywords": [
     "nihalsailor",
