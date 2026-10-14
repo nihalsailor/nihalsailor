@@ -7,6 +7,9 @@
 
   [![Official Domain](https://img.shields.io/badge/Official_Domain-nihalsailor.com-gold?style=for-the-badge&logo=compass&logoColor=black)](https://nihalsailor.com/)
   [![GitHub Mirror](https://img.shields.io/badge/GitHub_Mirror-nihalsailor.github.io-181717?style=for-the-badge&logo=github)](https://nihalsailor.github.io/nihalsailor/)
+  [![WhatsApp Channel](https://img.shields.io/badge/WhatsApp_Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N)
+  [![Telegram Channel](https://img.shields.io/badge/Telegram_Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+WZIT0iJa88djNTk1)
+  [![Telegram Group](https://img.shields.io/badge/Telegram_Group-0088cc?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+DDR_hlYhVRljOWU1)
   [![YouTube](https://img.shields.io/badge/YouTube-@nihalsailor-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@nihalsailor)
   [![Instagram](https://img.shields.io/badge/Instagram-@nihalsailor-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/nihalsailor)
   [![Email](https://img.shields.io/badge/Dispatch-nihalsailor14@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nihalsailor14@gmail.com)
@@ -41,6 +44,7 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 | **ZAI Security Radar** | Ethical Hacking & Recon | Python, Network Security, Docker | [zaimcp.space-z.ai](https://zaimcp.space-z.ai/) |
 | **SafeGuard Lite** | Security & Policy Enforcement | Android, C#, Local Firewall | [safeguardlite.nihalsailor.com](https://safeguardlite.nihalsailor.com/) |
 | **Flow Connect Free** | AI Systems & MCP Protocol | MCP Protocol, TypeScript, Chrome MV3 | [github.com/nihalsailor/flow-connect-free](https://github.com/nihalsailor/flow-connect-free) |
+| **ReachTube Studio** | AI Creator Tools & Video SEO | React, PWA, YouTube API, Tailwind | [nihalsailor.com/reachtube](https://nihalsailor.com/reachtube/index.html) |
 | **Ghost Galleon 3D** | Browser Ocean Simulator | Three.js, GLSL Shaders, WebAudio | [3D Experience](#) |
 
 > ⚓ **Explore the Full Archive & Unity Asset Store Releases:**  
@@ -59,6 +63,9 @@ Welcome to the official repository and flagship portal of **Nihalsailor**.
 ## 📬 Direct Coordinates
 
 - 🌐 **Official Domain:** [nihalsailor.com](https://nihalsailor.com/)
+- 💬 **WhatsApp Channel:** [Nihalsailor WhatsApp Channel](https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N)
+- 📢 **Telegram Channel:** [Nihalsailor Telegram Channel](https://t.me/+WZIT0iJa88djNTk1)
+- 👥 **Telegram Community Group:** [Nihalsailor Telegram Group](https://t.me/+DDR_hlYhVRljOWU1)
 - 📺 **YouTube Channel:** [@nihalsailor](https://www.youtube.com/@nihalsailor)
 - 📸 **Instagram:** [@nihalsailor](https://instagram.com/nihalsailor)
 - 🐙 **GitHub:** [@nihalsailor](https://github.com/nihalsailor)

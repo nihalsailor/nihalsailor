@@ -117,5 +117,22 @@
     ],
     "liveUrl": "https://github.com/nihalsailor/flow-connect-free",
     "codeUrl": "https://github.com/nihalsailor/flow-connect-free"
+  },
+  {
+    "id": "reachtube",
+    "title": "ReachTube Studio",
+    "category": "creative",
+    "categoryLabel": "AI Creator Tools & Video SEO",
+    "image": "MainLogo.jpg",
+    "desc": "AI-powered YouTube channel growth and optimization platform featuring high-retention hook generation, automated SEO tagging, thumbnail prompts, and channel analytics synchronization.",
+    "tags": ["AI Tools", "YouTube API", "React", "PWA", "Tailwind CSS"],
+    "details": "ReachTube Studio accelerates channel monetization by automating retention hooks, video tag clusters, AI thumbnail prompt composition, and real-time channel statistics via Google Identity Services and YouTube OAuth APIs.",
+    "metrics": [
+      { "label": "Stack", "val": "React & PWA" },
+      { "label": "Integration", "val": "YouTube API" },
+      { "label": "Optimization", "val": "AI Hooks & SEO" }
+    ],
+    "liveUrl": "https://nihalsailor.com/reachtube/index.html",
+    "codeUrl": "https://github.com/nihalsailor"
   }
 ]

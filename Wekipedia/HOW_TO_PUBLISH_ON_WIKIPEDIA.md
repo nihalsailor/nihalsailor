@@ -1,97 +1,85 @@
-# 📖 Guide: How to Publish on Wikipedia & Wikimedia Commons
+# 📖 Complete Guide: Publishing Your Updated Page on Wikipedia & Wikimedia Commons
 
-This guide explains how Wikipedia works, what your screenshot is showing, and the step-by-step instructions to get your content live safely without getting deleted.
-
----
-
-## ⚠️ 1. Important: What Your Screenshot Shows
-
-In your screenshot, you have **Wikimedia Commons (Upload Wizard)** open with your username **`Developer42`**:
-
-* **Wikimedia Commons** (`commons.wikimedia.org`) is a media repository. It is **only for images, audio, and video files** licensed under Creative Commons or Public Domain. You **cannot** paste or upload article text here.
-* **Wikipedia** (`en.wikipedia.org`) is the actual encyclopedia where written articles live.
-
-However, you will use **both**! You will upload your photo on Commons first, and then create your page on Wikipedia.
+This guide explains how your updated Wikipedia page works, how the picture is displayed, and the steps to get your content and image live.
 
 ---
 
-## 📸 Step 1: Upload Your Photo to Wikimedia Commons
-*(Since you already have this screen open!)*
+## 🖼️ Picture Visibility on Wikipedia: How It Works
 
-1. On the **Upload Wizard** screen from your screenshot:
-   * Click the blue button: **"Select media files to share"**.
-   * Pick your portrait photo or `MainLogo.jpg` from `C:\Developments\Nihalsailor\`.
-2. Click **"Continue"**.
-3. Under **Release rights**:
+### 1. In Your Local Preview (`Wikipedia_Preview.html`)
+* **Status:** ✅ **100% Visible & Synced.**
+* `MainLogo.jpg` and `BackgroundLogo.png` are stored directly in this folder.
+* An inline fallback data-URI is also built into `Wikipedia_Preview.html`, ensuring the image renders in any browser, even with strict security settings. Double-click `Wikipedia_Preview.html` to view it immediately!
+
+### 2. On Real Wikipedia (`en.wikipedia.org`)
+* Wikipedia **does not permit external image links** (e.g. `http://.../myphoto.jpg`) inside wikitext `[[File:...]]` tags for copyright and security reasons.
+* All pictures displayed on Wikipedia **must be hosted on Wikimedia Commons** (`commons.wikimedia.org`).
+* If you insert `[[File:MainLogo.jpg]]` before uploading it to Commons, Wikipedia will display a red missing file link: `File:MainLogo.jpg (page does not exist)`.
+* **Fix:** You simply complete the upload on Wikimedia Commons using the name `MainLogo.jpg`. As soon as it is uploaded to Commons, Wikipedia automatically detects it and displays the picture!
+
+---
+
+## 📸 Step 1: Upload Your Image to Wikimedia Commons
+*(Using the screen shown in your screenshot)*
+
+1. Go to your open **Wikimedia Commons Upload Wizard** tab (or visit [commons.wikimedia.org/wiki/Special:UploadWizard](https://commons.wikimedia.org/wiki/Special:UploadWizard)).
+2. Make sure you are logged in as **`Developer42`**.
+3. Click **"Select media files to share"** and select:
+   * `C:\Developments\Nihalsailor\Wekipedia\MainLogo.jpg`
+4. Click **"Continue"**.
+5. Under **Release rights**:
    * Select **"This file is my own work"**.
-   * Confirm the Creative Commons license: **CC BY-SA 4.0** (required by Wikipedia).
-4. Under **Describe**:
-   * **Title:** Enter a descriptive file name, e.g., `Nihal_Sailor_Portrait.jpg`.
-   * **Description:** "Portrait of software developer and game creator Nihal Sailor."
-   * **Category:** Type and select `Software engineers from India` or `People of India`.
-5. Click **"Publish files"**.
-   * Note down the exact filename you gave it (e.g., `File:Nihal_Sailor_Portrait.jpg`). You can now embed this photo on Wikipedia!
+   * Choose license: **Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)**.
+6. Under **Describe**:
+   * **Title:** Enter `MainLogo.jpg` (or `Nihal_Sailor_Emblem.jpg`).
+   * **Description:** "Official emblem and avatar of software developer and game creator Nihal Sailor."
+   * **Category:** Add `Software engineers from India` or `People of India`.
+7. Click **"Publish files"**.
+   * Once published, the image is live globally across all Wikimedia projects!
 
 ---
 
-## 🚀 Step 2: Choose How You Want to Publish on Wikipedia
+## 🚀 Step 2: Publish Your Updated Page on Wikipedia
 
-There are two distinct ways to publish your presence on Wikipedia:
-
-| Method | Target Location | Approval Process | Deletion Risk | Recommended For |
-| :--- | :--- | :--- | :--- | :--- |
-| **Option A: User Profile Page** | `User:Developer42` | **Instant** (No review needed) | **Zero** (Safe) | Introducing yourself, your skills & fleet |
-| **Option B: Public Encyclopedia Article** | `Draft:Nihal Sailor` | Reviewed by Wikipedia AfC editors | High if lacking secondary news press | Official Wikipedia encyclopedia article |
-
----
-
-### Option A (Recommended): Create Your Official User Page (`User:Developer42`)
-
-Every registered Wikipedia user has their own official personal page. Wikipedia allows you to describe who you are, what projects you develop, and your skills on your User Page!
+### Option A (Recommended & Immediate): Your User Page (`User:Developer42`)
+Your personal user page is your official identity on Wikipedia. It allows you to display your profile, projects, and avatar without being subjected to Wikipedia's strict independent news notability requirements.
 
 1. Go to: **[https://en.wikipedia.org/wiki/User:Developer42](https://en.wikipedia.org/wiki/User:Developer42)**
-2. Make sure you are logged in as **Developer42**.
-3. Click the **"Create"** or **"Edit"** tab at the top right of the page.
-4. Open the file **`User_Page_Developer42.wiki`** (located in this folder).
-5. Copy all the text and paste it into the editor box on Wikipedia.
-6. Under **Edit summary**, type: *"Initial user page profile"*.
-7. Click **"Publish changes"**.
-   * 🎉 **Result:** Your official page on Wikipedia is immediately live at `https://en.wikipedia.org/wiki/User:Developer42`!
+2. Click the **"Edit"** tab at the top right.
+3. Open **`User_Page_Developer42.wiki`** from this folder.
+4. Copy all content and paste it into the editor box.
+   * Notice line 4: `[[File:MainLogo.jpg|220px|Nihal Sailor Emblem]]`. This will render your image as soon as Step 1 is done!
+5. In the **Edit summary** box, write: *"Updated developer profile with 2026 fleet, ReachTube Studio, and Flow Connect Free"*.
+6. Click **"Publish changes"**.
+   * 🎉 **Your page and picture are now live on Wikipedia!**
 
 ---
 
 ### Option B: Submit a Public Encyclopedia Article (`Draft:Nihal Sailor`)
+For an official Wikipedia encyclopedia article in the main encyclopedia:
 
-Wikipedia has strict community policies for standalone encyclopedia articles:
-1. **WP:GNG & WP:BIO (Notability Guidelines):** Wikipedia requires that the subject has received significant, in-depth coverage in **reliable, independent secondary sources** (e.g. newspapers, tech journalism magazines, published interviews, verified press articles). Self-published portfolios, personal websites, and GitHub repositories are primary sources.
-2. **WP:COI (Conflict of Interest):** Creating an article about yourself is considered a Conflict of Interest. If you publish it directly into the public encyclopedia space, it is likely to be marked for speedy deletion under **CSD A7 / G11**.
-
-#### The Proper Way to Submit:
-Use Wikipedia's **Articles for Creation (AfC)** system:
-
-1. Log into your account on Wikipedia: **[https://en.wikipedia.org](https://en.wikipedia.org)**
-2. In the search box, search for: `Draft:Nihal Sailor`
-3. Click **"Start the Draft:Nihal Sailor page"** (or use the [Wikipedia Article Wizard](https://en.wikipedia.org/wiki/Wikipedia:Article_wizard)).
-4. Open the file **`Nihal_Sailor_Article.wiki`** inside this folder:
-   * Replace the image name `Nihal_Sailor_Portrait.jpg` with the exact filename you uploaded to Wikimedia Commons in Step 1.
-   * If you have any news articles, tech blog features, or independent reviews of your games/software, add them to the references `<ref>` tags.
-5. Copy all the wikitext from `Nihal_Sailor_Article.wiki` and paste it into the draft editor.
-6. At the very top of the text, add:
+1. Go to: **[Wikipedia:Articles for creation](https://en.wikipedia.org/wiki/Wikipedia:Articles_for_creation)** or search for `Draft:Nihal Sailor`.
+2. Open **`Nihal_Sailor_Article.wiki`** in this folder.
+3. Copy all wikitext and paste it into the Draft editor.
+4. At the very top, add:
    ```wikitext
    {{subst:submit}}
    ```
-7. Click **"Publish changes"**.
-8. A submission box will appear stating that your draft is queued for review by independent Wikipedia editors.
+5. Click **"Publish changes"** to submit the draft for review by Wikipedia editors.
 
 ---
 
-## 📂 Files Included in This Folder (`C:\Developments\Nihalsailor\Wekipedia`)
+## 🚢 Synced 2026 Project Roster & Live URLs
 
-1. **`Nihal_Sailor_Article.wiki`**:
-   The full encyclopedia article draft written in standard Wikipedia Wikitext markup (including Infobox, career history, software tables, and citations).
-2. **`User_Page_Developer42.wiki`**:
-   The profile wikitext ready to paste into `User:Developer42` on Wikipedia.
-3. **`Wikipedia_Preview.html`**:
-   An offline interactive HTML preview styled like Wikipedia. Double-click this file to open it in Chrome, Edge, or Brave and see how your Wikipedia article looks in real life!
-4. **`HOW_TO_PUBLISH_ON_WIKIPEDIA.md`**:
-   This complete publishing guide.
+Every project is synced with verified documentation and live deployment links:
+
+| Project | Category | Year | Dossier URL | Live / Code URL |
+| :--- | :--- | :--- | :--- | :--- |
+| **ReachTube Studio** *(New)* | AI Creator Tools & Video SEO | 2026 | [Dossier](https://nihalsailor.com/projects/reachtube.html) | [Live App](https://nihalsailor.com/reachtube/index.html) |
+| **Flow Connect Free** | AI Systems & MCP Bridge | 2026 | [Dossier](https://nihalsailor.com/projects/flow-connect-free.html) | [GitHub](https://github.com/nihalsailor/flow-connect-free) |
+| **WRX Battles Online** | Multiplayer Combat Game | 2024 | [Dossier](https://nihalsailor.com/projects/wrx-battles.html) | [Play / Download](https://wrx-battles.vercel.app/download) |
+| **SafeGuard Lite** | Security & Parental Control | 2024 | [Dossier](https://nihalsailor.com/projects/safeguard-lite.html) | [Live](https://safeguardlite.nihalsailor.com/) |
+| **ApaniBaat** | Encrypted Real-Time Chat | 2024 | [Dossier](https://nihalsailor.com/projects/apanibaat.html) | [Live](https://apanibaat.netlify.app) |
+| **StreamSailor Suite** | Broadcast Deck & DSP | 2025 | [Dossier](https://nihalsailor.com/projects/stream-sailor.html) | [Live](https://streamsailor.nihalsailor.com/) |
+| **ZAI Cyber Security** | Threat Recon & Scanning | 2025 | [Dossier](https://nihalsailor.com/projects/zai-security.html) | [Live](https://zaimcp.space-z.ai/) |
+| **Ghost Galleon 3D** | WebGL 3D Ocean Simulation | 2025 | [Dossier](https://nihalsailor.com/projects/ghost-galleon-3d.html) | [WebGL](https://nihalsailor.com/projects/ghost-galleon-3d.html) |

@@ -45,4 +45,4 @@ Independent software engineer and developer **Nihal Sailor** has officially anno
 
 **Nihal Sailor** is a digital creator, 3D artist, and programmer dedicated to building accessible software tools. Through his official platform at [nihalsailor.com](https://nihalsailor.com/), he continues to build projects that bridge the gap between user privacy and functional utility.
 
-For documentation, source repositories, or to download the utility, visit the official [Nihal Sailor Project Hub](https://nihalsailor.com/projects.html) or subscribe to the [Nihal Sailor YouTube Channel](https://www.youtube.com/@nihalsailor) for video deep-dives.
+For documentation, source repositories, or to download the utility, visit the official [Nihal Sailor Project Hub](https://nihalsailor.com/projects.html) or join the community on [WhatsApp Channel](https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N), [Telegram Channel](https://t.me/+WZIT0iJa88djNTk1), or [Telegram Group](https://t.me/+DDR_hlYhVRljOWU1). Video deep-dives are available on the [Nihal Sailor YouTube Channel](https://www.youtube.com/@nihalsailor).

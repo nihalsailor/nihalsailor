@@ -1,18 +1,20 @@
-{{Short description|Indian software engineer and game developer}}
+{{Short description|Indian software engineer, AI systems developer, and game programmer}}
 {{Infobox person
 | name             = Nihal Sailor
 | other_names      = Captain Nihalsailor
-| image            = Nihal_Sailor_Portrait.jpg
+| image            = MainLogo.jpg
 | image_size       = 220px
-| caption          = Nihal Sailor
+| caption          = Nihal Sailor emblem and avatar
 | occupation       = {{flatlist|
 * Software engineer
+* AI systems developer
 * Game developer
 * Cybersecurity researcher
-* 3D graphics developer
 }}
 | years_active     = 2022–present
 | known_for        = {{flatlist|
+* ''Flow Connect Free''
+* ''ReachTube Studio''
 * ''WRX Battles Online''
 * ''SafeGuard Lite''
 * ''ApaniBaat''
@@ -21,24 +23,29 @@
 | website          = {{URL|https://nihalsailor.com/}}
 }}
 
-'''Nihal Sailor''' (known professionally and online as '''Nihalsailor''') is an Indian software developer, ethical hacker, and game engineer.<ref>{{cite web |title=Nihalsailor Flagship Portal |url=https://nihalsailor.com/ |access-date=2026-10-07}}</ref> He is the creator and maintainer of several multiplayer gaming systems, real-time communications platforms, and system security tools, including the combat vehicle multiplayer simulator ''WRX Battles Online'', the privacy-focused device utility ''SafeGuard Lite'', and the creative broadcast toolset ''StreamSailor Suite''.<ref>{{cite web |title=The Fleet & Asset Store Archive |url=https://nihalsailor.com/projects.html |website=nihalsailor.com |access-date=2026-10-07}}</ref>
+'''Nihal Sailor''' (known professionally and online as '''Nihalsailor''') is an Indian software developer, artificial intelligence systems engineer, ethical hacker, and game programmer.<ref>{{cite web |title=Nihalsailor Flagship Portal |url=https://nihalsailor.com/ |access-date=2026-10-14}}</ref> He is the creator and maintainer of several open-source and proprietary software platforms spanning artificial intelligence orchestration, creator optimization tooling, real-time multiplayer gaming, distributed systems, and endpoint security. His notable projects include the Model Context Protocol bridge ''Flow Connect Free'', the AI YouTube optimization suite ''ReachTube Studio'', the vehicular combat title ''WRX Battles Online'', the privacy-oriented device management tool ''SafeGuard Lite'', and the creator broadcast deck ''StreamSailor Suite''.<ref>{{cite web |title=The Complete Fleet & Asset Store Archive |url=https://nihalsailor.com/projects.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
 
 == Career and development ==
 
-Sailor's software engineering focus spans interactive 3D simulations, real-time networking, client-side encryption, and cyber security automation. His digital presence and creative brand are characterized by dark maritime and nautical fantasy motifs under the persona "Captain Nihalsailor".<ref>{{cite web |title=Nihalsailor Official Repository Profile |url=https://github.com/nihalsailor |website=GitHub |access-date=2026-10-07}}</ref>
+Sailor's engineering work centers around real-time network protocols, interactive 3D simulations, agentic artificial intelligence bridges, creator toolsets, and cybersecurity automation. Across public repositories and technical releases, his digital identity is characterized by maritime and dark nautical motifs under the persona "Captain Nihalsailor".<ref>{{cite web |title=Nihalsailor Official Repository Profile |url=https://github.com/nihalsailor |website=GitHub |access-date=2026-10-14}}</ref>
+
+=== Artificial intelligence and creator tools ===
+In 2026, Sailor expanded his development focus into agentic artificial intelligence workflows, model context protocol engineering, and content optimization platforms:
+* '''Flow Connect Free''': An open-source [[Model Context Protocol]] (MCP) bridge that interfaces AI coding agents (such as Claude Code, Antigravity, and Cursor) directly with Google Flow.<ref>{{cite web |title=Flow Connect Free by Nihal Sailor - Google Flow MCP |url=https://nihalsailor.com/projects/flow-connect-free.html |website=nihalsailor.com |access-date=2026-10-14}}</ref> Utilizing [[TypeScript]], [[Chrome DevTools Protocol]] (CDP), and local [[WebSocket]] loopback communication, the tool enables automated text-to-image and image-to-video generation through Veo 3.1 and Nano models without requiring commercial API key fees.<ref>{{cite web |title=Flow Connect Free Open Source Repository |url=https://github.com/nihalsailor/flow-connect-free |website=GitHub |access-date=2026-10-14}}</ref>
+* '''ReachTube Studio''': An AI-powered YouTube channel growth and video optimization platform engineered for digital content creators.<ref>{{cite web |title=ReachTube Studio - AI YouTube Growth & Optimization |url=https://nihalsailor.com/reachtube/index.html |website=nihalsailor.com |access-date=2026-10-14}}</ref> Designed as an installable [[Progressive web app|Progressive Web Application]] (PWA) incorporating Google Identity Services and YouTube OAuth APIs, the platform automates algorithm-calibrated introductory hooks, viewer retention pacing, tag cluster generation, and AI prompt composition for high-CTR thumbnails.<ref>{{cite web |title=ReachTube Studio Dossier |url=https://nihalsailor.com/projects/reachtube.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
 
 === Game development and 3D graphics ===
-In game engineering, Sailor utilizes the [[Unity (game engine)|Unity]] engine, [[C Sharp (programming language)|C#]], and [[WebGL]] technologies.
-* '''WRX Battles Online''': A high-tempo multiplayer vehicular combat title incorporating dynamic wheel suspension, client-side predictive netcode, weapon ballistics, and destructible vehicle components.<ref>{{cite web |title=WRX Battles Online Repository |url=https://github.com/nihalsailor/WRXBattlesOnline |website=GitHub |access-date=2026-10-07}}</ref>
-* '''Ghost Galleon 3D''': A browser-based interactive 3D ocean simulator engineered in [[Three.js]] and custom [[OpenGL Shading Language|GLSL]] shaders, demonstrating GPU Gerstner wave displacement and dynamic buoyancy physics in real time.
-* '''Unity Asset Store tools''': Development of modular systems for independent game studios, including dark fantasy user interface kits (''Stuck Cursed UI''), multi-point ocean buoyancy algorithms, and runtime game memory encryption toolsets.
+In game engineering, Sailor utilizes the [[Unity (game engine)|Unity]] engine, [[C Sharp (programming language)|C#]], and [[WebGL]] technologies:
+* '''WRX Battles Online''': A high-tempo multiplayer vehicular combat title incorporating dynamic wheel suspension, client-side predictive netcode, weapon ballistics, and destructible vehicle components.<ref>{{cite web |title=WRX Battles Online Project Dossier |url=https://nihalsailor.com/projects/wrx-battles.html |website=nihalsailor.com |access-date=2026-10-14}}</ref><ref>{{cite web |title=WRX Battles Online Repository |url=https://github.com/nihalsailor/WRXBattlesOnline |website=GitHub |access-date=2026-10-14}}</ref>
+* '''Ghost Galleon 3D''': A browser-based interactive 3D ocean simulator engineered in [[Three.js]] and custom [[OpenGL Shading Language|GLSL]] shaders, demonstrating GPU Gerstner wave displacement and dynamic buoyancy physics in real time.<ref>{{cite web |title=Ghost Galleon 3D Simulation |url=https://nihalsailor.com/projects/ghost-galleon-3d.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
+* '''Unity Asset Store tools''': Development of modular systems for independent game studios, including dark fantasy user interface kits (''Stuck Cursed UI''), multi-point ocean buoyancy algorithms (''Abyssal Dynamic Buoyancy''), and runtime game memory encryption toolsets (''Guardian Client Security'').<ref>{{cite web |title=Stuck Cursed UI System |url=https://nihalsailor.com/projects/stuck-cursed-ui.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
 
 === Cybersecurity and system software ===
 Sailor has engineered several utilities addressing cybersecurity, local policy enforcement, and communication privacy:
-* '''SafeGuard Lite''': A lightweight device management and content-filtering application engineered for Android and personal computers. The software utilizes local network packet filtering, application lockouts, and tamper-resistant background daemons to provide parental controls without relying on third-party cloud monitoring.<ref>{{cite web |title=SafeGuard Lite Project Source |url=https://github.com/nihalsailor/ParentralControllApp |website=GitHub |access-date=2026-10-07}}</ref>
-* '''ZAI Cyber Threat Radar''': An automated reconnaissance and ethical penetration auditing pipeline built in [[Python (programming language)|Python]] and [[Docker (software)|Docker]] to scan exposed endpoints, inspect open network ports, and correlate findings against known Common Vulnerabilities and Exposures (CVE) databases.<ref>{{cite web |title=ZAI Security Radar Deployment |url=https://zaimcp.space-z.ai/ |website=Space-Z AI |access-date=2026-10-07}}</ref>
-* '''ApaniBaat''': A full-stack real-time communications application engineered with [[Node.js]], [[React (software)|React]], and [[WebSocket]] protocol, providing end-to-end encrypted messaging, media distribution, and presence synchronization.<ref>{{cite web |title=ApaniBaat Realtime Communication |url=https://github.com/nihalsailor/apnibaat |website=GitHub |access-date=2026-10-07}}</ref>
-* '''StreamSailor Studio Suite''': An open broadcast orchestration tool written in Python that interfaces with OBS Studio via WebSockets, featuring automated live stream triggers, responsive audio digital signal processing (DSP), and streaming platform telemetry.
+* '''SafeGuard Lite''': A lightweight device management and content-filtering application engineered for Android and personal computers. The software utilizes local network packet filtering, application lockouts, and tamper-resistant background daemons to provide parental controls without relying on third-party cloud monitoring.<ref>{{cite web |title=SafeGuard Lite Project Dossier |url=https://nihalsailor.com/projects/safeguard-lite.html |website=nihalsailor.com |access-date=2026-10-14}}</ref><ref>{{cite web |title=SafeGuard Lite Project Source |url=https://github.com/nihalsailor/ParentralControllApp |website=GitHub |access-date=2026-10-14}}</ref>
+* '''ZAI Cyber Threat Radar''': An automated reconnaissance and ethical penetration auditing pipeline built in [[Python (programming language)|Python]] and [[Docker (software)|Docker]] to scan exposed endpoints, inspect open network ports, and correlate findings against known Common Vulnerabilities and Exposures (CVE) databases.<ref>{{cite web |title=ZAI Security Radar Deployment |url=https://zaimcp.space-z.ai/ |website=Space-Z AI |access-date=2026-10-14}}</ref><ref>{{cite web |title=ZAI Cyber Security Project |url=https://nihalsailor.com/projects/zai-security.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
+* '''ApaniBaat''': A full-stack real-time communications application engineered with [[Node.js]], [[React (software)|React]], and WebSocket protocol, providing end-to-end encrypted messaging, media distribution, and presence synchronization.<ref>{{cite web |title=ApaniBaat Realtime Platform |url=https://nihalsailor.com/projects/apanibaat.html |website=nihalsailor.com |access-date=2026-10-14}}</ref><ref>{{cite web |title=ApaniBaat Source Code |url=https://github.com/nihalsailor/apnibaat |website=GitHub |access-date=2026-10-14}}</ref>
+* '''StreamSailor Studio Suite''': An open broadcast orchestration tool written in Python that interfaces with OBS Studio via WebSockets, featuring automated live stream triggers, responsive audio digital signal processing (DSP), and streaming platform telemetry.<ref>{{cite web |title=StreamSailor Studio Project |url=https://nihalsailor.com/projects/stream-sailor.html |website=nihalsailor.com |access-date=2026-10-14}}</ref>
 
 == Notable projects and software ==
 
@@ -48,55 +55,78 @@ Sailor has engineered several utilities addressing cybersecurity, local policy e
 ! Year
 ! Primary technologies
 ! Category
+! Documentation / Link
 ! Description
+|-
+| ''ReachTube Studio''
+| 2026
+| React, PWA, YouTube OAuth API, Tailwind CSS
+| AI Creator Tools & Video SEO
+| [https://nihalsailor.com/projects/reachtube.html Dossier] / [https://nihalsailor.com/reachtube/index.html Live App]
+| AI-powered YouTube growth platform with automated retention hooks, tag SEO, and thumbnail prompts.
+|-
+| ''Flow Connect Free''
+| 2026
+| MCP Protocol, TypeScript, Chrome DevTools Protocol, WebSockets
+| AI Systems & MCP Bridge
+| [https://nihalsailor.com/projects/flow-connect-free.html Dossier] / [https://github.com/nihalsailor/flow-connect-free GitHub]
+| Open-source MCP bridge connecting AI coding agents directly to Google Flow for media generation.
 |-
 | ''WRX Battles Online''
 | 2024
 | Unity 3D, C#, Photon PUN, PhysX
 | Video game
+| [https://nihalsailor.com/projects/wrx-battles.html Dossier] / [https://wrx-battles.vercel.app/download Live]
 | Multiplayer vehicular combat and physics battle arena.
 |-
 | ''SafeGuard Lite''
 | 2024
 | Android, C#, SQLite, Network Filter
 | Security utility
+| [https://nihalsailor.com/projects/safeguard-lite.html Dossier] / [https://safeguardlite.nihalsailor.com/ Live]
 | Privacy-first parental control and endpoint firewall application.
 |-
 | ''ApaniBaat''
 | 2024
 | Node.js, WebSockets, React, MongoDB
 | Web platform
+| [https://nihalsailor.com/projects/apanibaat.html Dossier] / [https://apanibaat.netlify.app Live]
 | Real-time encrypted group and peer messaging service.
 |-
 | ''StreamSailor Suite''
 | 2025
 | Python, OBS WebSockets, Audio DSP
 | Broadcast tooling
+| [https://nihalsailor.com/projects/stream-sailor.html Dossier] / [https://streamsailor.nihalsailor.com/ Live]
 | Interactive creator dashboard and audio signal processor.
 |-
 | ''ZAI Cyber Threat Radar''
 | 2025
 | Python, Linux, Docker, CVE APIs
 | Cybersecurity
+| [https://nihalsailor.com/projects/zai-security.html Dossier] / [https://zaimcp.space-z.ai/ Live]
 | Automated vulnerability scanner and network reconnaissance suite.
 |-
 | ''Ghost Galleon 3D''
 | 2025
 | Three.js, WebGL, GLSL Shaders, Web Audio
 | 3D Simulation
+| [https://nihalsailor.com/projects/ghost-galleon-3d.html Dossier]
 | In-browser maritime wave dynamics and atmospheric simulator.
 |}
 
 == Technical specializations ==
 
 Sailor's primary technical proficiencies include:
+* '''AI Systems & Protocol Engineering:''' Model Context Protocol (MCP), Chrome DevTools Protocol (CDP), TypeScript, YouTube APIs, and LLM agent integration.
 * '''Game Engineering:''' Unity 3D engine, C#, multiplayer state synchronization, client-side prediction, GLSL/HLSL custom shaders, and vehicle physics.
 * '''Information Security:''' Network penetration testing, endpoint traffic auditing, local packet filtering, and memory tamper resistance.
-* '''Web & Distributed Systems:''' WebSockets, Three.js 3D rendering, asynchronous Node.js microservices, and Docker containerization.
+* '''Web & Distributed Systems:''' Progressive Web Apps (PWA), WebSockets, Three.js 3D rendering, asynchronous Node.js microservices, and Docker containerization.
 
 == See also ==
+* [[Model Context Protocol]]
+* [[Progressive web app]]
 * [[Independent video game development]]
-* [[Game physics]]
 * [[Application security]]
 
 == References ==
@@ -104,8 +134,14 @@ Sailor's primary technical proficiencies include:
 
 == External links ==
 * {{Official website|https://nihalsailor.com/}}
+* [https://nihalsailor.com/projects.html Complete Project Fleet & Asset Archive]
+* [https://nihalsailor.com/reachtube/index.html ReachTube Studio Live Platform]
+* [https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N Nihal Sailor on WhatsApp Channel]
+* [https://t.me/+WZIT0iJa88djNTk1 Nihal Sailor on Telegram Channel]
+* [https://t.me/+DDR_hlYhVRljOWU1 Nihal Sailor Community on Telegram Group]
 * {{GitHub|nihalsailor}}
 * [https://www.youtube.com/@nihalsailor Nihal Sailor on YouTube]
+* [https://instagram.com/nihalsailor Nihal Sailor on Instagram]
 
 {{DEFAULTSORT:Sailor, Nihal}}
 [[Category:Living people]]
@@ -113,3 +149,4 @@ Sailor's primary technical proficiencies include:
 [[Category:Indian video game developers]]
 [[Category:Unity (game engine) developers]]
 [[Category:Information security professionals]]
+[[Category:Artificial intelligence programmers]]

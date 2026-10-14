@@ -146,6 +146,18 @@ const projectMetadata = {
     schemaType: 'SoftwareApplication',
     appCategory: 'DeveloperApplication',
     operatingSystem: 'Windows, macOS, Linux, Chrome/Edge'
+  },
+  'reachtube': {
+    metaTitle: 'ReachTube Studio by Nihal Sailor - AI YouTube Growth & Optimization',
+    metaDesc: 'Discover ReachTube Studio by developer Nihal Sailor. AI-powered YouTube channel growth, automated SEO tags, high-retention script hooks, and real-time analytics synchronization.',
+    niche: 'AI-assisted video content optimization, YouTube SEO automation, and channel growth intelligence',
+    feature1Title: 'High-Retention Script Hooks & AI Thumbnails',
+    feature1Desc: 'Generates algorithm-calibrated introductory hooks, viewer retention pacing, and AI prompt compositions designed for peak YouTube CTR and engagement.',
+    feature2Title: 'Direct YouTube API & PWA Architecture',
+    feature2Desc: 'Engineered as an installable Progressive Web App (PWA) with 1-click Google OAuth authentication, background sync, and automated tag clustering.',
+    schemaType: 'SoftwareApplication',
+    appCategory: 'MultimediaApplication',
+    operatingSystem: 'Web, Android, iOS, Windows, macOS'
   }
 };
 
@@ -232,7 +244,10 @@ function generateProjectPage(item, isUnity) {
       "sameAs": [
         "https://www.youtube.com/@nihalsailor",
         "https://github.com/nihalsailor",
-        "https://instagram.com/nihalsailor"
+        "https://instagram.com/nihalsailor",
+        "https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N",
+        "https://t.me/+WZIT0iJa88djNTk1",
+        "https://t.me/+DDR_hlYhVRljOWU1"
       ]
     },
     "offers": {
@@ -554,7 +569,7 @@ function generateProjectPage(item, isUnity) {
               <strong>Nihal Sailor</strong> is a digital creator, 3D artist, and programmer dedicated to building accessible software tools. Through his official platform at <a href="https://nihalsailor.com" class="text-gold" style="text-decoration: underline;">nihalsailor.com</a>, he continues to build projects that bridge the gap between user privacy and functional utility.
             </p>
             <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or subscribe to the <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Nihal Sailor YouTube Channel</a> for video deep-dives.
+              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or join the fleet on <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Channel</a>, <a href="https://t.me/+WZIT0iJa88djNTk1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Channel</a>, and <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Group</a>.
             </p>
           </div>
         </section>
@@ -565,6 +580,13 @@ function generateProjectPage(item, isUnity) {
     <!-- Footer -->
     <footer class="main-footer" style="margin-top: 4rem;">
       <div class="container footer-container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; margin-bottom: 1.25rem; font-size: 0.85rem;">
+          <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://t.me/+WZIT0iJa88djNTk1" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Channel</a>
+          <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Group</a>
+          <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-youtube"></i> YouTube</a>
+          <a href="https://github.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-github"></i> GitHub</a>
+        </div>
         <div class="footer-bottom">
           <div>&copy; 2026 <strong>NIHALSAILOR</strong>. All rights reserved.</div>
           <div><a href="../projects.html" class="btn-corsair" style="padding: 0.4rem 0.9rem; font-size: 0.72rem;"><i class="fas fa-arrow-up"></i> Return to Fleet Archive</a></div>

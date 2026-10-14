@@ -1,24 +1,40 @@
 {{Userpage}}
 
 == Nihal Sailor (Developer42) ==
-Hello! I am '''Nihal Sailor''' (known online as '''Nihalsailor''' / '''Developer42'''). I am an independent software developer, game engineer, and cybersecurity researcher.
+
+<div style="float: right; margin: 0 0 1em 1.5em; text-align: center; border: 1px solid #c8ccd1; padding: 6px; background-color: #f8f9fa;">
+[[File:MainLogo.jpg|220px|Nihal Sailor Emblem]]
+<br/><small>'''Nihal Sailor''' (Captain Nihalsailor)</small>
+</div>
+
+Hello! I am '''Nihal Sailor''' (known online as '''Nihalsailor''' / '''Developer42'''). I am an independent software developer, AI systems engineer, game developer, and cybersecurity researcher based in India.
 
 === About Me ===
-* 🎮 '''Focus:''' Multiplayer Game Engineering (Unity 3D, C#, WebGL) & 3D Shaders.
-* 🛡️ '''Security:''' Network Penetration Auditing, Endpoint Defense, and Device Privacy.
+* 🤖 '''AI Systems & Creator Tools:''' Model Context Protocol (MCP) tooling, AI YouTube growth engines, agentic workflows.
+* 🎮 '''Game Engineering:''' Multiplayer Game Engineering (Unity 3D, C#, WebGL) & 3D GLSL Shaders.
+* 🛡️ '''Cybersecurity:''' Network Penetration Auditing, Endpoint Defense, and Local Policy Enforcement.
 * 🌐 '''Official Website:''' [https://nihalsailor.com nihalsailor.com]
+* 🚢 '''Project Archive:''' [https://nihalsailor.com/projects.html Complete Fleet Archive]
+* 💬 '''WhatsApp Channel:''' [https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N WhatsApp Channel]
+* 📢 '''Telegram Channel:''' [https://t.me/+WZIT0iJa88djNTk1 Telegram Channel]
+* 👥 '''Telegram Group:''' [https://t.me/+DDR_hlYhVRljOWU1 Telegram Community]
 * 🐙 '''GitHub:''' [https://github.com/nihalsailor github.com/nihalsailor]
 * 📺 '''YouTube:''' [https://www.youtube.com/@nihalsailor @nihalsailor]
 
 === Notable Projects ===
-* '''WRX Battles Online:''' Multiplayer vehicular combat arena with custom wheel physics and Photon netcode.
-* '''SafeGuard Lite:''' Privacy-first device safety and parental control system with local network filtering.
-* '''ApaniBaat:''' Real-time end-to-end encrypted messaging suite using WebSockets and Node.js.
-* '''StreamSailor Suite:''' Broadcast workflow automation and audio DSP for creators.
-* '''ZAI Cyber Threat Radar:''' Network vulnerability reconnaissance and automated CVE auditing.
+* '''[[ReachTube Studio]]:''' AI-powered YouTube channel growth platform with automated retention hooks, tag SEO, and thumbnail prompts ([https://nihalsailor.com/projects/reachtube.html Dossier] · [https://nihalsailor.com/reachtube/index.html Live App]).
+* '''[[Flow Connect Free]]:''' Open-source MCP bridge connecting AI coding agents directly to Google Flow for unlimited high-resolution image and video generation ([https://nihalsailor.com/projects/flow-connect-free.html Dossier] · [https://github.com/nihalsailor/flow-connect-free GitHub]).
+* '''WRX Battles Online:''' Multiplayer vehicular combat arena with custom wheel physics and Photon netcode ([https://nihalsailor.com/projects/wrx-battles.html Dossier] · [https://wrx-battles.vercel.app/download Play]).
+* '''SafeGuard Lite:''' Privacy-first device safety and parental control system with local network filtering ([https://nihalsailor.com/projects/safeguard-lite.html Dossier] · [https://safeguardlite.nihalsailor.com/ Live]).
+* '''ApaniBaat:''' Real-time end-to-end encrypted messaging suite using WebSockets and Node.js ([https://nihalsailor.com/projects/apanibaat.html Dossier] · [https://apanibaat.netlify.app Live]).
+* '''StreamSailor Suite:''' Broadcast workflow automation and audio DSP for creators ([https://nihalsailor.com/projects/stream-sailor.html Dossier] · [https://streamsailor.nihalsailor.com/ Live]).
+* '''ZAI Cyber Threat Radar:''' Network vulnerability reconnaissance and automated CVE auditing ([https://nihalsailor.com/projects/zai-security.html Dossier] · [https://zaimcp.space-z.ai/ Live]).
+* '''Ghost Galleon 3D:''' Browser-based 3D ocean and buoyancy physics simulator ([https://nihalsailor.com/projects/ghost-galleon-3d.html Dossier]).
 
 === Wikipedia Activities ===
-* Interested in improving articles related to:
+* Interested in contributing to:
+** [[Model Context Protocol]]
+** [[Progressive web app]]
 ** [[Unity (game engine)]]
 ** [[Video game development]]
 ** [[Network security]]
