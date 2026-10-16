@@ -91,18 +91,15 @@ if (fs.existsSync(reachSrc)) {
   console.log(`  ✓ ReachTube App Bundle: reachtube/ included for live link`);
 }
 
-// 5. Create ZIP using Windows tar
+// 5. Create ZIP using PowerShell Compress-Archive
 console.log('\n📦 Creating production ZIP archive: nihalsailor-hostinger-deploy.zip...');
 try {
-  // Run tar inside STAGING_DIR to ensure root-relative structure (no top folder wrapper)
-  execSync(`tar -a -c -f "${ZIP_OUTPUT}" * .htaccess`, {
-    cwd: STAGING_DIR,
-    stdio: 'inherit'
-  });
+  const psCmd = `powershell -NoProfile -ExecutionPolicy Bypass -Command "Compress-Archive -Path '${STAGING_DIR}\\*' -DestinationPath '${ZIP_OUTPUT}' -Force"`;
+  execSync(psCmd, { stdio: 'inherit' });
 
   const stats = fs.statSync(ZIP_OUTPUT);
   const sizeMb = (stats.size / (1024 * 1024)).toFixed(2);
-  console.log(`\n🎉 Success! Deploy ZIP generated: ${ZIP_OUTPUT} (${sizeMb} MB)`);
+  console.log(`\n🎉 Success! Clean Deploy ZIP generated: ${ZIP_OUTPUT} (${sizeMb} MB)`);
 } catch (err) {
   console.error('Failed to create ZIP archive:', err);
   process.exit(1);
