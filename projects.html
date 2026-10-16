@@ -37,8 +37,8 @@
   <!-- FontAwesome Icons CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Main Stylesheet (Cache-busted v2.5.0) -->
-  <link rel="stylesheet" href="css/style.css?v=2.5.0">
+  <!-- Main Stylesheet (Cache-busted v2.6.0) -->
+  <link rel="stylesheet" href="css/style.css?v=2.6.0">
   
   <style>
     .archive-hero {
@@ -428,10 +428,10 @@
     </div>
   </div>
 
-  <!-- Scripts (Cache-busted v2.5.0) -->
-  <script src="js/audio.js?v=2.5.0"></script>
-  <script src="js/canvas.js?v=2.5.0"></script>
-  <script src="js/projects-data.js?v=2.5.0"></script>
+  <!-- Scripts (Cache-busted v2.6.0) -->
+  <script src="js/audio.js?v=2.6.0"></script>
+  <script src="js/canvas.js?v=2.6.0"></script>
+  <script src="js/projects-data.js?v=2.6.0"></script>
   <script>
     let vaultItems = [];
 
@@ -712,16 +712,12 @@
 
       const closeBtn = document.getElementById('social-popup-close');
       const enterBtn = document.getElementById('social-popup-enter');
-      const triggerBtns = document.querySelectorAll('[data-open-social-popup]');
-
       function openPopup() {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
       }
 
       function closePopup() {
         modal.classList.remove('active');
-        document.body.style.overflow = '';
       }
 
       if (closeBtn) closeBtn.addEventListener('click', closePopup);
@@ -737,11 +733,11 @@
         }
       });
 
-      triggerBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
+      document.addEventListener('click', (e) => {
+        if (e.target.closest('[data-open-social-popup]')) {
           e.preventDefault();
           openPopup();
-        });
+        }
       });
     }
   </script>

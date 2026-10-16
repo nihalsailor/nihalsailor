@@ -586,16 +586,13 @@ function initSocialPopup() {
 
   const closeBtn = document.getElementById('social-popup-close');
   const enterBtn = document.getElementById('social-popup-enter');
-  const triggerBtns = document.querySelectorAll('[data-open-social-popup]');
 
   function openPopup() {
     modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
   }
 
   function closePopup() {
     modal.classList.remove('active');
-    document.body.style.overflow = '';
   }
 
   if (closeBtn) closeBtn.addEventListener('click', closePopup);
@@ -611,11 +608,11 @@ function initSocialPopup() {
     }
   });
 
-  triggerBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-open-social-popup]')) {
       e.preventDefault();
       openPopup();
-    });
+    }
   });
 
   // Automatically trigger popup when site is opened
