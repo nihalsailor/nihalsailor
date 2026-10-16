@@ -7,17 +7,17 @@
 window.allProjects = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
+  initSocialPopup();
   initNavbar();
   initSoundToggle();
   initCursedMode();
-  await loadAndRenderProjects();
   initProjectFilters();
   initProjectModals();
   initCaptainLogs();
   initContactForm();
   init3DTilt();
   initStatCounters();
-  initSocialPopup();
+  await loadAndRenderProjects();
 });
 
 /* --------------------------------------------------------------------------
