@@ -242,12 +242,15 @@ function generateProjectPage(item, isUnity) {
       "name": "Nihal Sailor",
       "url": "https://nihalsailor.com",
       "sameAs": [
-        "https://www.youtube.com/@nihalsailor",
-        "https://github.com/nihalsailor",
+        "https://www.facebook.com/profile.php?id=100025106842507",
+        "https://www.facebook.com/profile.php?id=61595180410098",
         "https://instagram.com/nihalsailor",
         "https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N",
-        "https://t.me/+WZIT0iJa88djNTk1",
-        "https://t.me/+DDR_hlYhVRljOWU1"
+        "https://t.me/nihalsailor5",
+        "https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4",
+        "https://t.me/+DDR_hlYhVRljOWU1",
+        "https://www.youtube.com/@nihalsailor",
+        "https://github.com/nihalsailor"
       ]
     },
     "offers": {
@@ -569,7 +572,7 @@ function generateProjectPage(item, isUnity) {
               <strong>Nihal Sailor</strong> is a digital creator, 3D artist, and programmer dedicated to building accessible software tools. Through his official platform at <a href="https://nihalsailor.com" class="text-gold" style="text-decoration: underline;">nihalsailor.com</a>, he continues to build projects that bridge the gap between user privacy and functional utility.
             </p>
             <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
-              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or join the fleet on <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Channel</a>, <a href="https://t.me/+WZIT0iJa88djNTk1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Channel</a>, and <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Group</a>.
+              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or join the fleet on <a href="https://www.facebook.com/profile.php?id=100025106842507" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Facebook Profile</a>, <a href="https://www.facebook.com/profile.php?id=61595180410098" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Facebook Page</a>, <a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Instagram</a>, <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Channel</a>, <a href="https://t.me/nihalsailor5" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Channel</a>, <a href="https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Group</a>, and <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Group</a>.
             </p>
           </div>
         </section>
@@ -581,8 +584,12 @@ function generateProjectPage(item, isUnity) {
     <footer class="main-footer" style="margin-top: 4rem;">
       <div class="container footer-container">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; margin-bottom: 1.25rem; font-size: 0.85rem;">
-          <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-          <a href="https://t.me/+WZIT0iJa88djNTk1" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Channel</a>
+          <a href="https://www.facebook.com/profile.php?id=100025106842507" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-facebook-f"></i> Facebook Profile</a>
+          <a href="https://www.facebook.com/profile.php?id=61595180410098" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-facebook"></i> Facebook Page</a>
+          <a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+          <a href="https://t.me/nihalsailor5" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Channel</a>
+          <a href="https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
           <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Group</a>
           <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-youtube"></i> YouTube</a>
           <a href="https://github.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-github"></i> GitHub</a>

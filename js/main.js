@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initContactForm();
   init3DTilt();
   initStatCounters();
+  initSocialPopup();
 });
 
 /* --------------------------------------------------------------------------
@@ -574,4 +575,51 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+/* --------------------------------------------------------------------------
+   12. WELCOME OFFICIAL SIGNALS & SOCIALS POPUP MODAL
+   -------------------------------------------------------------------------- */
+function initSocialPopup() {
+  const modal = document.getElementById('social-popup-modal');
+  if (!modal) return;
+
+  const closeBtn = document.getElementById('social-popup-close');
+  const enterBtn = document.getElementById('social-popup-enter');
+  const triggerBtns = document.querySelectorAll('[data-open-social-popup]');
+
+  function openPopup() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closePopup);
+  if (enterBtn) enterBtn.addEventListener('click', closePopup);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closePopup();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closePopup();
+    }
+  });
+
+  triggerBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openPopup();
+    });
+  });
+
+  // Automatically trigger popup when site is opened
+  setTimeout(() => {
+    openPopup();
+  }, 450);
 }
