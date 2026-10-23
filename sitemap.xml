@@ -116,4 +116,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://nihalsailor.com/projects/php2shell.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://nihalsailor.com/php2shell/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>

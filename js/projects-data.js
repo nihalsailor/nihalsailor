@@ -139,5 +139,22 @@ window.DEFAULT_PROJECTS = [
     ],
     "liveUrl": "https://nihalsailor.com/reachtube/index.html",
     "codeUrl": "https://github.com/nihalsailor"
+  },
+  {
+    "id": "php2shell",
+    "title": "PHP2SHELL Vulnerability Scanner & Patcher",
+    "category": "systems",
+    "categoryLabel": "Cyber Security & Hardening",
+    "image": "BackgroundLogo.png",
+    "desc": "Automated security auditor and 1-click Windows patcher remediating critical PHP2Shell vulnerabilities (CVE-2026-109618 & CVE-2026-109619) across web servers and host runtimes.",
+    "tags": ["PHP", "Security Audit", "CVE-2026-109618", "CVE-2026-109619", "Windows Patcher", "Python", "CLI"],
+    "details": "PHP2SHELL is an automated vulnerability detection and remediation suite engineered to safeguard server infrastructures against PHP2Shell (CVE-2026-109618 Out-Of-Memory heap corruption and CVE-2026-109619 session upload progress Use-After-Free RCE). Includes a 1-click zero-dependency Windows patcher with SHA-256 validation, cross-platform Python CLI auditor, PowerShell sysadmin toolkit, and self-hosted PHP web dashboard.",
+    "metrics": [
+      { "label": "Vulnerabilities", "val": "CVE-2026-109618/19" },
+      { "label": "Patcher", "val": "1-Click Batch" },
+      { "label": "Runtime", "val": "Cross-Platform" }
+    ],
+    "liveUrl": "https://nihalsailor.com/php2shell/",
+    "codeUrl": "https://github.com/nihalsailor/PHP2SHELL"
   }
 ];

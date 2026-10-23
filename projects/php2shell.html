@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP2SHELL by Nihal Sailor - PHP Vulnerability Patcher</title>
+  
+  <!-- Meta Information & SEO -->
+  <meta name="description" content="Discover the latest software innovation from developer Nihal Sailor. Download PHP2SHELL for advanced optimization, seamless security, and custom tools.">
+  <meta name="keywords" content="PHP2SHELL, Nihal Sailor, CVE-2026-109618, CVE-2026-109619, PHP vulnerability scanner, PHP patcher, session upload progress RCE, out of memory abort heap corruption, Windows PHP fix, cybersecurity, software engineer">
+  <meta name="author" content="Nihal Sailor">
+  <meta name="p:domain_verify" content="e11746ca856d30727b4935c454664b37"/>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nihalsailor.com/projects/php2shell.html">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="PHP2SHELL by Nihal Sailor - PHP Vulnerability Patcher">
+  <meta property="og:description" content="Discover the latest software innovation from developer Nihal Sailor. Download PHP2SHELL for advanced optimization, seamless security, and custom tools.">
+  <meta property="og:image" content="https://nihalsailor.com/BackgroundLogo.png">
+  <meta property="og:url" content="https://nihalsailor.com/projects/php2shell.html">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PHP2SHELL by Nihal Sailor - PHP Vulnerability Patcher">
+  <meta name="twitter:description" content="Discover the latest software innovation from developer Nihal Sailor. Download PHP2SHELL for advanced optimization, seamless security, and custom tools.">
+  <meta name="twitter:image" content="https://nihalsailor.com/BackgroundLogo.png">
+
+  <!-- Schema.org JSON-LD Structured Data (Google Knowledge Graph & Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PHP2SHELL Vulnerability Scanner & Patcher",
+    "url": "https://nihalsailor.com/projects/php2shell.html",
+    "image": "https://nihalsailor.com/BackgroundLogo.png",
+    "description": "Discover the latest software innovation from developer Nihal Sailor. Download PHP2SHELL for advanced optimization, seamless security, and custom tools.",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Windows 10, Windows 11, Windows Server, Linux, macOS",
+    "author": {
+      "@type": "Person",
+      "name": "Nihal Sailor",
+      "url": "https://nihalsailor.com",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100025106842507",
+        "https://www.facebook.com/profile.php?id=61595180410098",
+        "https://instagram.com/nihalsailor",
+        "https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N",
+        "https://t.me/nihalsailor5",
+        "https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4",
+        "https://t.me/+DDR_hlYhVRljOWU1",
+        "https://www.youtube.com/@nihalsailor",
+        "https://github.com/nihalsailor"
+      ]
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#d4af37">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet (Cache-busted v2.6.0) -->
+  <link rel="stylesheet" href="../css/style.css?v=2.6.0">
+
+  <style>
+    .launch-container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 7.5rem 1.5rem 5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .launch-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      box-shadow: var(--shadow-gilded);
+      backdrop-filter: blur(14px);
+      padding: 2.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .launch-banner-wrap {
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 2rem;
+      position: relative;
+      background: radial-gradient(circle at 50% 50%, #152238 0%, #080e1a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .launch-banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .banner-overlay-content {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(3, 6, 10, 0.4) 0%, rgba(3, 6, 10, 0.88) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+    .press-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: rgba(229, 185, 92, 0.12);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      margin-bottom: 1.25rem;
+    }
+    .press-headline {
+      font-size: 2.2rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+    .press-body {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-parchment);
+      margin-bottom: 2.25rem;
+    }
+    .cve-alert-box {
+      background: rgba(255, 42, 75, 0.1);
+      border: 1px solid var(--border-crimson);
+      border-left: 4px solid var(--crimson-eye);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.25rem;
+    }
+    .cve-alert-title {
+      font-family: var(--font-cinzel);
+      font-size: 1.1rem;
+      color: #ff8597;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .cve-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .cve-card {
+      background: rgba(5, 9, 17, 0.75);
+      border: 1px solid rgba(255, 42, 75, 0.25);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+    }
+    .cve-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--crimson-eye);
+      background: rgba(255, 42, 75, 0.15);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .feature-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background: rgba(5, 9, 17, 0.65);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      transition: var(--transition-smooth);
+    }
+    .feature-item:hover {
+      border-color: var(--gold-primary);
+      transform: translateX(4px);
+    }
+    .feature-icon {
+      color: var(--gold-primary);
+      font-size: 1.35rem;
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+    .feature-title {
+      font-family: var(--font-cinzel);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 0.25rem;
+    }
+    .feature-desc {
+      color: var(--text-parchment);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .spec-box {
+      background: rgba(5, 9, 17, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .spec-number {
+      font-family: var(--font-cinzel);
+      font-size: 1.25rem;
+      color: var(--gold-primary);
+      margin-bottom: 0.25rem;
+    }
+    .spec-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+    
+    /* Dedicated Download Options Section */
+    .download-section {
+      background: rgba(5, 9, 17, 0.85);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+    .download-section-title {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .download-section-subtitle {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+    .download-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .download-card {
+      background: rgba(13, 22, 38, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .download-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(229, 185, 92, 0.15);
+    }
+    .download-card.primary-download {
+      border-color: var(--gold-primary);
+      background: radial-gradient(circle at 100% 0%, rgba(229, 185, 92, 0.12) 0%, rgba(13, 22, 38, 0.85) 70%);
+    }
+    .download-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+    .download-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
+      background: rgba(229, 185, 92, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .download-card-title {
+      font-family: var(--font-cinzel);
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin: 0;
+    }
+    .download-card-badge {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--gold-light);
+      background: rgba(229, 185, 92, 0.2);
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+    .download-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-parchment);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .download-card-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      font-family: var(--font-cinzel);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+    .btn-download-gold {
+      background: linear-gradient(135deg, var(--gold-primary), #b3882f);
+      color: #03060a;
+      border: 1px solid var(--gold-light);
+    }
+    .btn-download-gold:hover {
+      background: linear-gradient(135deg, #fef0cd, var(--gold-primary));
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(229, 185, 92, 0.4);
+    }
+    .btn-download-ghost {
+      background: rgba(7, 12, 22, 0.8);
+      color: var(--gold-primary);
+      border: 1px solid var(--border-gold);
+    }
+    .btn-download-ghost:hover {
+      background: rgba(229, 185, 92, 0.15);
+      color: var(--gold-light);
+      border-color: var(--gold-light);
+    }
+    .code-preview-block {
+      background: #020408;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #93c5fd;
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem;
+      line-height: 1.6;
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    .author-card {
+      background: rgba(5, 9, 17, 0.75);
+      border: 1px solid var(--border-gold);
+      border-radius: 6px;
+      padding: 1.75rem;
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .author-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-primary);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      .launch-container { padding-top: 6rem; }
+      .launch-card { padding: 1.5rem; }
+      .press-headline { font-size: 1.75rem; }
+      .author-card { flex-direction: column; text-align: center; }
+      .action-row { flex-direction: column; }
+      .download-section { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Mist & Canvas -->
+  <canvas id="atmosphere-canvas"></canvas>
+
+  <div class="content-wrapper">
+
+    <!-- Header / Navigation Deck -->
+    <header class="main-nav scrolled">
+      <div class="container nav-container">
+        <a href="../index.html" class="brand-link" title="Nihalsailor Flagship">
+          <div class="brand-avatar-wrap">
+            <img src="../MainLogo.jpg" alt="Nihalsailor Crest" class="brand-avatar">
+          </div>
+          <div>
+            <span class="brand-name gold-gradient-text">NIHALSAILOR</span>
+            <span class="brand-tag">Digital Corsair</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> Flagship Home</a></li>
+            <li><a href="../projects.html" class="nav-link active"><i class="fas fa-ship"></i> All Projects</a></li>
+            <li><a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="nav-link"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="../index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn-sound-toggle" aria-label="Toggle Sea Ambience">
+            <i class="fas fa-volume-xmark"></i>
+          </button>
+          <a href="../projects.html" class="btn-corsair" style="font-size: 0.78rem; padding: 0.5rem 1rem;">
+            <i class="fas fa-arrow-left"></i> Fleet Vault
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content: SEO-Optimized Product Launch Template -->
+    <main class="launch-container">
+      <article class="launch-card">
+        
+        <!-- Media Banner -->
+        <div class="launch-banner-wrap">
+          <img src="../BackgroundLogo.png" alt="PHP2SHELL by Nihal Sailor" class="launch-banner-img">
+          <div class="banner-overlay-content">
+            <span class="project-category-tag" style="align-self: flex-start; margin-bottom: 0.5rem;">
+              Cyber Security &amp; Hardening
+            </span>
+            <div style="font-family: var(--font-cinzel); font-size: 1.6rem; color: #fff; font-weight: 800; text-shadow: 0 4px 15px rgba(0,0,0,0.9);">
+              PHP2SHELL SECURITY SUITE
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--gold-light);">
+              Automated Zero-Day Remediation • Targets CVE-2026-109618 &amp; CVE-2026-109619
+            </div>
+          </div>
+        </div>
+
+        <!-- Press Release Title & Badge -->
+        <div class="press-badge">
+          <i class="fas fa-bullhorn text-gold"></i> Official Security Release • Nihal Sailor
+        </div>
+
+        <h1 class="press-headline font-cinzel">
+          PHP2SHELL by Nihal Sailor - PHP Vulnerability Patcher
+        </h1>
+
+        <div class="project-tags" style="margin-bottom: 1.5rem;">
+          <span class="tag-pill">PHP</span>
+          <span class="tag-pill">Security Audit</span>
+          <span class="tag-pill">CVE-2026-109618</span>
+          <span class="tag-pill">CVE-2026-109619</span>
+          <span class="tag-pill">1-Click Windows Fix</span>
+          <span class="tag-pill">Python CLI</span>
+          <span class="tag-pill">PowerShell</span>
+          <span class="tag-pill">Web Dashboard</span>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-subtle); margin-bottom: 1.75rem;">
+
+        <!-- Main Content / Press Release Body -->
+        <p class="press-body">
+          Independent software engineer and developer <strong>Nihal Sailor</strong> has officially announced the launch of his newest project, <strong>PHP2SHELL</strong>. Following the release of mobile utilities like SafeGuard Lite, this latest software addresses critical needs in <em>PHP runtime security, zero-day threat detection, and automated enterprise system hardening</em>.
+        </p>
+
+        <!-- Critical Vulnerability Advisory -->
+        <div class="cve-alert-box">
+          <div class="cve-alert-title">
+            <i class="fas fa-triangle-exclamation"></i> Critical Vulnerabilities Addressed: PHP2Shell
+          </div>
+          <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-parchment); margin-bottom: 0.75rem;">
+            Disclosed on <strong>October 21, 2026</strong>, PHP2Shell consists of two high-severity flaws in the core PHP interpreter affecting millions of production servers worldwide:
+          </p>
+          <div class="cve-grid">
+            <div class="cve-card">
+              <span class="cve-badge">CVE-2026-109619 (UAF RCE)</span>
+              <p style="font-size: 0.88rem; color: var(--text-parchment); line-height: 1.55; margin: 0;">
+                A critical Use-After-Free (UAF) condition in PHP's built-in <code>session.upload_progress</code> handler. When multipart form uploads abort, cleanup routines access dangling global memory, leading to Remote Code Execution (RCE).
+              </p>
+            </div>
+            <div class="cve-card">
+              <span class="cve-badge">CVE-2026-109618 (Heap Corruption)</span>
+              <p style="font-size: 0.88rem; color: var(--text-parchment); line-height: 1.55; margin: 0;">
+                An uninitialized request data cleanup error triggered during Out-Of-Memory (OOM) <code>longjmp()</code> aborts, causing memory corruption in PHP core across versions &lt; 8.2.35, &lt; 8.3.36, &lt; 8.4.27, and &lt; 8.5.12.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Features of PHP2SHELL -->
+        <h2 class="font-cinzel gold-gradient-text" style="font-size: 1.45rem; margin-bottom: 0.5rem;">
+          Key Features of PHP2SHELL
+        </h2>
+        
+        <ul class="feature-list">
+          <li class="feature-item">
+            <i class="fas fa-award feature-icon"></i>
+            <div>
+              <div class="feature-title">Engineered by Nihal Sailor</div>
+              <div class="feature-desc">Built from the ground up prioritizing clean architecture, high operational reliability, and zero external dependency requirements for mission-critical servers.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-bolt feature-icon"></i>
+            <div>
+              <div class="feature-title">1-Click Automated Windows Security Patcher</div>
+              <div class="feature-desc">The flagship <code>fix_php2shell.bat</code> script automates detection, official SHA-256 integrity validation, extraction of patched PHP 8.3.36, directory junction linking, and directive hardening with zero administrative privileges required.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-shield-halved feature-icon"></i>
+            <div>
+              <div class="feature-title">Smart 3-Scenario Pre-Scan Logic</div>
+              <div class="feature-desc">Intelligently classifies system state before touching files: reports <strong>Safe</strong> if PHP is not installed or already patched (hardens <code>php.ini</code> in-place with zero re-downloads), and initiates a clean upgrade only when vulnerable releases are detected.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-terminal feature-icon"></i>
+            <div>
+              <div class="feature-title">Cross-Platform Python &amp; PowerShell Auditing</div>
+              <div class="feature-desc">Includes <code>php2shell_scanner.py</code> and <code>php2shell_scanner.ps1</code> for auditing local systems, scanning remote web applications via benign multipart probes, and generating structured JSON compliance reports.</div>
+            </div>
+          </li>
+          <li class="feature-item">
+            <i class="fas fa-chart-line feature-icon"></i>
+            <div>
+              <div class="feature-title">Self-Hosted Single-File PHP Web Dashboard</div>
+              <div class="feature-desc">A zero-setup, self-contained single-file PHP web application (<code>web/index.php</code>) providing live server telemetry, SAPI inspection, remote website scanning tabs, and REST API endpoints.</div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Technical Specifications -->
+        <h3 class="font-cinzel text-gold" style="font-size: 1.15rem; margin-bottom: 1rem; text-transform: uppercase;">
+          Vessel &amp; Security Specifications
+        </h3>
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-number">PHP 8.3.36+</div>
+            <div class="spec-label">Safe Target Release</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-number">1-Click Batch</div>
+            <div class="spec-label">Windows Automation</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-number">SHA-256 Verified</div>
+            <div class="spec-label">Package Integrity</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-number">Zero-Downtime</div>
+            <div class="spec-label">Junction Path Linking</div>
+          </div>
+        </div>
+
+        <!-- ================================================================
+             PROMINENT DOWNLOAD OPTIONS SECTION (FIXING THE VULNERABILITY)
+             ================================================================ -->
+        <section class="download-section" id="downloads">
+          <div class="download-section-title font-cinzel">
+            <i class="fas fa-download text-gold"></i> Official Download &amp; Remediation Options
+          </div>
+          <p class="download-section-subtitle">
+            Choose the remediation tool best suited for your operating environment. All packages are open-source, verified, and free to download.
+          </p>
+
+          <div class="download-cards-grid">
+            
+            <!-- Option 1: 1-Click Windows Batch Patcher (Recommended) -->
+            <div class="download-card primary-download">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fab fa-windows"></i></div>
+                  <div>
+                    <h3 class="download-card-title">1-Click Windows Fix</h3>
+                    <span class="download-card-badge">RECOMMENDED FOR WINDOWS</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  Self-contained batch script. Pre-scans your system, downloads official PHP 8.3.36, verifies SHA-256 hash, extracts, hardens <code>php.ini</code>, and updates directory junctions.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/fix_php2shell.bat" download="fix_php2shell.bat" class="download-card-btn btn-download-gold">
+                  <i class="fas fa-download"></i> Download fix_php2shell.bat
+                </a>
+              </div>
+            </div>
+
+            <!-- Option 2: Windows Patcher ZIP Bundle -->
+            <div class="download-card">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fas fa-file-zipper"></i></div>
+                  <div>
+                    <h3 class="download-card-title">Windows Patcher Bundle</h3>
+                    <span class="download-card-badge">ZIP ARCHIVE • 7.5 KB</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  Complete Windows remediation package including <code>fix_php2shell.bat</code> and the comprehensive <code>README_BAT.md</code> documentation with command-line flags.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/php2shell-windows-fix.zip" download="php2shell-windows-fix.zip" class="download-card-btn btn-download-ghost">
+                  <i class="fas fa-file-zipper"></i> Download Windows ZIP
+                </a>
+              </div>
+            </div>
+
+            <!-- Option 3: Python CLI Scanner -->
+            <div class="download-card">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fab fa-python"></i></div>
+                  <div>
+                    <h3 class="download-card-title">Python CLI Auditor</h3>
+                    <span class="download-card-badge">CROSS-PLATFORM • 25 KB</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  Full command-line scanner for Linux, macOS, and Windows. Audits local PHP runtimes, probes remote websites, and exports findings to structured JSON.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/php2shell_scanner.py" download="php2shell_scanner.py" class="download-card-btn btn-download-ghost">
+                  <i class="fas fa-download"></i> Download php2shell_scanner.py
+                </a>
+              </div>
+            </div>
+
+            <!-- Option 4: PowerShell Auditor -->
+            <div class="download-card">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fas fa-terminal"></i></div>
+                  <div>
+                    <h3 class="download-card-title">PowerShell Auditor</h3>
+                    <span class="download-card-badge">NATIVE POWERSHELL • 18 KB</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  Native PowerShell script for enterprise Windows sysadmins. Requires zero Python installation to audit servers, IIS nodes, and local development environments.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/php2shell_scanner.ps1" download="php2shell_scanner.ps1" class="download-card-btn btn-download-ghost">
+                  <i class="fas fa-download"></i> Download php2shell_scanner.ps1
+                </a>
+              </div>
+            </div>
+
+            <!-- Option 5: Self-Hosted PHP Web Dashboard -->
+            <div class="download-card">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fab fa-php"></i></div>
+                  <div>
+                    <h3 class="download-card-title">PHP Web Dashboard</h3>
+                    <span class="download-card-badge">SELF-CONTAINED • 33 KB</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  Single-file PHP web application (<code>index.php</code>) ready to drop into Apache, Nginx, or IIS. Provides real-time host status, remote website scanning, and REST API.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/php2shell-web.php" download="php2shell-web.php" class="download-card-btn btn-download-ghost">
+                  <i class="fas fa-download"></i> Download php2shell-web.php
+                </a>
+              </div>
+            </div>
+
+            <!-- Option 6: Complete Suite Master ZIP -->
+            <div class="download-card">
+              <div>
+                <div class="download-card-header">
+                  <div class="download-card-icon"><i class="fas fa-box-archive"></i></div>
+                  <div>
+                    <h3 class="download-card-title">Full Security Suite</h3>
+                    <span class="download-card-badge">ALL FILES • 40 KB</span>
+                  </div>
+                </div>
+                <p class="download-card-desc">
+                  The complete repository archive containing Windows patchers, Python/PowerShell scripts, Python web services, PHP web dashboard, and all technical guides.
+                </p>
+              </div>
+              <div>
+                <a href="../downloads/php2shell-suite.zip" download="php2shell-suite.zip" class="download-card-btn btn-download-ghost">
+                  <i class="fas fa-download"></i> Download Full Suite ZIP
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick CLI Command Examples -->
+          <h4 class="font-cinzel text-gold" style="font-size: 1.05rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-terminal"></i> Quick Command-Line Execution
+          </h4>
+          <div class="code-preview-block">
+:: 1. Audit Windows without making changes (Scan-Only):
+fix_php2shell.bat /scan
+
+:: 2. Interactive Patcher (Auto-detects version &amp; prompts):
+fix_php2shell.bat
+
+:: 3. Enterprise Silent Rollout (Unattended Mode for GPO / Scripts):
+fix_php2shell.bat /y
+
+:: 4. Cross-Platform Python Audit:
+python php2shell_scanner.py --system
+python php2shell_scanner.py --url https://yourwebsite.com
+          </div>
+
+          <!-- Interim php.ini Hardening Directives -->
+          <h4 class="font-cinzel text-gold" style="font-size: 1.05rem; margin-top: 1.5rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-shield-virus"></i> Manual php.ini Hardening Directives
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-parchment); margin-bottom: 0.75rem;">
+            If an immediate PHP binary upgrade cannot be performed, apply the following interim defense-in-depth mitigations in your active <code>php.ini</code>:
+          </p>
+          <div class="code-preview-block" style="color: #86efac;">
+; Mitigate CVE-2026-109619 by disabling upload progress tracking
+session.upload_progress.enabled = Off
+
+; Ensure upload progress memory structures are purged immediately if used
+session.upload_progress.cleanup = On
+
+; Suppress version disclosure in HTTP response headers
+expose_php = Off
+          </div>
+
+        </section>
+
+        <!-- Live Links & Direct Actions -->
+        <div class="action-row">
+          <a href="https://nihalsailor.com/php2shell/" target="_blank" rel="noopener" class="btn-corsair" style="border-color: var(--gold-primary); flex: 1; text-align: center;">
+            <i class="fas fa-satellite-dish"></i> Launch Live Web Scanner
+          </a>
+          
+          <a href="https://github.com/nihalsailor/PHP2SHELL" target="_blank" rel="noopener" class="btn-corsair" style="flex: 1; text-align: center;">
+            <i class="fab fa-github"></i> Blueprint Source Code
+          </a>
+          
+          <a href="../projects.html" class="btn-corsair" style="flex: 1; text-align: center;">
+            <i class="fas fa-arrow-left"></i> Return to Fleet Archive
+          </a>
+        </div>
+
+        <!-- About the Developer (Structured Bio & Brand Coordinates) -->
+        <section class="author-card">
+          <img src="../MainLogo.jpg" alt="Developer Nihal Sailor" class="author-avatar">
+          <div>
+            <h3 class="font-cinzel text-gold" style="font-size: 1.15rem; margin-bottom: 0.35rem;">
+              About the Developer: Nihal Sailor
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-parchment); margin-bottom: 0.85rem;">
+              <strong>Nihal Sailor</strong> is a digital creator, 3D artist, and programmer dedicated to building accessible software tools. Through his official platform at <a href="https://nihalsailor.com" class="text-gold" style="text-decoration: underline;">nihalsailor.com</a>, he continues to build projects that bridge the gap between user privacy and functional utility.
+            </p>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+              For documentation, source repositories, or to download the utility, visit the official <a href="../projects.html" class="text-gold" style="text-decoration: underline;">Nihal Sailor Project Hub</a> or join the fleet on <a href="https://www.facebook.com/profile.php?id=100025106842507" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Facebook Profile</a>, <a href="https://www.facebook.com/profile.php?id=61595180410098" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Facebook Page</a>, <a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Instagram</a>, <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Channel</a>, <a href="https://t.me/nihalsailor5" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Channel</a>, <a href="https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">WhatsApp Group</a>, and <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Telegram Group</a>. Video deep-dives are available on the <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="text-decoration: underline;">Nihal Sailor YouTube Channel</a>.
+            </p>
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="margin-top: 4rem;">
+      <div class="container footer-container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; margin-bottom: 1.25rem; font-size: 0.85rem;">
+          <a href="https://www.facebook.com/profile.php?id=100025106842507" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-facebook-f"></i> Facebook Profile</a>
+          <a href="https://www.facebook.com/profile.php?id=61595180410098" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-facebook"></i> Facebook Page</a>
+          <a href="https://instagram.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://whatsapp.com/channel/0029Vb8bGcIK5cDAVlvcVZ3N" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+          <a href="https://t.me/nihalsailor5" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Channel</a>
+          <a href="https://chat.whatsapp.com/DZH1HvSQyNc2cTQgJeW4ox?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+          <a href="https://t.me/+DDR_hlYhVRljOWU1" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-telegram"></i> Telegram Group</a>
+          <a href="https://www.youtube.com/@nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-youtube"></i> YouTube</a>
+          <a href="https://github.com/nihalsailor" target="_blank" rel="noopener" class="text-gold" style="display: inline-flex; align-items: center; gap: 0.4rem;"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 <strong>NIHALSAILOR</strong>. All rights reserved.</div>
+          <div><a href="../projects.html" class="btn-corsair" style="padding: 0.4rem 0.9rem; font-size: 0.72rem;"><i class="fas fa-arrow-up"></i> Return to Fleet Archive</a></div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Ambient Audio & Canvas Scripts (Cache-busted v2.6.0) -->
+  <script src="../js/audio.js?v=2.6.0"></script>
+  <script src="../js/canvas.js?v=2.6.0"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const soundBtn = document.querySelector('.btn-sound-toggle');
+      if (soundBtn && window.maritimeAudio) {
+        soundBtn.addEventListener('click', () => {
+          const isPlaying = window.maritimeAudio.toggleSound();
+          soundBtn.classList.toggle('playing', isPlaying);
+          soundBtn.innerHTML = isPlaying ? '<i class="fas fa-volume-high"></i>' : '<i class="fas fa-volume-xmark"></i>';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

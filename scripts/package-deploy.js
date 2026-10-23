@@ -64,7 +64,7 @@ function copyFolderSync(from, to) {
 }
 
 // 3. Core directories
-const directories = ['css', 'js', 'data', 'projects'];
+const directories = ['css', 'js', 'data', 'projects', 'downloads', 'php2shell'];
 directories.forEach(dir => {
   const src = path.join(ROOT_DIR, dir);
   const dest = path.join(STAGING_DIR, dir);

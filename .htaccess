@@ -24,6 +24,15 @@ AddDefaultCharset UTF-8
   AddType image/jpeg .jpg .jpeg
   AddType image/x-icon .ico
   AddType application/manifest+json .webmanifest
+  AddType application/zip .zip
+  AddType text/plain .ps1 .py .bat
+</IfModule>
+
+# Force downloads for utility files in downloads directory
+<IfModule mod_headers.c>
+  <FilesMatch "\.(bat|ps1|py|zip)$">
+    Header set Content-Disposition "attachment"
+  </FilesMatch>
 </IfModule>
 
 # 4. Gzip & Deflate Compression
