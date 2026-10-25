@@ -11,12 +11,27 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "Game Dev & Multiplayer",
     "image": "BackgroundLogo.png",
     "desc": "High-octane multiplayer combat and vehicular warfare simulator built with real-time networking, customized vehicle physics, and destructive battle arenas.",
-    "tags": ["Unity", "C#", "Multiplayer", "Physics", "Photon / WebGL"],
+    "tags": [
+      "Unity",
+      "C#",
+      "Multiplayer",
+      "Physics",
+      "Photon / WebGL"
+    ],
     "details": "WRX Battles is an action-driven vehicular combat game engineered for high-concurrency multiplayer matches. Features dynamic vehicle suspension, damage modeling, projectile trajectory simulation, and low-latency client-side prediction.",
     "metrics": [
-      { "label": "Engine", "val": "Unity 3D" },
-      { "label": "Mode", "val": "Multiplayer PvP" },
-      { "label": "Platform", "val": "PC & WebGL" }
+      {
+        "label": "Engine",
+        "val": "Unity 3D"
+      },
+      {
+        "label": "Mode",
+        "val": "Multiplayer PvP"
+      },
+      {
+        "label": "Platform",
+        "val": "PC & WebGL"
+      }
     ],
     "liveUrl": "https://wrx-battles.vercel.app/download",
     "codeUrl": "https://github.com/nihalsailor/WRXBattlesOnline"
@@ -28,12 +43,27 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "Web Platforms & Chat",
     "image": "MainLogo.jpg",
     "desc": "Full-stack real-time communication platform featuring encrypted instant messaging, live presence tracking, low-latency room channels, and clean responsive UI.",
-    "tags": ["Full-Stack", "WebSockets", "Node.js", "React", "MongoDB"],
+    "tags": [
+      "Full-Stack",
+      "WebSockets",
+      "Node.js",
+      "React",
+      "MongoDB"
+    ],
     "details": "ApaniBaat provides instant, resilient peer-to-peer and group messaging. Engineered with secure session authentication, real-time message delivery acknowledgments, typing indicators, and media sharing.",
     "metrics": [
-      { "label": "Protocol", "val": "WebSockets" },
-      { "label": "Encryption", "val": "End-to-End" },
-      { "label": "Latency", "val": "< 25ms" }
+      {
+        "label": "Protocol",
+        "val": "WebSockets"
+      },
+      {
+        "label": "Encryption",
+        "val": "End-to-End"
+      },
+      {
+        "label": "Latency",
+        "val": "< 25ms"
+      }
     ],
     "liveUrl": "https://apanibaat.netlify.app",
     "codeUrl": "https://github.com/nihalsailor/apnibaat"
@@ -45,12 +75,27 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "Streaming & Audio DSP",
     "image": "BackgroundLogo.png",
     "desc": "Broadcast orchestration and interactive streaming toolset for creators. Provides custom overlays, audio signal processing, and automated Twitch/YouTube bots.",
-    "tags": ["Python", "OBS WebSocket", "Audio DSP", "Tailwind", "REST API"],
+    "tags": [
+      "Python",
+      "OBS WebSocket",
+      "Audio DSP",
+      "Tailwind",
+      "REST API"
+    ],
     "details": "StreamSailor equips content creators with automated scene triggers, reactive audio filters, Twitch event integration, and stream health telemetry in a single customizable command deck.",
     "metrics": [
-      { "label": "Sync Delay", "val": "< 10ms" },
-      { "label": "Integration", "val": "OBS & Twitch" },
-      { "label": "Overhead", "val": "< 1% CPU" }
+      {
+        "label": "Sync Delay",
+        "val": "< 10ms"
+      },
+      {
+        "label": "Integration",
+        "val": "OBS & Twitch"
+      },
+      {
+        "label": "Overhead",
+        "val": "< 1% CPU"
+      }
     ],
     "liveUrl": "https://streamsailor.nihalsailor.com/",
     "codeUrl": "https://github.com/nihalsailor/StreamSailor"
@@ -62,12 +107,27 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "Cyber Security & Hacking",
     "image": "MainLogo.jpg",
     "desc": "Intelligent automated penetration testing and threat reconnaissance framework designed to detect network vulnerabilities, exposed endpoints, and misconfigurations.",
-    "tags": ["Python", "Ethical Hacking", "Network Recon", "Linux", "Docker"],
+    "tags": [
+      "Python",
+      "Ethical Hacking",
+      "Network Recon",
+      "Linux",
+      "Docker"
+    ],
     "details": "ZAI implements automated security audit pipelines, port vulnerability scanners, packet inspection algorithms, and real-time alerts to safeguard digital infrastructures against adversarial intrusion.",
     "metrics": [
-      { "label": "Audit Speed", "val": "1000 ports/s" },
-      { "label": "Specialization", "val": "Ethical Hacking" },
-      { "label": "Database", "val": "CVE Threat Lib" }
+      {
+        "label": "Audit Speed",
+        "val": "1000 ports/s"
+      },
+      {
+        "label": "Specialization",
+        "val": "Ethical Hacking"
+      },
+      {
+        "label": "Database",
+        "val": "CVE Threat Lib"
+      }
     ],
     "liveUrl": "https://zaimcp.space-z.ai/",
     "codeUrl": "https://github.com/nihalsailor"
@@ -79,12 +139,26 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "Systems & Device Security",
     "image": "BackgroundLogo.png",
     "desc": "Lightweight cross-device monitoring and content filtering application ensuring safe digital environments with real-time app usage tracking and policy enforcement.",
-    "tags": ["Android / C#", "Security Rules", "Local Firewall", "SQLite"],
+    "tags": [
+      "Android / C#",
+      "Security Rules",
+      "Local Firewall",
+      "SQLite"
+    ],
     "details": "SafeGuard Lite is a privacy-first device management and parental control architecture that operates with local network filtering, activity auditing, scheduled screen lockouts, and tamper-resistant background services.",
     "metrics": [
-      { "label": "Edition", "val": "Lite" },
-      { "label": "Response", "val": "Instant Block" },
-      { "label": "Platform", "val": "Android / PC" }
+      {
+        "label": "Edition",
+        "val": "Lite"
+      },
+      {
+        "label": "Response",
+        "val": "Instant Block"
+      },
+      {
+        "label": "Platform",
+        "val": "Android / PC"
+      }
     ],
     "liveUrl": "https://safeguardlite.nihalsailor.com/",
     "codeUrl": "https://github.com/nihalsailor/ParentralControllApp"
@@ -96,12 +170,26 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "3D Graphics & Shaders",
     "image": "BackgroundLogo.png",
     "desc": "Interactive 3D WebGL ocean simulator featuring dynamic cresting waves, volumetric storm fog, ship buoyancy physics, and lantern illumination.",
-    "tags": ["Three.js", "GLSL Shaders", "WebAudio", "PhysX"],
+    "tags": [
+      "Three.js",
+      "GLSL Shaders",
+      "WebAudio",
+      "PhysX"
+    ],
     "details": "Engineered directly in browser technologies to demonstrate high-performance GPU vertex displacement for ocean waves, buoyancy calculations for seafaring vessels, and atmospheric particle systems.",
     "metrics": [
-      { "label": "Frame Rate", "val": "60 FPS Ultra" },
-      { "label": "Draw Calls", "val": "< 85" },
-      { "label": "Payload", "val": "2.4 MB" }
+      {
+        "label": "Frame Rate",
+        "val": "60 FPS Ultra"
+      },
+      {
+        "label": "Draw Calls",
+        "val": "< 85"
+      },
+      {
+        "label": "Payload",
+        "val": "2.4 MB"
+      }
     ],
     "liveUrl": "#",
     "codeUrl": "https://github.com/nihalsailor"
@@ -113,12 +201,27 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "AI Systems & MCP Protocol",
     "image": "BackgroundLogo.png",
     "desc": "Open-source Model Context Protocol (MCP) bridge connecting AI coding agents directly to Google Flow for unlimited high-resolution image and video generation.",
-    "tags": ["MCP Protocol", "Google Flow", "TypeScript", "Chrome Extension", "Veo 3.1 & Nano"],
+    "tags": [
+      "MCP Protocol",
+      "Google Flow",
+      "TypeScript",
+      "Chrome Extension",
+      "Veo 3.1 & Nano"
+    ],
     "details": "Flow Connect Free connects AI coding assistants (Claude Code, Antigravity, Cursor, Windsurf) to Google Flow via Chrome DevTools Protocol and local WebSocket loopback. Dispatches hardware-level inputs, intercepts clean CDN media URLs, supports automated Image-to-Image prompts, and syncs media locally with zero API key fees.",
     "metrics": [
-      { "label": "Protocol", "val": "MCP JSON-RPC" },
-      { "label": "Models", "val": "Veo 3.1 & Nano" },
-      { "label": "Pricing", "val": "100% Free / MIT" }
+      {
+        "label": "Protocol",
+        "val": "MCP JSON-RPC"
+      },
+      {
+        "label": "Models",
+        "val": "Veo 3.1 & Nano"
+      },
+      {
+        "label": "Pricing",
+        "val": "100% Free / MIT"
+      }
     ],
     "liveUrl": "https://github.com/nihalsailor/flow-connect-free",
     "codeUrl": "https://github.com/nihalsailor/flow-connect-free"
@@ -130,14 +233,95 @@ window.DEFAULT_PROJECTS = [
     "categoryLabel": "AI Creator Tools & Video SEO",
     "image": "MainLogo.jpg",
     "desc": "AI-powered YouTube channel growth and optimization platform featuring high-retention hook generation, automated SEO tagging, thumbnail prompts, and channel analytics synchronization.",
-    "tags": ["AI Tools", "YouTube API", "React", "PWA", "Tailwind CSS"],
+    "tags": [
+      "AI Tools",
+      "YouTube API",
+      "React",
+      "PWA",
+      "Tailwind CSS"
+    ],
     "details": "ReachTube Studio accelerates channel monetization by automating retention hooks, video tag clusters, AI thumbnail prompt composition, and real-time channel statistics via Google Identity Services and YouTube OAuth APIs.",
     "metrics": [
-      { "label": "Stack", "val": "React & PWA" },
-      { "label": "Integration", "val": "YouTube API" },
-      { "label": "Optimization", "val": "AI Hooks & SEO" }
+      {
+        "label": "Stack",
+        "val": "React & PWA"
+      },
+      {
+        "label": "Integration",
+        "val": "YouTube API"
+      },
+      {
+        "label": "Optimization",
+        "val": "AI Hooks & SEO"
+      }
     ],
     "liveUrl": "https://nihalsailor.com/reachtube/index.html",
+    "codeUrl": "https://github.com/nihalsailor"
+  },
+  {
+    "id": "immersive-world",
+    "title": "ImmersiveWorld 3D",
+    "category": "creative",
+    "categoryLabel": "Spatial Computing & WebXR",
+    "image": "BackgroundLogo.png",
+    "desc": "Photorealistic spatial computing experience transforming 2D imagery into walkable 3D Gaussian Splatting environments powered by Apple's open-source vision foundation model.",
+    "tags": [
+      "Apple Vision Pro",
+      "3D Gaussian Splats",
+      "Spatial Computing",
+      "WebXR",
+      "Three.js",
+      "ML-SHARP"
+    ],
+    "details": "ImmersiveWorld harnesses Apple's open-source ML-SHARP foundation model and 3D Gaussian Splatting to convert ordinary 2D photographs into navigable, photorealistic 3D spatial environments. Delivers seamless WebGL and WebXR VR locomotion across Apple Vision Pro, Meta Quest, PC, and Mobile browsers with zero installation.",
+    "metrics": [
+      {
+        "label": "Model",
+        "val": "Apple ML-SHARP"
+      },
+      {
+        "label": "Technology",
+        "val": "Gaussian Splats"
+      },
+      {
+        "label": "Platform",
+        "val": "Vision Pro / WebXR"
+      }
+    ],
+    "liveUrl": "https://nihalsailor.com/ImmersiveWorld/index.html",
+    "codeUrl": "https://github.com/nihalsailor"
+  },
+  {
+    "id": "the-fall",
+    "title": "The Fall",
+    "category": "game",
+    "categoryLabel": "Game Dev & Physics Simulation",
+    "image": "BackgroundLogo.png",
+    "desc": "Atmospheric 3D physics-driven action game featuring high-velocity descent kinematics, dynamic collision mechanics, and intense survival navigation.",
+    "tags": [
+      "Indie Game",
+      "Physics Engine",
+      "RUN.world",
+      "WebGL",
+      "3D Survival",
+      "Kinematics"
+    ],
+    "details": "The Fall is an atmospheric 3D physics game developed by Nihal Sailor and published on RUN.world. Features real-time velocity calculations, momentum preservation, dynamic lighting, and precision collision detection, delivering an intense descent experience playable directly in-browser.",
+    "metrics": [
+      {
+        "label": "Platform",
+        "val": "RUN.world WebGL"
+      },
+      {
+        "label": "Genre",
+        "val": "3D Physics Survival"
+      },
+      {
+        "label": "Performance",
+        "val": "60 FPS WebGL"
+      }
+    ],
+    "liveUrl": "https://run.world/nihalsailor/the-fall",
     "codeUrl": "https://github.com/nihalsailor"
   }
 ];

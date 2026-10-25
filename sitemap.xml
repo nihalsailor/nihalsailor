@@ -116,4 +116,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://nihalsailor.com/projects/immersive-world.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://nihalsailor.com/projects/the-fall.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
